@@ -17,14 +17,14 @@ def generateRandomRobotPositions(robot_nums,robot_radius):
             xSource = round(random.uniform(-8,8), 1)
             ySource = round(random.uniform(-8,8), 1)
             while ((-8<=xSource<=-1.5 and -8<=ySource<=-1.5) or (-8<=xSource<=-1.5 and 1.5<=ySource<=8) or (1.5<=xSource<=8 and -8<=ySource<=-1.5) or (1.5<=xSource<=8 and 1.5<=ySource<=8)):
-#                 print(xSource,ySource)
+                # print(xSource,ySource)
                 xSource = round(random.uniform(-8,8), 1)
                 ySource = round(random.uniform(-8,8), 1)
-            xGoal = round(random.uniform(-8,8), 1)
-            yGoal = round(random.uniform(-8,8), 1)
+            xGoal = round(random.uniform(-7.5,7.5), 1)
+            yGoal = round(random.uniform(-7.5,7.5), 1)
             while ((-8<=xGoal<=-1.5 and -8<=yGoal<=-1.5) or (-8<=xGoal<=-1.5 and 1.5<=yGoal<=8) or (1.5<=xGoal<=8 and -8<=yGoal<=-1.5) or (1.5<=xGoal<=8 and 1.5<=yGoal<=8)):
-                xGoal = round(random.uniform(-8,8), 1)
-                yGoal = round(random.uniform(-8,8), 1)
+                xGoal = round(random.uniform(-7.5,7.5), 1)
+                yGoal = round(random.uniform(-7.5,7.5), 1)
             collide = False
             for [(xS,yS),(xG,yG)] in robotPos:
                  if norm((xS - xSource, yS - ySource )) < 2*robot_radius:
