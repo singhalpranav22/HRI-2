@@ -148,7 +148,7 @@ def main():
         logging.info('Experience set size: %d/%d', len(memory), memory.capacity)
     episode = 0
     while episode < train_episodes:
-        logging.info('Current episode=',episode)
+        logging.info('Current episode={}'.format(episode))
         if args.resume:
             epsilon = epsilon_end
         else:
@@ -156,7 +156,7 @@ def main():
                 epsilon = epsilon_start + (epsilon_end - epsilon_start) / epsilon_decay * episode
             else:
                 epsilon = epsilon_end
-        logging.info('Current episilon=',epsilon)
+        logging.info('Current episilon={}'.format(epsilon))
         robot.policy.set_epsilon(epsilon)
 
         # evaluate the model
