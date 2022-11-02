@@ -20,6 +20,7 @@ class Explorer(object):
     # @profile
     def run_k_episodes(self, k, phase, update_memory=False, imitation_learning=False, episode=None,
                        print_failure=False):
+        logging.info("INSIDE THE run_k_episodes FUNCTION.")
         self.robot.policy.set_phase(phase)
         success_times = []
         collision_times = []
@@ -33,7 +34,7 @@ class Explorer(object):
         collision_cases = []
         timeout_cases = []
         for i in range(k):
-            logging.info('current k = ',i)
+            logging.info('Current k = {}'.format(i))
             ob = self.env.reset(phase)
             done = False
             states = []

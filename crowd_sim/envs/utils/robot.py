@@ -128,12 +128,12 @@ class Robot(Agent):
         pos = self.compute_position(action, self.time_step)
         self.px, self.py = pos
         current_quad = determineQuadrant(self.px,self.py) 
-        print("current quad=",current_quad)
+        # print("current quad=",current_quad)
         if self.e_goal_quadrant == current_quad or current_quad==0:
             self.set_goal_position(self.egx,self.egy)
         else:
             subGoal = determineSubGoal(self.px,self.py,self.egx,self.egy)
-            print("subgoal=",subGoal)
+            # print("subgoal=",subGoal)
             self.set_goal_position(subGoal[0],subGoal[1])
         if self.kinematics == 'holonomic':
             self.vx = action.vx

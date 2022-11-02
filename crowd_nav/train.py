@@ -113,6 +113,7 @@ def main():
         model.load_state_dict(torch.load(il_weight_file))
         logging.info('Load imitation learning trained weights.')
     else:
+        logging.info("IMITATION LEARNING TAKING PLACE")
         il_episodes = train_config.getint('imitation_learning', 'il_episodes')
         il_policy = train_config.get('imitation_learning', 'il_policy')
         il_epochs = train_config.getint('imitation_learning', 'il_epochs')
@@ -126,6 +127,7 @@ def main():
         il_policy.multiagent_training = policy.multiagent_training
         il_policy.safety_space = safety_space
         robot.set_policy(il_policy)
+        logging.info("NOW RUNNING K EPISODES OF IL POLICY")
         explorer.run_k_episodes(il_episodes, 'train', update_memory=True, imitation_learning=True)
         trainer.optimize_epoch(il_epochs)
         torch.save(model.state_dict(), il_weight_file)

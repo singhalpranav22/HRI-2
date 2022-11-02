@@ -95,7 +95,6 @@ class CrowdSim(gym.Env):
         self.robot = robot
 
     def generate_random_human_position(self, human_num, rule):
-        print("RULE", rule)
         """
         Generate human position according to certain rule
         Rule square_crossing: generate start/goal position at two sides of y-axis
@@ -133,7 +132,6 @@ class CrowdSim(gym.Env):
             # hardcoding some humans as static obstacles
             curr = -7.5
             while curr<=-2.5:
-                 print("REACHING HERE")
                  human1 = Human(self.config, 'humans')
                  human1.radius = 0.3
                  human1.v_pref = 0
@@ -649,7 +647,6 @@ class CrowdSim(gym.Env):
             human_numbers = [plt.text(humans[i].center[0] - x_offset, humans[i].center[1] - y_offset, str(i),
                                       color='black', fontsize=12) for i in range(len(self.humans))]
             ##### print number of humans here
-            print("LENGTH OF HUMANS ARRAY",len(humans))
             for i, human in enumerate(humans):
                 ax.add_artist(human)
                 ax.add_artist(human_numbers[i])
