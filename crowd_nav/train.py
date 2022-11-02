@@ -69,7 +69,7 @@ def main():
     policy_config.read(args.policy_config)
     policy.configure(policy_config)
     policy.set_device(device)
-
+    logging.info("Policy configured.")
     # configure environment
     env_config = configparser.RawConfigParser()
     env_config.read(args.env_config)
@@ -77,7 +77,7 @@ def main():
     env.configure(env_config)
     robot = Robot(env_config, 'robot')
     env.set_robot(robot)
-
+    logging.info("Environment configured.")
     # read training parameters
     if args.train_config is None:
         parser.error('Train config has to be specified for a trainable network')
@@ -94,14 +94,14 @@ def main():
     epsilon_end = train_config.getfloat('train', 'epsilon_end')
     epsilon_decay = train_config.getfloat('train', 'epsilon_decay')
     checkpoint_interval = train_config.getint('train', 'checkpoint_interval')
-
+    logging.info("Training Parameters read successful")
     # configure trainer and explorer
     memory = ReplayMemory(capacity)
     model = policy.get_model()
     batch_size = train_config.getint('trainer', 'batch_size')
     trainer = Trainer(model, memory, device, batch_size)
     explorer = Explorer(env, robot, device, memory, policy.gamma, target_policy=policy)
-
+    logging.info("Trainer and explorer configured.")
     # imitation learning
     if args.resume:
         if not os.path.exists(rl_weight_file):
@@ -141,10 +141,12 @@ def main():
     # fill the memory pool with some RL experience
     if args.resume:
         robot.policy.set_epsilon(epsilon_end)
+        logging.info('Running: explorer.run_k_episodes(100, , update_memory=True, episode=0)')
         explorer.run_k_episodes(100, 'train', update_memory=True, episode=0)
         logging.info('Experience set size: %d/%d', len(memory), memory.capacity)
     episode = 0
     while episode < train_episodes:
+        logging.info('Current episode=',episode)
         if args.resume:
             epsilon = epsilon_end
         else:
@@ -152,6 +154,7 @@ def main():
                 epsilon = epsilon_start + (epsilon_end - epsilon_start) / epsilon_decay * episode
             else:
                 epsilon = epsilon_end
+        logging.info('Current episilon=',epsilon)
         robot.policy.set_epsilon(epsilon)
 
         # evaluate the model

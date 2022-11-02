@@ -2,6 +2,7 @@ LICENSE
 README.md
 setup.py
 crowd_nav/__init__.py
+crowd_nav/generateTestCases.py
 crowd_nav/test.py
 crowd_nav/train.py
 crowd_nav/policy/__init__.py
@@ -18,6 +19,9 @@ crowd_nav/utils/trainer.py
 crowd_sim/__init__.py
 crowd_sim/envs/__init__.py
 crowd_sim/envs/crowd_sim.py
+crowd_sim/envs/crowd_sim2.py
+crowd_sim/envs/generateRandomPositions.py
+crowd_sim/envs/generateRandomRobotPositions.py
 crowd_sim/envs/policy/__init__.py
 crowd_sim/envs/policy/linear.py
 crowd_sim/envs/policy/orca.py
@@ -28,6 +32,7 @@ crowd_sim/envs/utils/action.py
 crowd_sim/envs/utils/agent.py
 crowd_sim/envs/utils/human.py
 crowd_sim/envs/utils/info.py
+crowd_sim/envs/utils/obstacle.py
 crowd_sim/envs/utils/robot.py
 crowd_sim/envs/utils/state.py
 crowd_sim/envs/utils/utils.py

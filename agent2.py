@@ -1,3 +1,5 @@
+### gx,gy -> subgoals
+### egx,egy -> endinggoals
 import numpy as np
 from numpy.linalg import norm
 import abc
@@ -5,12 +7,13 @@ import logging
 from crowd_sim.envs.policy.policy_factory import policy_factory
 from crowd_sim.envs.utils.action import ActionXY, ActionRot
 from crowd_sim.envs.utils.state import ObservableState, FullState
-
+from .utils import isIntersectionCrowded, isIntersectionCrossing,determineQuadrant,determineSubGoal
 
 class Agent(object):
     def __init__(self, config, section):
         """
         Base class for robot and human. Have the physical attributes of an agent.
+
         """
         self.visible = config.getboolean(section, 'visible')
         self.v_pref = config.getfloat(section, 'v_pref')
@@ -29,6 +32,7 @@ class Agent(object):
         self.vy = None
         self.theta = None
         self.time_step = None
+
     def print_info(self):
         logging.info('Agent is {} and has {} kinematic constraint'.format(
             'visible' if self.visible else 'invisible', self.kinematics))
@@ -45,11 +49,18 @@ class Agent(object):
         self.v_pref = np.random.uniform(0.5, 1.5)
         self.radius = np.random.uniform(0.3, 0.5)
 
-    def set(self, px, py, gx, gy, vx, vy, theta, radius=None, v_pref=None):
+    def set(self, px, py, egx, egy, vx, vy, theta, radius=None, v_pref=None):
         self.px = px
         self.py = py
-        self.gx = gx
-        self.gy = gy
+        self.egx = egx
+        self.egy = egy
+        self.e_goal_auadrant = determineQuadrant(egx,egy)
+        current_quad = determineQuadrant(self.px,self.py) 
+        if self.e_goal_quadrant == current_quad:
+            self.set_goal_position(self.egx,self.egy)
+        else:
+            subGoal = determineSubGoal(self.px,self.py,self.egx,self.egy)
+            self.set_goal_position(subGoal[0],subGoal[1])
         self.vx = vx
         self.vy = vy
         self.theta = theta
@@ -87,6 +98,14 @@ class Agent(object):
     def get_goal_position(self):
         return self.gx, self.gy
 
+    def get_end_goal_position(self):
+        return self.egx,self.egy
+
+    def set_goal_position(self,gx,gy):  
+        self.gx = gx
+        self.gy = gy
+
+
     def get_velocity(self):
         return self.vx, self.vy
 
@@ -98,6 +117,7 @@ class Agent(object):
     def act(self, ob):
         """
         Compute state using received observation and pass it to policy
+
         """
         return
 
@@ -126,6 +146,12 @@ class Agent(object):
         self.check_validity(action)
         pos = self.compute_position(action, self.time_step)
         self.px, self.py = pos
+        current_quad = determineQuadrant(self.px,self.py) 
+        if self.e_goal_quadrant == current_quad:
+            self.set_goal_position(self.egx,self.egy)
+        else:
+            subGoal = determineSubGoal(self.px,self.py,self.egx,self.egy)
+            self.set_goal_position(subGoal[0],subGoal[1])
         if self.kinematics == 'holonomic':
             self.vx = action.vx
             self.vy = action.vy
@@ -136,3 +162,4 @@ class Agent(object):
 
     def reached_destination(self):
         return norm(np.array(self.get_position()) - np.array(self.get_goal_position())) < self.radius
+

@@ -33,6 +33,7 @@ class Explorer(object):
         collision_cases = []
         timeout_cases = []
         for i in range(k):
+            logging.info('current k = ',i)
             ob = self.env.reset(phase)
             done = False
             states = []
