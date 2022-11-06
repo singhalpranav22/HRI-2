@@ -68,7 +68,10 @@ class CrowdSim(gym.Env):
         self.collision_penalty = config.getfloat('reward', 'collision_penalty')
         self.discomfort_dist = config.getfloat('reward', 'discomfort_dist')
         self.discomfort_penalty_factor = config.getfloat('reward', 'discomfort_penalty_factor')
+        self.subgoal_velocity_dirn_factor = config.getfloat('reward','subgoal_velocity_dirn_factor')
+        self.subgoal_reached = config.getfloat('reward','subgoal_reached')
         self.robot_radius = config.getfloat('robot','radius')
+
         # self.human_radius = config.getfloat('human','radius')
         if self.config.get('humans', 'policy') == 'orca':
             self.case_capacity = {'train': np.iinfo(np.uint32).max - 2000, 'val': 1000, 'test': 1000}
@@ -465,6 +468,26 @@ class CrowdSim(gym.Env):
         end_position = np.array(self.robot.compute_position(action, self.time_step))
         reaching_goal = norm(end_position - np.array(self.robot.get_end_goal_position())) < self.robot.radius
         isCsvRequired = False
+
+        # calculate angle in radians between velocity and current position to goal vector
+        px = self.robot.px
+        py = self.robot.py 
+        vx = self.robot.vx
+        vy = self.robot.vy 
+        gx = self.robot.gx
+        gy = self.robot.gy
+        egx = self.robot.egx
+        egy = self.robot.egy
+
+        angle = np.arctan2(gy - py, gx - px) - np.arctan2(vy, vx)
+        reward = np.cos(angle) * self.subgoal_velocity_dirn_factor
+        if gx == egx and gy == egy:
+            reaching_subgoal = False 
+        else:
+            reaching_subgoal = norm(end_position - np.array(self.robot.get_goal_position())) < self.robot.radius
+            if reaching_subgoal:
+                reward += self.subgoal_reached
+        
         if self.global_time >= self.time_limit - 1:
             reward = 0
             done = True
@@ -483,14 +506,13 @@ class CrowdSim(gym.Env):
         elif dmin < self.discomfort_dist:
             # only penalize agent for getting too close if it's visible
             # adjust the reward based on FPS
-            reward = (dmin - self.discomfort_dist) * self.discomfort_penalty_factor * self.time_step
+            reward += (dmin - self.discomfort_dist) * self.discomfort_penalty_factor * self.time_step
             done = False
             info = Danger(dmin)
         else:
-            reward = 0
             done = False
             info = Nothing()
-
+        print("Current reward at ",self.global_time," = ",reward)
         if isCsvRequired:
             # print("&&&&&&&&",self.data)
             header = ['time']
