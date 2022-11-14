@@ -32,17 +32,20 @@ def main():
         env_config_file = os.path.join(args.model_dir, os.path.basename(args.env_config))
         policy_config_file = os.path.join(args.model_dir, os.path.basename(args.policy_config))
         if args.il:
+            print("Il done")
             model_weights = os.path.join(args.model_dir, 'il_model.pth')
         else:
             if os.path.exists(os.path.join(args.model_dir, 'resumed_rl_model.pth')):
                 model_weights = os.path.join(args.model_dir, 'resumed_rl_model.pth')
             else:
+                print("RL done")
                 model_weights = os.path.join(args.model_dir, 'rl_model.pth')
     else:
         env_config_file = args.env_config
         policy_config_file = args.env_config
 
     # configure logging and device
+    print("Something happened!")
     logging.basicConfig(level=logging.INFO, format='%(asctime)s, %(levelname)s: %(message)s',
                         datefmt="%Y-%m-%d %H:%M:%S")
     device = torch.device("cuda:0" if torch.cuda.is_available() and args.gpu else "cpu")

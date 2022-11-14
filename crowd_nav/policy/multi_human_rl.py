@@ -23,7 +23,7 @@ class MultiHumanRL(CADRL):
             return ActionXY(0, 0) if self.kinematics == 'holonomic' else ActionRot(0, 0)
         if self.action_space is None:
             self.build_action_space(state.self_state.v_pref)
-
+       # print("In multi human RL predict function,state=",state.human_states)
         occupancy_maps = None
         probability = np.random.random()
         if self.phase == 'train' and probability < self.epsilon:
