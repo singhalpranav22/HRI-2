@@ -97,7 +97,7 @@ class MultiHumanRL(CADRL):
         state_tensor = torch.cat([torch.Tensor([state.self_state + human_state]).to(self.device)
                                   for human_state in state.human_states], dim=0)
         if self.with_om:
-            print("Build occupany maps called")
+           # print("Build occupany maps called")
             occupancy_maps = self.build_occupancy_maps(state.human_states)
             state_tensor = torch.cat([self.rotate(state_tensor), occupancy_maps.to(self.device)], dim=1)
         else:
@@ -114,8 +114,12 @@ class MultiHumanRL(CADRL):
         :return: tensor of shape (# human - 1, self.cell_num ** 2)
         """
         occupancy_maps = []
-        print("Human states====",len(human_states))
+        # print("Human states====",len(human_states))
+        i = 0
         for human in human_states:
+            if i>=3:
+                break
+            i += 1
             other_humans = np.concatenate([np.array([(other_human.px, other_human.py, other_human.vx, other_human.vy)])
                                          for other_human in human_states if other_human != human], axis=0)
             ###### relative x and y coords
