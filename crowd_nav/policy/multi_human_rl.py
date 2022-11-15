@@ -3,7 +3,7 @@ import numpy as np
 from crowd_sim.envs.utils.action import ActionRot, ActionXY
 from crowd_nav.policy.cadrl import CADRL
 
-
+ 
 class MultiHumanRL(CADRL):
     def __init__(self):
         super().__init__()
@@ -97,6 +97,7 @@ class MultiHumanRL(CADRL):
         state_tensor = torch.cat([torch.Tensor([state.self_state + human_state]).to(self.device)
                                   for human_state in state.human_states], dim=0)
         if self.with_om:
+            print("Build occupany maps called")
             occupancy_maps = self.build_occupancy_maps(state.human_states)
             state_tensor = torch.cat([self.rotate(state_tensor), occupancy_maps.to(self.device)], dim=1)
         else:
@@ -113,6 +114,7 @@ class MultiHumanRL(CADRL):
         :return: tensor of shape (# human - 1, self.cell_num ** 2)
         """
         occupancy_maps = []
+        print("Human states====",len(human_states))
         for human in human_states:
             other_humans = np.concatenate([np.array([(other_human.px, other_human.py, other_human.vx, other_human.vy)])
                                          for other_human in human_states if other_human != human], axis=0)
