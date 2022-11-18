@@ -35,7 +35,7 @@ def closest_point_on_segment(x1, y1, x2, y2, x3, y3):
     if px == 0 and py == 0:
         return np.linalg.norm((x3-x1, y3-y1))
 
-    u = ((x3 - x1) * px + (y3 - y1) * py) / (px * px + py * py)
+    u = ((x3 - x1) * px + (y3 - y1) * py) / (px * px + py * py)#RK check if (x3-x1),(y3-y1) should be pre-normalized
 
     if u > 1:
         u = 1
@@ -104,7 +104,7 @@ def determineSubGoal(px,py,egx,egy):
     current_quadrant = determineQuadrant(px,py)
     if current_quadrant == 0:
         return (egx,egy)
-    else:
+    else: #RK: check if 2 and 4 are swapped
         if current_quadrant == 1:
             return closest_point_on_segment(1.9,-1.9,1.9,1.9,egx,egy)
         if current_quadrant == 2:

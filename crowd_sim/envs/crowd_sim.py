@@ -481,7 +481,7 @@ class CrowdSim(gym.Env):
 
         angle = np.arctan2(gy - py, gx - px) - np.arctan2(vy, vx)
         reward = np.cos(angle) * self.subgoal_velocity_dirn_factor
-        if gx == egx and gy == egy:
+        if gx == egx and gy == egy: #RK check if doubles can be compared for equality
             reaching_subgoal = False 
         else:
             reaching_subgoal = norm(end_position - np.array(self.robot.get_goal_position())) < self.robot.radius

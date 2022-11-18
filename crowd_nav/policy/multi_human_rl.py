@@ -114,14 +114,11 @@ class MultiHumanRL(CADRL):
         :return: tensor of shape (# human - 1, self.cell_num ** 2)
         """
         occupancy_maps = []
-        # print("Human states====",len(human_states))
+        human_states_without_static = human_states[:3]
         i = 0
-        for human in human_states:
-            if i>=3:
-                break
-            i += 1
+        for human in human_states_without_static:
             other_humans = np.concatenate([np.array([(other_human.px, other_human.py, other_human.vx, other_human.vy)])
-                                         for other_human in human_states if other_human != human], axis=0)
+                                         for other_human in human_states_without_static if other_human != human], axis=0)
             ###### relative x and y coords
             other_px = other_humans[:, 0] - human.px
             other_py = other_humans[:, 1] - human.py
