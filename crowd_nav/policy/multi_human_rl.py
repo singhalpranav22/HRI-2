@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-from crowd_sim.envs.utils.action import ActionRot, ActionXY
+from crowd_sim_il.envs.utils.action import ActionRot, ActionXY
 from crowd_nav.policy.cadrl import CADRL
 
  

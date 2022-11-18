@@ -1,5 +1,5 @@
-from crowd_sim.envs.policy.linear import Linear
-from crowd_sim.envs.policy.orca import ORCA
+from crowd_sim_rl.envs.policy.linear import Linear
+from crowd_sim_rl.envs.policy.orca import ORCA
 
 
 def none_policy():

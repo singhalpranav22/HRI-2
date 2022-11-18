@@ -2,9 +2,9 @@ import numpy as np
 from numpy.linalg import norm
 import abc
 import logging
-from crowd_sim.envs.policy.policy_factory import policy_factory
-from crowd_sim.envs.utils.action import ActionXY, ActionRot
-from crowd_sim.envs.utils.state import ObservableState, FullState
+from crowd_sim_il.envs.policy.policy_factory import policy_factory
+from crowd_sim_il.envs.utils.action import ActionXY, ActionRot
+from crowd_sim_il.envs.utils.state import ObservableState, FullState
 
 
 class Agent(object):

@@ -1,5 +1,5 @@
-from crowd_sim.envs.utils.agent import Agent
-from crowd_sim.envs.utils.state import JointState
+from crowd_sim_il.envs.utils.agent import Agent
+from crowd_sim_il.envs.utils.state import JointState
 
 
 class Human(Agent):

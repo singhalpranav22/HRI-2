@@ -1,7 +1,7 @@
 import logging
 import copy
 import torch
-from crowd_sim.envs.utils.info import *
+from crowd_sim_il.envs.utils.info import *
 
 
 class Explorer(object):

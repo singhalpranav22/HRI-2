@@ -7,10 +7,10 @@ import numpy as np
 import rvo2
 from matplotlib import patches
 from numpy.linalg import norm
-from crowd_sim.envs.utils.human import Human
-from crowd_sim.envs.utils.info import *
-from crowd_sim.envs.utils.robot import Robot
-from crowd_sim.envs.utils.utils import point_to_segment_dist
+from crowd_sim_il.envs.utils.human import Human
+from crowd_sim_il.envs.utils.info import *
+from crowd_sim_il.envs.utils.robot import Robot
+from crowd_sim_il.envs.utils.utils import point_to_segment_dist
 from .generateRandomPositions import generateRandomPositions
 from .generateRandomRobotPositions import generateRandomRobotPositions
 from .utils.utils import isIntersectionCrowded, isIntersectionCrossing, addRandomNoise
@@ -369,15 +369,15 @@ class CrowdSim(gym.Env):
             counter_offset = {'train': self.case_capacity['val'] + self.case_capacity['test'],
                               'val': 0, 'test': self.case_capacity['val']}
             # self.robot.set(0, -6, 7, 0, 0, 0, np.pi / 2)
-            robotPos = generateRandomRobotPositions(1, self.robot_radius)
+            robotPos = generateRandomRobotPositions(1,self.robot_radius)
             # robotPos = [(),()]
             # print(robotPos)
             # robotPos = [(-6, 1), (-1, 3)]
             # robotPos[0] = addRandomNoise(robotPos[0][0], robotPos[0][1], 0.2)
             # robotPos[1] = addRandomNoise(robotPos[1][0], robotPos[1][1], 0.2)
             # print("Robot init", robotPos[0])
-            print("Robot goal", robotPos[1])
-            self.robot.set(robotPos[0][0], robotPos[0][1], robotPos[1][0], robotPos[1][1], 0, 0, np.pi / 2)
+            print("Robot goal", robotPos)
+            self.robot.set(robotPos[0][0][0], robotPos[0][0][1], robotPos[0][1][0], robotPos[0][1][1], 0, 0, np.pi / 2)
             if self.case_counter[phase] >= 0:
                 np.random.seed(counter_offset[phase] + self.case_counter[phase])
                 if phase in ['train', 'val']:
