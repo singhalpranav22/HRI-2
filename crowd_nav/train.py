@@ -73,7 +73,7 @@ def main():
     # configure environment
     env_config = configparser.RawConfigParser()
     env_config.read(args.env_config)
-    env = gym.make('CrowdSim-v0')
+    env = gym.make('CrowdSim_il-v0')
     env.configure(env_config)
     robot = Robot(env_config, 'robot')
     env.set_robot(robot)
@@ -136,6 +136,7 @@ def main():
     explorer.update_target_model(model)
 
     # reinforcement learning
+    env = gym.make('CrowdSim_rl-v0')
     policy.set_env(env)
     robot.set_policy(policy)
     robot.print_info()
