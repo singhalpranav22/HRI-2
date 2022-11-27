@@ -1,129 +1,33 @@
-2022-11-16 16:08:17, INFO: Current git head hash code: %s
-2022-11-16 16:08:17, INFO: Using device: cpu
-2022-11-16 16:08:17, INFO: Policy: OM-SARL w/ global state
-2022-11-16 16:08:17, INFO: Policy configured.
-2022-11-16 16:08:17, INFO: human number: 3
-2022-11-16 16:08:17, INFO: Not randomize human's radius and preferred speed
-2022-11-16 16:08:17, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
-2022-11-16 16:08:17, INFO: Square width: 10.0, circle width: 4.0
-2022-11-16 16:08:17, INFO: Environment configured.
-2022-11-16 16:08:17, INFO: Training Parameters read successful
-2022-11-16 16:08:17, INFO: Trainer and explorer configured.
-2022-11-16 16:08:17, INFO: IMITATION LEARNING TAKING PLACE
-2022-11-16 16:08:17, INFO: Current learning rate: 0.010000
-2022-11-16 16:08:17, INFO: NOW RUNNING K EPISODES OF IL POLICY
-2022-11-16 16:08:17, INFO: INSIDE THE run_k_episodes FUNCTION.
-2022-11-16 16:08:17, INFO: Current k = 0
-2022-11-16 16:08:18, INFO: Current k = 1
-2022-11-16 16:08:20, INFO: Current k = 2
-2022-11-16 16:08:21, INFO: Current k = 3
-2022-11-16 16:08:23, INFO: Current k = 4
-2022-11-16 16:08:24, INFO: Current k = 5
-2022-11-16 16:08:25, INFO: Current k = 6
-2022-11-16 16:08:27, INFO: Current k = 7
-2022-11-16 16:08:28, INFO: Current k = 8
-2022-11-16 16:08:30, INFO: Current k = 9
-2022-11-16 16:08:31, INFO: Current k = 10
-2022-11-16 16:08:33, INFO: Current k = 11
-2022-11-16 16:08:34, INFO: Current k = 12
-2022-11-16 16:08:36, INFO: Current k = 13
-2022-11-16 16:08:37, INFO: Current k = 14
-2022-11-16 16:08:39, INFO: Current k = 15
-2022-11-16 16:08:40, INFO: Current k = 16
-2022-11-16 16:08:42, INFO: Current k = 17
-2022-11-16 16:08:43, INFO: Current k = 18
-2022-11-16 16:08:45, INFO: Current k = 19
-2022-11-16 16:08:46, INFO: Current k = 20
-2022-11-16 16:08:48, INFO: Current k = 21
-2022-11-16 16:08:49, INFO: Current k = 22
-2022-11-16 16:08:51, INFO: Current k = 23
-2022-11-16 16:08:52, INFO: Current k = 24
-2022-11-16 16:08:54, INFO: Current k = 25
-2022-11-16 16:08:55, INFO: Current k = 26
-2022-11-16 16:08:57, INFO: Current k = 27
-2022-11-16 16:08:58, INFO: Current k = 28
-2022-11-16 16:08:59, INFO: Current k = 29
-2022-11-16 16:09:01, INFO: Current k = 30
-2022-11-16 16:09:02, INFO: Current k = 31
-2022-11-16 16:09:04, INFO: Current k = 32
-2022-11-16 16:09:05, INFO: Current k = 33
-2022-11-16 16:09:07, INFO: Current k = 34
-2022-11-16 16:09:08, INFO: Current k = 35
-2022-11-16 16:09:10, INFO: Current k = 36
-2022-11-16 16:09:11, INFO: Current k = 37
-2022-11-16 16:09:13, INFO: Current k = 38
-2022-11-16 16:09:14, INFO: Current k = 39
-2022-11-16 16:09:15, INFO: Current k = 40
-2022-11-16 16:09:17, INFO: Current k = 41
-2022-11-16 16:09:18, INFO: Current k = 42
-2022-11-16 16:09:20, INFO: Current k = 43
-2022-11-16 16:09:21, INFO: Current k = 44
-2022-11-16 16:09:23, INFO: Current k = 45
-2022-11-16 16:09:24, INFO: Current k = 46
-2022-11-16 16:09:26, INFO: Current k = 47
-2022-11-16 16:09:27, INFO: Current k = 48
-2022-11-16 16:09:28, INFO: Current k = 49
-2022-11-16 16:09:30, INFO: Current k = 50
-2022-11-16 16:09:31, INFO: Current k = 51
-2022-11-16 16:09:33, INFO: Current k = 52
-2022-11-16 16:09:34, INFO: Current k = 53
-2022-11-16 16:09:36, INFO: Current k = 54
-2022-11-16 16:09:37, INFO: Current k = 55
-2022-11-16 16:09:39, INFO: Current k = 56
-2022-11-16 16:09:40, INFO: Current k = 57
-2022-11-16 16:09:42, INFO: Current k = 58
-2022-11-16 16:09:43, INFO: Current k = 59
-2022-11-16 16:09:44, INFO: Current k = 60
-2022-11-16 16:09:46, INFO: Current k = 61
-2022-11-16 16:09:47, INFO: Current k = 62
-2022-11-16 16:09:49, INFO: Current k = 63
-2022-11-16 16:09:50, INFO: Current k = 64
-2022-11-16 16:09:52, INFO: Current k = 65
-2022-11-16 16:09:53, INFO: Current k = 66
-2022-11-16 16:09:55, INFO: Current k = 67
-2022-11-16 16:09:56, INFO: Current k = 68
-2022-11-16 16:09:57, INFO: Current k = 69
-2022-11-16 16:09:59, INFO: Current k = 70
-2022-11-16 16:10:00, INFO: Current k = 71
-2022-11-16 16:10:02, INFO: Current k = 72
-2022-11-16 16:10:03, INFO: Current k = 73
-2022-11-16 16:10:05, INFO: Current k = 74
-2022-11-16 16:10:06, INFO: Current k = 75
-2022-11-16 16:10:08, INFO: Current k = 76
-2022-11-16 16:10:09, INFO: Current k = 77
-2022-11-16 16:10:10, INFO: Current k = 78
-2022-11-16 16:10:12, INFO: Current k = 79
-2022-11-16 16:10:13, INFO: Current k = 80
-2022-11-16 16:10:15, INFO: Current k = 81
-2022-11-16 16:10:16, INFO: Current k = 82
-2022-11-16 16:10:18, INFO: Current k = 83
-2022-11-16 16:10:19, INFO: Current k = 84
-2022-11-16 16:10:21, INFO: Current k = 85
-2022-11-16 16:10:22, INFO: Current k = 86
-2022-11-16 16:10:23, INFO: Current k = 87
-2022-11-16 16:10:25, INFO: Current k = 88
-2022-11-16 16:10:26, INFO: Current k = 89
-2022-11-16 16:10:28, INFO: Current k = 90
-2022-11-16 16:10:29, INFO: Current k = 91
-2022-11-16 16:10:31, INFO: Current k = 92
-2022-11-16 16:10:32, INFO: Current k = 93
-2022-11-16 16:10:33, INFO: Current k = 94
-2022-11-16 16:10:35, INFO: Current k = 95
-2022-11-16 16:10:36, INFO: Current k = 96
-2022-11-16 16:10:38, INFO: Current k = 97
-2022-11-16 16:10:39, INFO: Current k = 98
-2022-11-16 16:10:41, INFO: Current k = 99
-2022-11-16 16:10:42, INFO: TRAIN has success rate: 1.00, collision rate: 0.00, nav time: 8.00, total reward: 1.5201
-2022-11-16 16:11:31, INFO: Finish imitation learning. Weights saved.
-2022-11-16 16:11:31, INFO: Experience set size: 3200/100000
-2022-11-16 16:11:31, INFO: Agent is invisible and has holonomic kinematic constraint
-2022-11-16 16:11:31, INFO: Current learning rate: 0.001000
-2022-11-16 16:11:31, INFO: Current episode=0
-2022-11-16 16:11:31, INFO: Current episilon=0.5
-2022-11-16 16:11:31, INFO: INSIDE THE run_k_episodes FUNCTION.
-2022-11-16 16:11:31, INFO: Current k = 0
-2022-11-16 16:12:07, INFO: Current k = 1
-2022-11-16 16:12:43, INFO: VAL   in episode 0 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: 6.7777
-2022-11-16 16:12:43, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
-2022-11-16 16:12:43, INFO: INSIDE THE run_k_episodes FUNCTION.
-2022-11-16 16:12:43, INFO: Current k = 0
+2022-11-27 16:24:18, INFO: Current git head hash code: %s
+2022-11-27 16:24:18, INFO: Using device: cpu
+2022-11-27 16:24:18, INFO: Policy: OM-SARL w/ global state
+2022-11-27 16:24:18, INFO: Policy configured.
+2022-11-27 16:24:18, INFO: human number: 3
+2022-11-27 16:24:18, INFO: Not randomize human's radius and preferred speed
+2022-11-27 16:24:18, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2022-11-27 16:24:18, INFO: Square width: 10.0, circle width: 4.0
+2022-11-27 16:24:18, INFO: Environment configured.
+2022-11-27 16:24:18, INFO: Training Parameters read successful
+2022-11-27 16:24:18, INFO: Trainer and explorer configured.
+2022-11-27 16:24:18, INFO: Load imitation learning trained weights.
+2022-11-27 16:24:18, INFO: Agent is invisible and has holonomic kinematic constraint
+2022-11-27 16:24:18, INFO: Current learning rate: 0.001000
+2022-11-27 16:24:18, INFO: Current episode=0
+2022-11-27 16:24:18, INFO: Current episilon=0.5
+2022-11-27 16:24:18, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-27 16:24:18, INFO: Current k = 0
+2022-11-27 16:25:49, INFO: Current k = 1
+2022-11-27 16:27:19, INFO: VAL   in episode 0 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -11.3143
+2022-11-27 16:27:19, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-27 16:27:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-27 16:27:19, INFO: Current k = 0
+2022-11-27 16:28:33, INFO: TRAIN in episode 0 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -17.6284
+2022-11-27 16:28:35, INFO: Current episode=1
+2022-11-27 16:28:35, INFO: Current episilon=0.4999
+2022-11-27 16:28:35, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-27 16:28:35, INFO: Current k = 0
+2022-11-27 16:30:02, INFO: TRAIN in episode 1 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -18.0936
+2022-11-27 16:30:06, INFO: Current episode=2
+2022-11-27 16:30:06, INFO: Current episilon=0.4998
+2022-11-27 16:30:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-27 16:30:06, INFO: Current k = 0

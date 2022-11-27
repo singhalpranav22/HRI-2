@@ -122,8 +122,8 @@ class CrowdSim(gym.Env):
             # humanPosHc = [[(-7.5,-1),(7.5,-1)],[(0,7.5),(0,-7.5)],[(-7.5,1),(1,-7.5)],[(-1,7.5),(1,-7.5)]]
             ##### Case-2 overtaking condition
             human = Human(self.config, 'humans')
-            humanPos = generateRandomPositions(human_num, human.radius)
-            # humanPos = [[(0, 4),(-2.9, -1.4)], [(1.2, -5), (1.3, 5.5)], [(7, 1.5), (-1.3, -4)]]
+            # humanPos = generateRandomPositions(human_num, human.radius)
+            humanPos = [[(0, 4),(-2.9, -1.4)], [(1.2, -5), (1.3, 5.5)], [(7, 1.5), (-1.3, -4)]]
             self.humans = []
             for i in range(human_num):
                 # if i < 2:
@@ -368,16 +368,16 @@ class CrowdSim(gym.Env):
             counter_offset = {'train': self.case_capacity['val'] + self.case_capacity['test'],
                               'val': 0, 'test': self.case_capacity['val']}
             #self.robot.set(0, -6, 7, 0, 0, 0, np.pi / 2)
-            robotPos = generateRandomRobotPositions(1, self.robot_radius)
+            #robotPos = generateRandomRobotPositions(1, self.robot_radius)
             # robotPos = [(),()]
             # print(robotPos)
-            #robotPos = [(-6, 1), (-1, 3)]
+            robotPos = [(-6, 1), (-1, 3)]
             # robotPos[0] = addRandomNoise(robotPos[0][0], robotPos[0][1], 0.2)
             # robotPos[1] = addRandomNoise(robotPos[1][0], robotPos[1][1], 0.2)
             # print("Robot init", robotPos[0])
             # print("Robot goal", robotPos[1])
-            #self.robot.set(robotPos[0][0], robotPos[0][1], robotPos[1][0], robotPos[1][1], 0, 0, np.pi / 2)
-            self.robot.set(robotPos[0][0][0], robotPos[0][0][1], robotPos[0][1][0], robotPos[0][1][1], 0, 0, np.pi / 2)
+            self.robot.set(robotPos[0][0], robotPos[0][1], robotPos[1][0], robotPos[1][1], 0, 0, np.pi / 2)
+            #self.robot.set(robotPos[0][0][0], robotPos[0][0][1], robotPos[0][1][0], robotPos[0][1][1], 0, 0, np.pi / 2)
             if self.case_counter[phase] >= 0:
                 np.random.seed(counter_offset[phase] + self.case_counter[phase])
                 if phase in ['train', 'val']:

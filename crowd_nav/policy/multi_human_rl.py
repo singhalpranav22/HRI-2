@@ -49,8 +49,10 @@ class MultiHumanRL(CADRL):
                     rotated_batch_input = torch.cat([rotated_batch_input, occupancy_maps.to(self.device)], dim=2)
                 # VALUE UPDATE
                 next_state_value = self.model(rotated_batch_input).data.item()
+               # print(self.gamma, self.time_step * state.self_state.v_pref, next_state_value)
                 value = reward + pow(self.gamma, self.time_step * state.self_state.v_pref) * next_state_value
                 self.action_values.append(value)
+                #print("Max value===",max_value,"value==",value,"Max action===",max_action,"reward====",reward,"Added by===",pow(self.gamma, self.time_step * state.self_state.v_pref) * next_state_value)
                 if value > max_value:
                     max_value = value
                     max_action = action
@@ -114,11 +116,11 @@ class MultiHumanRL(CADRL):
         :return: tensor of shape (# human - 1, self.cell_num ** 2)
         """
         occupancy_maps = []
-        human_states_without_static = human_states[:3]
+        # human_states_without_static = human_states[:3]
         i = 0
-        for human in human_states_without_static:
+        for human in human_states:
             other_humans = np.concatenate([np.array([(other_human.px, other_human.py, other_human.vx, other_human.vy)])
-                                         for other_human in human_states_without_static if other_human != human], axis=0)
+                                         for other_human in human_states if other_human != human], axis=0)
             ###### relative x and y coords
             other_px = other_humans[:, 0] - human.px
             other_py = other_humans[:, 1] - human.py
