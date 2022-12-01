@@ -151,7 +151,7 @@ class CADRL(Policy):
         # exploration
         if self.phase == 'train' and probability < self.epsilon:
             max_action = self.action_space[np.random.choice(len(self.action_space))]
-        # exploiatation
+        # exploitation
         else:
             self.action_values = list()
             max_min_value = float('-inf')
@@ -170,7 +170,6 @@ class CADRL(Policy):
                 if min_value > max_min_value:
                     max_min_value = min_value
                     max_action = action
-        ########## why transforming, why used??????
         if self.phase == 'train':
             self.last_state = self.transform(state)
 

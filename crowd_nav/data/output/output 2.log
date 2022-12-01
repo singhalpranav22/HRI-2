@@ -1,0 +1,33 @@
+2022-11-27 16:24:18, INFO: Current git head hash code: %s
+2022-11-27 16:24:18, INFO: Using device: cpu
+2022-11-27 16:24:18, INFO: Policy: OM-SARL w/ global state
+2022-11-27 16:24:18, INFO: Policy configured.
+2022-11-27 16:24:18, INFO: human number: 3
+2022-11-27 16:24:18, INFO: Not randomize human's radius and preferred speed
+2022-11-27 16:24:18, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2022-11-27 16:24:18, INFO: Square width: 10.0, circle width: 4.0
+2022-11-27 16:24:18, INFO: Environment configured.
+2022-11-27 16:24:18, INFO: Training Parameters read successful
+2022-11-27 16:24:18, INFO: Trainer and explorer configured.
+2022-11-27 16:24:18, INFO: Load imitation learning trained weights.
+2022-11-27 16:24:18, INFO: Agent is invisible and has holonomic kinematic constraint
+2022-11-27 16:24:18, INFO: Current learning rate: 0.001000
+2022-11-27 16:24:18, INFO: Current episode=0
+2022-11-27 16:24:18, INFO: Current episilon=0.5
+2022-11-27 16:24:18, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-27 16:24:18, INFO: Current k = 0
+2022-11-27 16:25:49, INFO: Current k = 1
+2022-11-27 16:27:19, INFO: VAL   in episode 0 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -11.3143
+2022-11-27 16:27:19, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-27 16:27:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-27 16:27:19, INFO: Current k = 0
+2022-11-27 16:28:33, INFO: TRAIN in episode 0 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -17.6284
+2022-11-27 16:28:35, INFO: Current episode=1
+2022-11-27 16:28:35, INFO: Current episilon=0.4999
+2022-11-27 16:28:35, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-27 16:28:35, INFO: Current k = 0
+2022-11-27 16:30:02, INFO: TRAIN in episode 1 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -18.0936
+2022-11-27 16:30:06, INFO: Current episode=2
+2022-11-27 16:30:06, INFO: Current episilon=0.4998
+2022-11-27 16:30:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-27 16:30:06, INFO: Current k = 0

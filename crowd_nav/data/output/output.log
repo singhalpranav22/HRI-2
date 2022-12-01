@@ -1,33 +1,2769 @@
-2022-11-27 16:24:18, INFO: Current git head hash code: %s
-2022-11-27 16:24:18, INFO: Using device: cpu
-2022-11-27 16:24:18, INFO: Policy: OM-SARL w/ global state
-2022-11-27 16:24:18, INFO: Policy configured.
-2022-11-27 16:24:18, INFO: human number: 3
-2022-11-27 16:24:18, INFO: Not randomize human's radius and preferred speed
-2022-11-27 16:24:18, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
-2022-11-27 16:24:18, INFO: Square width: 10.0, circle width: 4.0
-2022-11-27 16:24:18, INFO: Environment configured.
-2022-11-27 16:24:18, INFO: Training Parameters read successful
-2022-11-27 16:24:18, INFO: Trainer and explorer configured.
-2022-11-27 16:24:18, INFO: Load imitation learning trained weights.
-2022-11-27 16:24:18, INFO: Agent is invisible and has holonomic kinematic constraint
-2022-11-27 16:24:18, INFO: Current learning rate: 0.001000
-2022-11-27 16:24:18, INFO: Current episode=0
-2022-11-27 16:24:18, INFO: Current episilon=0.5
-2022-11-27 16:24:18, INFO: INSIDE THE run_k_episodes FUNCTION.
-2022-11-27 16:24:18, INFO: Current k = 0
-2022-11-27 16:25:49, INFO: Current k = 1
-2022-11-27 16:27:19, INFO: VAL   in episode 0 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -11.3143
-2022-11-27 16:27:19, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
-2022-11-27 16:27:19, INFO: INSIDE THE run_k_episodes FUNCTION.
-2022-11-27 16:27:19, INFO: Current k = 0
-2022-11-27 16:28:33, INFO: TRAIN in episode 0 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -17.6284
-2022-11-27 16:28:35, INFO: Current episode=1
-2022-11-27 16:28:35, INFO: Current episilon=0.4999
-2022-11-27 16:28:35, INFO: INSIDE THE run_k_episodes FUNCTION.
-2022-11-27 16:28:35, INFO: Current k = 0
-2022-11-27 16:30:02, INFO: TRAIN in episode 1 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -18.0936
-2022-11-27 16:30:06, INFO: Current episode=2
-2022-11-27 16:30:06, INFO: Current episilon=0.4998
-2022-11-27 16:30:06, INFO: INSIDE THE run_k_episodes FUNCTION.
-2022-11-27 16:30:06, INFO: Current k = 0
+2022-11-29 01:18:40, INFO: Current git head hash code: %s
+2022-11-29 01:18:40, INFO: Using device: cpu
+2022-11-29 01:18:40, INFO: Policy: OM-SARL w/ global state
+2022-11-29 01:18:40, INFO: Policy configured.
+2022-11-29 01:18:40, INFO: human number: 3
+2022-11-29 01:18:40, INFO: Not randomize human's radius and preferred speed
+2022-11-29 01:18:40, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2022-11-29 01:18:40, INFO: Square width: 10.0, circle width: 4.0
+2022-11-29 01:18:40, INFO: Environment configured.
+2022-11-29 01:18:40, INFO: Training Parameters read successful
+2022-11-29 01:18:40, INFO: Trainer and explorer configured.
+2022-11-29 01:18:40, INFO: Load imitation learning trained weights.
+2022-11-29 01:18:40, INFO: Agent is invisible and has holonomic kinematic constraint
+2022-11-29 01:18:40, INFO: Current learning rate: 0.001000
+2022-11-29 01:18:40, INFO: Current episode=0
+2022-11-29 01:18:40, INFO: Current episilon=0.5
+2022-11-29 01:18:40, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:18:40, INFO: Current k = 0
+2022-11-29 01:18:43, INFO: Current k = 1
+2022-11-29 01:18:45, INFO: VAL   in episode 0 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:18:45, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-29 01:18:45, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:18:45, INFO: Current k = 0
+2022-11-29 01:18:51, INFO: TRAIN in episode 0 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8825
+2022-11-29 01:18:51, INFO: Current episode=1
+2022-11-29 01:18:51, INFO: Current episilon=0.4999
+2022-11-29 01:18:51, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:18:51, INFO: Current k = 0
+2022-11-29 01:18:53, INFO: TRAIN in episode 1 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:18:53, INFO: Current episode=2
+2022-11-29 01:18:53, INFO: Current episilon=0.4998
+2022-11-29 01:18:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:18:53, INFO: Current k = 0
+2022-11-29 01:18:56, INFO: TRAIN in episode 2 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1957
+2022-11-29 01:18:56, INFO: Current episode=3
+2022-11-29 01:18:56, INFO: Current episilon=0.4997
+2022-11-29 01:18:56, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:18:56, INFO: Current k = 0
+2022-11-29 01:18:59, INFO: TRAIN in episode 3 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:18:59, INFO: Current episode=4
+2022-11-29 01:18:59, INFO: Current episilon=0.4996
+2022-11-29 01:18:59, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:18:59, INFO: Current k = 0
+2022-11-29 01:19:01, INFO: TRAIN in episode 4 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:19:01, INFO: Current episode=5
+2022-11-29 01:19:01, INFO: Current episilon=0.4995
+2022-11-29 01:19:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:01, INFO: Current k = 0
+2022-11-29 01:19:04, INFO: TRAIN in episode 5 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:19:04, INFO: Current episode=6
+2022-11-29 01:19:04, INFO: Current episilon=0.4994
+2022-11-29 01:19:04, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:04, INFO: Current k = 0
+2022-11-29 01:19:07, INFO: TRAIN in episode 6 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2039
+2022-11-29 01:19:07, INFO: Current episode=7
+2022-11-29 01:19:07, INFO: Current episilon=0.4993
+2022-11-29 01:19:07, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:07, INFO: Current k = 0
+2022-11-29 01:19:09, INFO: TRAIN in episode 7 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:19:09, INFO: Current episode=8
+2022-11-29 01:19:09, INFO: Current episilon=0.4992
+2022-11-29 01:19:09, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:09, INFO: Current k = 0
+2022-11-29 01:19:14, INFO: TRAIN in episode 8 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1966
+2022-11-29 01:19:14, INFO: Current episode=9
+2022-11-29 01:19:14, INFO: Current episilon=0.4991
+2022-11-29 01:19:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:14, INFO: Current k = 0
+2022-11-29 01:19:19, INFO: TRAIN in episode 9 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:19:20, INFO: Current episode=10
+2022-11-29 01:19:20, INFO: Current episilon=0.499
+2022-11-29 01:19:20, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:20, INFO: Current k = 0
+2022-11-29 01:19:25, INFO: Current k = 1
+2022-11-29 01:19:30, INFO: VAL   in episode 10 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:19:30, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.11
+2022-11-29 01:19:30, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:30, INFO: Current k = 0
+2022-11-29 01:19:35, INFO: TRAIN in episode 10 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2034
+2022-11-29 01:19:35, INFO: Current episode=11
+2022-11-29 01:19:35, INFO: Current episilon=0.4989
+2022-11-29 01:19:35, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:35, INFO: Current k = 0
+2022-11-29 01:19:43, INFO: TRAIN in episode 11 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.8926
+2022-11-29 01:19:43, INFO: Current episode=12
+2022-11-29 01:19:43, INFO: Current episilon=0.4988
+2022-11-29 01:19:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:43, INFO: Current k = 0
+2022-11-29 01:19:48, INFO: TRAIN in episode 12 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:19:48, INFO: Current episode=13
+2022-11-29 01:19:48, INFO: Current episilon=0.4987
+2022-11-29 01:19:48, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:48, INFO: Current k = 0
+2022-11-29 01:19:51, INFO: TRAIN in episode 13 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2027
+2022-11-29 01:19:51, INFO: Current episode=14
+2022-11-29 01:19:51, INFO: Current episilon=0.4986
+2022-11-29 01:19:51, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:51, INFO: Current k = 0
+2022-11-29 01:19:53, INFO: TRAIN in episode 14 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:19:53, INFO: Current episode=15
+2022-11-29 01:19:53, INFO: Current episilon=0.4985
+2022-11-29 01:19:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:53, INFO: Current k = 0
+2022-11-29 01:19:56, INFO: TRAIN in episode 15 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:19:56, INFO: Current episode=16
+2022-11-29 01:19:56, INFO: Current episilon=0.4984
+2022-11-29 01:19:56, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:56, INFO: Current k = 0
+2022-11-29 01:19:59, INFO: TRAIN in episode 16 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:19:59, INFO: Current episode=17
+2022-11-29 01:19:59, INFO: Current episilon=0.4983
+2022-11-29 01:19:59, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:19:59, INFO: Current k = 0
+2022-11-29 01:20:01, INFO: TRAIN in episode 17 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:20:02, INFO: Current episode=18
+2022-11-29 01:20:02, INFO: Current episilon=0.4982
+2022-11-29 01:20:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:02, INFO: Current k = 0
+2022-11-29 01:20:04, INFO: TRAIN in episode 18 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:20:04, INFO: Current episode=19
+2022-11-29 01:20:04, INFO: Current episilon=0.4981
+2022-11-29 01:20:04, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:04, INFO: Current k = 0
+2022-11-29 01:20:07, INFO: TRAIN in episode 19 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2083
+2022-11-29 01:20:07, INFO: Current episode=20
+2022-11-29 01:20:07, INFO: Current episilon=0.498
+2022-11-29 01:20:07, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:07, INFO: Current k = 0
+2022-11-29 01:20:12, INFO: Current k = 1
+2022-11-29 01:20:18, INFO: VAL   in episode 20 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:20:18, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.11
+2022-11-29 01:20:18, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:18, INFO: Current k = 0
+2022-11-29 01:20:20, INFO: TRAIN in episode 20 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:20:20, INFO: Current episode=21
+2022-11-29 01:20:20, INFO: Current episilon=0.4979
+2022-11-29 01:20:20, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:20, INFO: Current k = 0
+2022-11-29 01:20:26, INFO: TRAIN in episode 21 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:20:26, INFO: Current episode=22
+2022-11-29 01:20:26, INFO: Current episilon=0.4978
+2022-11-29 01:20:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:26, INFO: Current k = 0
+2022-11-29 01:20:31, INFO: TRAIN in episode 22 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:20:31, INFO: Current episode=23
+2022-11-29 01:20:31, INFO: Current episilon=0.4977
+2022-11-29 01:20:31, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:31, INFO: Current k = 0
+2022-11-29 01:20:40, INFO: TRAIN in episode 23 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -13.2853
+2022-11-29 01:20:40, INFO: Current episode=24
+2022-11-29 01:20:40, INFO: Current episilon=0.4976
+2022-11-29 01:20:40, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:40, INFO: Current k = 0
+2022-11-29 01:20:45, INFO: TRAIN in episode 24 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:20:45, INFO: Current episode=25
+2022-11-29 01:20:45, INFO: Current episilon=0.4975
+2022-11-29 01:20:45, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:45, INFO: Current k = 0
+2022-11-29 01:20:46, INFO: TRAIN in episode 25 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:20:46, INFO: Current episode=26
+2022-11-29 01:20:46, INFO: Current episilon=0.4974
+2022-11-29 01:20:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:46, INFO: Current k = 0
+2022-11-29 01:20:51, INFO: TRAIN in episode 26 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2077
+2022-11-29 01:20:51, INFO: Current episode=27
+2022-11-29 01:20:51, INFO: Current episilon=0.4973
+2022-11-29 01:20:51, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:51, INFO: Current k = 0
+2022-11-29 01:20:56, INFO: TRAIN in episode 27 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1953
+2022-11-29 01:20:56, INFO: Current episode=28
+2022-11-29 01:20:56, INFO: Current episilon=0.4972
+2022-11-29 01:20:56, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:56, INFO: Current k = 0
+2022-11-29 01:20:57, INFO: TRAIN in episode 28 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:20:57, INFO: Current episode=29
+2022-11-29 01:20:57, INFO: Current episilon=0.4971
+2022-11-29 01:20:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:20:57, INFO: Current k = 0
+2022-11-29 01:21:02, INFO: TRAIN in episode 29 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1368
+2022-11-29 01:21:02, INFO: Current episode=30
+2022-11-29 01:21:02, INFO: Current episilon=0.497
+2022-11-29 01:21:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:02, INFO: Current k = 0
+2022-11-29 01:21:08, INFO: Current k = 1
+2022-11-29 01:21:13, INFO: VAL   in episode 30 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:21:13, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.11
+2022-11-29 01:21:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:13, INFO: Current k = 0
+2022-11-29 01:21:18, INFO: TRAIN in episode 30 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1107
+2022-11-29 01:21:18, INFO: Current episode=31
+2022-11-29 01:21:18, INFO: Current episilon=0.4969
+2022-11-29 01:21:18, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:18, INFO: Current k = 0
+2022-11-29 01:21:21, INFO: TRAIN in episode 31 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2140
+2022-11-29 01:21:21, INFO: Current episode=32
+2022-11-29 01:21:21, INFO: Current episilon=0.4968
+2022-11-29 01:21:21, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:21, INFO: Current k = 0
+2022-11-29 01:21:24, INFO: TRAIN in episode 32 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0983
+2022-11-29 01:21:24, INFO: Current episode=33
+2022-11-29 01:21:24, INFO: Current episilon=0.4967
+2022-11-29 01:21:24, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:24, INFO: Current k = 0
+2022-11-29 01:21:29, INFO: TRAIN in episode 33 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1438
+2022-11-29 01:21:30, INFO: Current episode=34
+2022-11-29 01:21:30, INFO: Current episilon=0.4966
+2022-11-29 01:21:30, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:30, INFO: Current k = 0
+2022-11-29 01:21:32, INFO: TRAIN in episode 34 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2464
+2022-11-29 01:21:32, INFO: Current episode=35
+2022-11-29 01:21:32, INFO: Current episilon=0.4965
+2022-11-29 01:21:32, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:32, INFO: Current k = 0
+2022-11-29 01:21:38, INFO: TRAIN in episode 35 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9778
+2022-11-29 01:21:38, INFO: Current episode=36
+2022-11-29 01:21:38, INFO: Current episilon=0.4964
+2022-11-29 01:21:38, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:38, INFO: Current k = 0
+2022-11-29 01:21:43, INFO: TRAIN in episode 36 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:21:43, INFO: Current episode=37
+2022-11-29 01:21:43, INFO: Current episilon=0.4963
+2022-11-29 01:21:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:43, INFO: Current k = 0
+2022-11-29 01:21:46, INFO: TRAIN in episode 37 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:21:46, INFO: Current episode=38
+2022-11-29 01:21:46, INFO: Current episilon=0.4962
+2022-11-29 01:21:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:46, INFO: Current k = 0
+2022-11-29 01:21:49, INFO: TRAIN in episode 38 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:21:49, INFO: Current episode=39
+2022-11-29 01:21:49, INFO: Current episilon=0.4961
+2022-11-29 01:21:49, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:49, INFO: Current k = 0
+2022-11-29 01:21:52, INFO: TRAIN in episode 39 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:21:52, INFO: Current episode=40
+2022-11-29 01:21:52, INFO: Current episilon=0.496
+2022-11-29 01:21:52, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:52, INFO: Current k = 0
+2022-11-29 01:21:55, INFO: Current k = 1
+2022-11-29 01:21:57, INFO: VAL   in episode 40 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:21:57, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-29 01:21:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:21:57, INFO: Current k = 0
+2022-11-29 01:22:00, INFO: TRAIN in episode 40 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:22:00, INFO: Current episode=41
+2022-11-29 01:22:00, INFO: Current episilon=0.4959
+2022-11-29 01:22:00, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:00, INFO: Current k = 0
+2022-11-29 01:22:03, INFO: TRAIN in episode 41 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:22:03, INFO: Current episode=42
+2022-11-29 01:22:03, INFO: Current episilon=0.4958
+2022-11-29 01:22:03, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:03, INFO: Current k = 0
+2022-11-29 01:22:08, INFO: TRAIN in episode 42 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0030
+2022-11-29 01:22:09, INFO: Current episode=43
+2022-11-29 01:22:09, INFO: Current episilon=0.4957
+2022-11-29 01:22:09, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:09, INFO: Current k = 0
+2022-11-29 01:22:11, INFO: TRAIN in episode 43 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:22:11, INFO: Current episode=44
+2022-11-29 01:22:11, INFO: Current episilon=0.4956
+2022-11-29 01:22:11, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:11, INFO: Current k = 0
+2022-11-29 01:22:14, INFO: TRAIN in episode 44 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:22:14, INFO: Current episode=45
+2022-11-29 01:22:14, INFO: Current episilon=0.4955
+2022-11-29 01:22:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:14, INFO: Current k = 0
+2022-11-29 01:22:17, INFO: TRAIN in episode 45 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:22:17, INFO: Current episode=46
+2022-11-29 01:22:17, INFO: Current episilon=0.4954
+2022-11-29 01:22:17, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:17, INFO: Current k = 0
+2022-11-29 01:22:22, INFO: TRAIN in episode 46 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0014
+2022-11-29 01:22:23, INFO: Current episode=47
+2022-11-29 01:22:23, INFO: Current episilon=0.4953
+2022-11-29 01:22:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:23, INFO: Current k = 0
+2022-11-29 01:22:25, INFO: TRAIN in episode 47 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1118
+2022-11-29 01:22:26, INFO: Current episode=48
+2022-11-29 01:22:26, INFO: Current episilon=0.4952
+2022-11-29 01:22:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:26, INFO: Current k = 0
+2022-11-29 01:22:28, INFO: TRAIN in episode 48 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0197
+2022-11-29 01:22:28, INFO: Current episode=49
+2022-11-29 01:22:28, INFO: Current episilon=0.4951
+2022-11-29 01:22:28, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:28, INFO: Current k = 0
+2022-11-29 01:22:34, INFO: TRAIN in episode 49 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2078
+2022-11-29 01:22:34, INFO: Current episode=50
+2022-11-29 01:22:34, INFO: Current episilon=0.495
+2022-11-29 01:22:34, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:34, INFO: Current k = 0
+2022-11-29 01:22:37, INFO: Current k = 1
+2022-11-29 01:22:39, INFO: VAL   in episode 50 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:22:39, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-29 01:22:39, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:39, INFO: Current k = 0
+2022-11-29 01:22:42, INFO: TRAIN in episode 50 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:22:42, INFO: Current episode=51
+2022-11-29 01:22:42, INFO: Current episilon=0.4949
+2022-11-29 01:22:42, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:42, INFO: Current k = 0
+2022-11-29 01:22:45, INFO: TRAIN in episode 51 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:22:45, INFO: Current episode=52
+2022-11-29 01:22:45, INFO: Current episilon=0.4948
+2022-11-29 01:22:45, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:45, INFO: Current k = 0
+2022-11-29 01:22:47, INFO: TRAIN in episode 52 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:22:48, INFO: Current episode=53
+2022-11-29 01:22:48, INFO: Current episilon=0.4947
+2022-11-29 01:22:48, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:48, INFO: Current k = 0
+2022-11-29 01:22:50, INFO: TRAIN in episode 53 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:22:50, INFO: Current episode=54
+2022-11-29 01:22:50, INFO: Current episilon=0.4946
+2022-11-29 01:22:50, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:50, INFO: Current k = 0
+2022-11-29 01:22:56, INFO: TRAIN in episode 54 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1309
+2022-11-29 01:22:56, INFO: Current episode=55
+2022-11-29 01:22:56, INFO: Current episilon=0.4945
+2022-11-29 01:22:56, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:56, INFO: Current k = 0
+2022-11-29 01:22:59, INFO: TRAIN in episode 55 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:22:59, INFO: Current episode=56
+2022-11-29 01:22:59, INFO: Current episilon=0.4944
+2022-11-29 01:22:59, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:22:59, INFO: Current k = 0
+2022-11-29 01:23:02, INFO: TRAIN in episode 56 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0018
+2022-11-29 01:23:02, INFO: Current episode=57
+2022-11-29 01:23:02, INFO: Current episilon=0.4943
+2022-11-29 01:23:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:02, INFO: Current k = 0
+2022-11-29 01:23:04, INFO: TRAIN in episode 57 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:23:05, INFO: Current episode=58
+2022-11-29 01:23:05, INFO: Current episilon=0.4942
+2022-11-29 01:23:05, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:05, INFO: Current k = 0
+2022-11-29 01:23:05, INFO: TRAIN in episode 58 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2587
+2022-11-29 01:23:05, INFO: Current episode=59
+2022-11-29 01:23:05, INFO: Current episilon=0.4941
+2022-11-29 01:23:05, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:05, INFO: Current k = 0
+2022-11-29 01:23:07, INFO: TRAIN in episode 59 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2388
+2022-11-29 01:23:08, INFO: Current episode=60
+2022-11-29 01:23:08, INFO: Current episilon=0.494
+2022-11-29 01:23:08, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:08, INFO: Current k = 0
+2022-11-29 01:23:10, INFO: Current k = 1
+2022-11-29 01:23:13, INFO: VAL   in episode 60 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:23:13, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-29 01:23:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:13, INFO: Current k = 0
+2022-11-29 01:23:16, INFO: TRAIN in episode 60 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:23:16, INFO: Current episode=61
+2022-11-29 01:23:16, INFO: Current episilon=0.4939
+2022-11-29 01:23:16, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:16, INFO: Current k = 0
+2022-11-29 01:23:19, INFO: TRAIN in episode 61 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:23:19, INFO: Current episode=62
+2022-11-29 01:23:19, INFO: Current episilon=0.4938
+2022-11-29 01:23:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:19, INFO: Current k = 0
+2022-11-29 01:23:21, INFO: TRAIN in episode 62 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:23:22, INFO: Current episode=63
+2022-11-29 01:23:22, INFO: Current episilon=0.4937
+2022-11-29 01:23:22, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:22, INFO: Current k = 0
+2022-11-29 01:23:24, INFO: TRAIN in episode 63 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:23:24, INFO: Current episode=64
+2022-11-29 01:23:24, INFO: Current episilon=0.4936
+2022-11-29 01:23:24, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:24, INFO: Current k = 0
+2022-11-29 01:23:27, INFO: TRAIN in episode 64 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:23:27, INFO: Current episode=65
+2022-11-29 01:23:27, INFO: Current episilon=0.4935
+2022-11-29 01:23:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:27, INFO: Current k = 0
+2022-11-29 01:23:30, INFO: TRAIN in episode 65 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:23:30, INFO: Current episode=66
+2022-11-29 01:23:30, INFO: Current episilon=0.4934
+2022-11-29 01:23:30, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:30, INFO: Current k = 0
+2022-11-29 01:23:35, INFO: TRAIN in episode 66 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1136
+2022-11-29 01:23:35, INFO: Current episode=67
+2022-11-29 01:23:35, INFO: Current episilon=0.4933
+2022-11-29 01:23:35, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:35, INFO: Current k = 0
+2022-11-29 01:23:38, INFO: TRAIN in episode 67 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:23:38, INFO: Current episode=68
+2022-11-29 01:23:38, INFO: Current episilon=0.49319999999999997
+2022-11-29 01:23:38, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:38, INFO: Current k = 0
+2022-11-29 01:23:49, INFO: TRAIN in episode 68 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4207
+2022-11-29 01:23:49, INFO: Current episode=69
+2022-11-29 01:23:49, INFO: Current episilon=0.4931
+2022-11-29 01:23:49, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:49, INFO: Current k = 0
+2022-11-29 01:23:52, INFO: TRAIN in episode 69 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:23:52, INFO: Current episode=70
+2022-11-29 01:23:52, INFO: Current episilon=0.493
+2022-11-29 01:23:52, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:23:52, INFO: Current k = 0
+2022-11-29 01:23:57, INFO: Current k = 1
+2022-11-29 01:24:02, INFO: VAL   in episode 70 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:24:02, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:24:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:02, INFO: Current k = 0
+2022-11-29 01:24:08, INFO: TRAIN in episode 70 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:24:08, INFO: Current episode=71
+2022-11-29 01:24:08, INFO: Current episilon=0.4929
+2022-11-29 01:24:08, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:08, INFO: Current k = 0
+2022-11-29 01:24:11, INFO: TRAIN in episode 71 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2215
+2022-11-29 01:24:11, INFO: Current episode=72
+2022-11-29 01:24:11, INFO: Current episilon=0.4928
+2022-11-29 01:24:11, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:11, INFO: Current k = 0
+2022-11-29 01:24:14, INFO: TRAIN in episode 72 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8472
+2022-11-29 01:24:14, INFO: Current episode=73
+2022-11-29 01:24:14, INFO: Current episilon=0.4927
+2022-11-29 01:24:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:14, INFO: Current k = 0
+2022-11-29 01:24:16, INFO: TRAIN in episode 73 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:24:17, INFO: Current episode=74
+2022-11-29 01:24:17, INFO: Current episilon=0.4926
+2022-11-29 01:24:17, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:17, INFO: Current k = 0
+2022-11-29 01:24:22, INFO: TRAIN in episode 74 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:24:22, INFO: Current episode=75
+2022-11-29 01:24:22, INFO: Current episilon=0.4925
+2022-11-29 01:24:22, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:22, INFO: Current k = 0
+2022-11-29 01:24:25, INFO: TRAIN in episode 75 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:24:25, INFO: Current episode=76
+2022-11-29 01:24:25, INFO: Current episilon=0.4924
+2022-11-29 01:24:25, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:25, INFO: Current k = 0
+2022-11-29 01:24:27, INFO: TRAIN in episode 76 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:24:27, INFO: Current episode=77
+2022-11-29 01:24:27, INFO: Current episilon=0.4923
+2022-11-29 01:24:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:27, INFO: Current k = 0
+2022-11-29 01:24:30, INFO: TRAIN in episode 77 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:24:30, INFO: Current episode=78
+2022-11-29 01:24:30, INFO: Current episilon=0.4922
+2022-11-29 01:24:30, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:30, INFO: Current k = 0
+2022-11-29 01:24:36, INFO: TRAIN in episode 78 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 01:24:36, INFO: Current episode=79
+2022-11-29 01:24:36, INFO: Current episilon=0.4921
+2022-11-29 01:24:36, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:36, INFO: Current k = 0
+2022-11-29 01:24:36, INFO: TRAIN in episode 79 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:24:36, INFO: Current episode=80
+2022-11-29 01:24:36, INFO: Current episilon=0.492
+2022-11-29 01:24:36, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:36, INFO: Current k = 0
+2022-11-29 01:24:39, INFO: Current k = 1
+2022-11-29 01:24:41, INFO: VAL   in episode 80 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:24:41, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-29 01:24:41, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:41, INFO: Current k = 0
+2022-11-29 01:24:44, INFO: TRAIN in episode 80 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:24:44, INFO: Current episode=81
+2022-11-29 01:24:44, INFO: Current episilon=0.4919
+2022-11-29 01:24:44, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:44, INFO: Current k = 0
+2022-11-29 01:24:57, INFO: TRAIN in episode 81 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -9.2753
+2022-11-29 01:24:57, INFO: Current episode=82
+2022-11-29 01:24:57, INFO: Current episilon=0.4918
+2022-11-29 01:24:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:24:57, INFO: Current k = 0
+2022-11-29 01:25:00, INFO: TRAIN in episode 82 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:25:00, INFO: Current episode=83
+2022-11-29 01:25:00, INFO: Current episilon=0.4917
+2022-11-29 01:25:00, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:00, INFO: Current k = 0
+2022-11-29 01:25:03, INFO: TRAIN in episode 83 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:25:03, INFO: Current episode=84
+2022-11-29 01:25:03, INFO: Current episilon=0.4916
+2022-11-29 01:25:03, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:03, INFO: Current k = 0
+2022-11-29 01:25:05, INFO: TRAIN in episode 84 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:25:06, INFO: Current episode=85
+2022-11-29 01:25:06, INFO: Current episilon=0.4915
+2022-11-29 01:25:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:06, INFO: Current k = 0
+2022-11-29 01:25:13, INFO: TRAIN in episode 85 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2007
+2022-11-29 01:25:13, INFO: Current episode=86
+2022-11-29 01:25:13, INFO: Current episilon=0.4914
+2022-11-29 01:25:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:13, INFO: Current k = 0
+2022-11-29 01:25:16, INFO: TRAIN in episode 86 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:25:16, INFO: Current episode=87
+2022-11-29 01:25:16, INFO: Current episilon=0.4913
+2022-11-29 01:25:16, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:16, INFO: Current k = 0
+2022-11-29 01:25:19, INFO: TRAIN in episode 87 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:25:19, INFO: Current episode=88
+2022-11-29 01:25:19, INFO: Current episilon=0.4912
+2022-11-29 01:25:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:19, INFO: Current k = 0
+2022-11-29 01:25:29, INFO: TRAIN in episode 88 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8425
+2022-11-29 01:25:29, INFO: Current episode=89
+2022-11-29 01:25:29, INFO: Current episilon=0.4911
+2022-11-29 01:25:29, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:29, INFO: Current k = 0
+2022-11-29 01:25:32, INFO: TRAIN in episode 89 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:25:32, INFO: Current episode=90
+2022-11-29 01:25:32, INFO: Current episilon=0.491
+2022-11-29 01:25:32, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:32, INFO: Current k = 0
+2022-11-29 01:25:35, INFO: Current k = 1
+2022-11-29 01:25:37, INFO: VAL   in episode 90 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:25:37, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-29 01:25:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:37, INFO: Current k = 0
+2022-11-29 01:25:40, INFO: TRAIN in episode 90 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1901
+2022-11-29 01:25:40, INFO: Current episode=91
+2022-11-29 01:25:40, INFO: Current episilon=0.4909
+2022-11-29 01:25:40, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:40, INFO: Current k = 0
+2022-11-29 01:25:43, INFO: TRAIN in episode 91 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:25:43, INFO: Current episode=92
+2022-11-29 01:25:43, INFO: Current episilon=0.4908
+2022-11-29 01:25:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:25:43, INFO: Current k = 0
+2022-11-29 01:26:06, INFO: TRAIN in episode 92 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -11.0465
+2022-11-29 01:26:06, INFO: Current episode=93
+2022-11-29 01:26:06, INFO: Current episilon=0.4907
+2022-11-29 01:26:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:06, INFO: Current k = 0
+2022-11-29 01:26:11, INFO: TRAIN in episode 93 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1947
+2022-11-29 01:26:11, INFO: Current episode=94
+2022-11-29 01:26:11, INFO: Current episilon=0.4906
+2022-11-29 01:26:11, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:11, INFO: Current k = 0
+2022-11-29 01:26:14, INFO: TRAIN in episode 94 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:26:14, INFO: Current episode=95
+2022-11-29 01:26:14, INFO: Current episilon=0.4905
+2022-11-29 01:26:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:14, INFO: Current k = 0
+2022-11-29 01:26:14, INFO: TRAIN in episode 95 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1316
+2022-11-29 01:26:15, INFO: Current episode=96
+2022-11-29 01:26:15, INFO: Current episilon=0.4904
+2022-11-29 01:26:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:15, INFO: Current k = 0
+2022-11-29 01:26:17, INFO: TRAIN in episode 96 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0996
+2022-11-29 01:26:17, INFO: Current episode=97
+2022-11-29 01:26:17, INFO: Current episilon=0.4903
+2022-11-29 01:26:17, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:17, INFO: Current k = 0
+2022-11-29 01:26:20, INFO: TRAIN in episode 97 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:26:20, INFO: Current episode=98
+2022-11-29 01:26:20, INFO: Current episilon=0.4902
+2022-11-29 01:26:20, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:20, INFO: Current k = 0
+2022-11-29 01:26:23, INFO: TRAIN in episode 98 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:26:23, INFO: Current episode=99
+2022-11-29 01:26:23, INFO: Current episilon=0.4901
+2022-11-29 01:26:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:23, INFO: Current k = 0
+2022-11-29 01:26:26, INFO: TRAIN in episode 99 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1189
+2022-11-29 01:26:26, INFO: Current episode=100
+2022-11-29 01:26:26, INFO: Current episilon=0.49
+2022-11-29 01:26:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:26, INFO: Current k = 0
+2022-11-29 01:26:28, INFO: Current k = 1
+2022-11-29 01:26:31, INFO: VAL   in episode 100 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:26:31, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-29 01:26:31, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:31, INFO: Current k = 0
+2022-11-29 01:26:33, INFO: TRAIN in episode 100 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1934
+2022-11-29 01:26:34, INFO: Current episode=101
+2022-11-29 01:26:34, INFO: Current episilon=0.4899
+2022-11-29 01:26:34, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:34, INFO: Current k = 0
+2022-11-29 01:26:39, INFO: TRAIN in episode 101 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1486
+2022-11-29 01:26:39, INFO: Current episode=102
+2022-11-29 01:26:39, INFO: Current episilon=0.4898
+2022-11-29 01:26:39, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:39, INFO: Current k = 0
+2022-11-29 01:26:42, INFO: TRAIN in episode 102 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:26:42, INFO: Current episode=103
+2022-11-29 01:26:42, INFO: Current episilon=0.4897
+2022-11-29 01:26:42, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:42, INFO: Current k = 0
+2022-11-29 01:26:44, INFO: TRAIN in episode 103 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:26:44, INFO: Current episode=104
+2022-11-29 01:26:44, INFO: Current episilon=0.4896
+2022-11-29 01:26:44, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:44, INFO: Current k = 0
+2022-11-29 01:26:47, INFO: TRAIN in episode 104 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:26:47, INFO: Current episode=105
+2022-11-29 01:26:47, INFO: Current episilon=0.4895
+2022-11-29 01:26:47, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:47, INFO: Current k = 0
+2022-11-29 01:26:50, INFO: TRAIN in episode 105 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2452
+2022-11-29 01:26:50, INFO: Current episode=106
+2022-11-29 01:26:50, INFO: Current episilon=0.4894
+2022-11-29 01:26:50, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:50, INFO: Current k = 0
+2022-11-29 01:26:55, INFO: TRAIN in episode 106 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:26:56, INFO: Current episode=107
+2022-11-29 01:26:56, INFO: Current episilon=0.4893
+2022-11-29 01:26:56, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:26:56, INFO: Current k = 0
+2022-11-29 01:27:01, INFO: TRAIN in episode 107 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9747
+2022-11-29 01:27:01, INFO: Current episode=108
+2022-11-29 01:27:01, INFO: Current episilon=0.4892
+2022-11-29 01:27:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:27:01, INFO: Current k = 0
+2022-11-29 01:27:06, INFO: TRAIN in episode 108 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1842
+2022-11-29 01:27:06, INFO: Current episode=109
+2022-11-29 01:27:06, INFO: Current episilon=0.4891
+2022-11-29 01:27:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:27:06, INFO: Current k = 0
+2022-11-29 01:27:09, INFO: TRAIN in episode 109 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:27:09, INFO: Current episode=110
+2022-11-29 01:27:09, INFO: Current episilon=0.489
+2022-11-29 01:27:09, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:27:09, INFO: Current k = 0
+2022-11-29 01:27:12, INFO: Current k = 1
+2022-11-29 01:27:14, INFO: VAL   in episode 110 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:27:14, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-29 01:27:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:27:14, INFO: Current k = 0
+2022-11-29 01:27:38, INFO: TRAIN in episode 110 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -13.2340
+2022-11-29 01:27:38, INFO: Current episode=111
+2022-11-29 01:27:38, INFO: Current episilon=0.4889
+2022-11-29 01:27:38, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:27:38, INFO: Current k = 0
+2022-11-29 01:27:43, INFO: TRAIN in episode 111 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 01:27:44, INFO: Current episode=112
+2022-11-29 01:27:44, INFO: Current episilon=0.4888
+2022-11-29 01:27:44, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:27:44, INFO: Current k = 0
+2022-11-29 01:27:46, INFO: TRAIN in episode 112 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:27:46, INFO: Current episode=113
+2022-11-29 01:27:46, INFO: Current episilon=0.4887
+2022-11-29 01:27:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:27:46, INFO: Current k = 0
+2022-11-29 01:27:54, INFO: TRAIN in episode 113 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1073
+2022-11-29 01:27:54, INFO: Current episode=114
+2022-11-29 01:27:54, INFO: Current episilon=0.4886
+2022-11-29 01:27:54, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:27:54, INFO: Current k = 0
+2022-11-29 01:27:57, INFO: TRAIN in episode 114 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2508
+2022-11-29 01:27:57, INFO: Current episode=115
+2022-11-29 01:27:57, INFO: Current episilon=0.4885
+2022-11-29 01:27:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:27:57, INFO: Current k = 0
+2022-11-29 01:28:00, INFO: TRAIN in episode 115 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:28:00, INFO: Current episode=116
+2022-11-29 01:28:00, INFO: Current episilon=0.4884
+2022-11-29 01:28:00, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:28:00, INFO: Current k = 0
+2022-11-29 01:28:06, INFO: TRAIN in episode 116 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2006
+2022-11-29 01:28:06, INFO: Current episode=117
+2022-11-29 01:28:06, INFO: Current episilon=0.4883
+2022-11-29 01:28:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:28:06, INFO: Current k = 0
+2022-11-29 01:30:28, INFO: TRAIN in episode 117 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -25.1950
+2022-11-29 01:30:29, INFO: Current episode=118
+2022-11-29 01:30:29, INFO: Current episilon=0.4882
+2022-11-29 01:30:29, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:30:29, INFO: Current k = 0
+2022-11-29 01:30:34, INFO: TRAIN in episode 118 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1432
+2022-11-29 01:30:34, INFO: Current episode=119
+2022-11-29 01:30:34, INFO: Current episilon=0.4881
+2022-11-29 01:30:34, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:30:34, INFO: Current k = 0
+2022-11-29 01:30:39, INFO: TRAIN in episode 119 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.2198
+2022-11-29 01:30:40, INFO: Current episode=120
+2022-11-29 01:30:40, INFO: Current episilon=0.488
+2022-11-29 01:30:40, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:30:40, INFO: Current k = 0
+2022-11-29 01:30:45, INFO: Current k = 1
+2022-11-29 01:30:50, INFO: VAL   in episode 120 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:30:50, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:30:50, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:30:50, INFO: Current k = 0
+2022-11-29 01:30:52, INFO: TRAIN in episode 120 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:30:53, INFO: Current episode=121
+2022-11-29 01:30:53, INFO: Current episilon=0.4879
+2022-11-29 01:30:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:30:53, INFO: Current k = 0
+2022-11-29 01:30:58, INFO: TRAIN in episode 121 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:30:58, INFO: Current episode=122
+2022-11-29 01:30:58, INFO: Current episilon=0.4878
+2022-11-29 01:30:58, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:30:58, INFO: Current k = 0
+2022-11-29 01:31:03, INFO: TRAIN in episode 122 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1966
+2022-11-29 01:31:03, INFO: Current episode=123
+2022-11-29 01:31:03, INFO: Current episilon=0.4877
+2022-11-29 01:31:03, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:31:03, INFO: Current k = 0
+2022-11-29 01:31:06, INFO: TRAIN in episode 123 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:31:06, INFO: Current episode=124
+2022-11-29 01:31:06, INFO: Current episilon=0.4876
+2022-11-29 01:31:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:31:06, INFO: Current k = 0
+2022-11-29 01:33:21, INFO: TRAIN in episode 124 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -25.2043
+2022-11-29 01:33:21, INFO: Current episode=125
+2022-11-29 01:33:21, INFO: Current episilon=0.4875
+2022-11-29 01:33:21, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:33:21, INFO: Current k = 0
+2022-11-29 01:33:26, INFO: TRAIN in episode 125 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:33:26, INFO: Current episode=126
+2022-11-29 01:33:26, INFO: Current episilon=0.4874
+2022-11-29 01:33:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:33:26, INFO: Current k = 0
+2022-11-29 01:33:29, INFO: TRAIN in episode 126 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1184
+2022-11-29 01:33:29, INFO: Current episode=127
+2022-11-29 01:33:29, INFO: Current episilon=0.4873
+2022-11-29 01:33:29, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:33:29, INFO: Current k = 0
+2022-11-29 01:33:32, INFO: TRAIN in episode 127 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9910
+2022-11-29 01:33:32, INFO: Current episode=128
+2022-11-29 01:33:32, INFO: Current episilon=0.4872
+2022-11-29 01:33:32, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:33:32, INFO: Current k = 0
+2022-11-29 01:33:37, INFO: TRAIN in episode 128 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:33:37, INFO: Current episode=129
+2022-11-29 01:33:37, INFO: Current episilon=0.4871
+2022-11-29 01:33:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:33:37, INFO: Current k = 0
+2022-11-29 01:33:42, INFO: TRAIN in episode 129 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:33:43, INFO: Current episode=130
+2022-11-29 01:33:43, INFO: Current episilon=0.487
+2022-11-29 01:33:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:33:43, INFO: Current k = 0
+2022-11-29 01:33:48, INFO: Current k = 1
+2022-11-29 01:33:53, INFO: VAL   in episode 130 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:33:53, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:33:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:33:53, INFO: Current k = 0
+2022-11-29 01:36:06, INFO: TRAIN in episode 130 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -25.1987
+2022-11-29 01:36:06, INFO: Current episode=131
+2022-11-29 01:36:06, INFO: Current episilon=0.4869
+2022-11-29 01:36:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:36:06, INFO: Current k = 0
+2022-11-29 01:37:18, INFO: TRAIN in episode 131 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -22.5060
+2022-11-29 01:37:18, INFO: Current episode=132
+2022-11-29 01:37:18, INFO: Current episilon=0.4868
+2022-11-29 01:37:18, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:37:18, INFO: Current k = 0
+2022-11-29 01:38:14, INFO: TRAIN in episode 132 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -22.7763
+2022-11-29 01:38:14, INFO: Current episode=133
+2022-11-29 01:38:14, INFO: Current episilon=0.4867
+2022-11-29 01:38:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:38:14, INFO: Current k = 0
+2022-11-29 01:38:19, INFO: TRAIN in episode 133 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:38:19, INFO: Current episode=134
+2022-11-29 01:38:19, INFO: Current episilon=0.4866
+2022-11-29 01:38:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:38:19, INFO: Current k = 0
+2022-11-29 01:38:24, INFO: TRAIN in episode 134 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:38:25, INFO: Current episode=135
+2022-11-29 01:38:25, INFO: Current episilon=0.4865
+2022-11-29 01:38:25, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:38:25, INFO: Current k = 0
+2022-11-29 01:38:35, INFO: TRAIN in episode 135 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4163
+2022-11-29 01:38:35, INFO: Current episode=136
+2022-11-29 01:38:35, INFO: Current episilon=0.4864
+2022-11-29 01:38:35, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:38:35, INFO: Current k = 0
+2022-11-29 01:38:40, INFO: TRAIN in episode 136 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8369
+2022-11-29 01:38:40, INFO: Current episode=137
+2022-11-29 01:38:40, INFO: Current episilon=0.4863
+2022-11-29 01:38:40, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:38:40, INFO: Current k = 0
+2022-11-29 01:38:43, INFO: TRAIN in episode 137 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:38:43, INFO: Current episode=138
+2022-11-29 01:38:43, INFO: Current episilon=0.4862
+2022-11-29 01:38:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:38:43, INFO: Current k = 0
+2022-11-29 01:38:46, INFO: TRAIN in episode 138 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2091
+2022-11-29 01:38:46, INFO: Current episode=139
+2022-11-29 01:38:46, INFO: Current episilon=0.4861
+2022-11-29 01:38:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:38:46, INFO: Current k = 0
+2022-11-29 01:40:40, INFO: TRAIN in episode 139 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -24.6944
+2022-11-29 01:40:40, INFO: Current episode=140
+2022-11-29 01:40:40, INFO: Current episilon=0.486
+2022-11-29 01:40:40, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:40:40, INFO: Current k = 0
+2022-11-29 01:40:45, INFO: Current k = 1
+2022-11-29 01:40:50, INFO: VAL   in episode 140 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:40:50, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:40:50, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:40:50, INFO: Current k = 0
+2022-11-29 01:40:55, INFO: TRAIN in episode 140 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1914
+2022-11-29 01:40:55, INFO: Current episode=141
+2022-11-29 01:40:55, INFO: Current episilon=0.4859
+2022-11-29 01:40:55, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:40:55, INFO: Current k = 0
+2022-11-29 01:41:00, INFO: TRAIN in episode 141 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:41:01, INFO: Current episode=142
+2022-11-29 01:41:01, INFO: Current episilon=0.4858
+2022-11-29 01:41:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:41:01, INFO: Current k = 0
+2022-11-29 01:41:06, INFO: TRAIN in episode 142 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:41:06, INFO: Current episode=143
+2022-11-29 01:41:06, INFO: Current episilon=0.4857
+2022-11-29 01:41:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:41:06, INFO: Current k = 0
+2022-11-29 01:41:08, INFO: TRAIN in episode 143 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2414
+2022-11-29 01:41:09, INFO: Current episode=144
+2022-11-29 01:41:09, INFO: Current episilon=0.4856
+2022-11-29 01:41:09, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:41:09, INFO: Current k = 0
+2022-11-29 01:41:14, INFO: TRAIN in episode 144 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0973
+2022-11-29 01:41:14, INFO: Current episode=145
+2022-11-29 01:41:14, INFO: Current episilon=0.4855
+2022-11-29 01:41:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:41:14, INFO: Current k = 0
+2022-11-29 01:41:19, INFO: TRAIN in episode 145 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:41:19, INFO: Current episode=146
+2022-11-29 01:41:19, INFO: Current episilon=0.4854
+2022-11-29 01:41:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:41:19, INFO: Current k = 0
+2022-11-29 01:41:24, INFO: TRAIN in episode 146 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:41:25, INFO: Current episode=147
+2022-11-29 01:41:25, INFO: Current episilon=0.4853
+2022-11-29 01:41:25, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:41:25, INFO: Current k = 0
+2022-11-29 01:41:25, INFO: TRAIN in episode 147 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:41:25, INFO: Current episode=148
+2022-11-29 01:41:25, INFO: Current episilon=0.4852
+2022-11-29 01:41:25, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:41:25, INFO: Current k = 0
+2022-11-29 01:42:04, INFO: TRAIN in episode 148 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -19.3646
+2022-11-29 01:42:05, INFO: Current episode=149
+2022-11-29 01:42:05, INFO: Current episilon=0.4851
+2022-11-29 01:42:05, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:42:05, INFO: Current k = 0
+2022-11-29 01:42:10, INFO: TRAIN in episode 149 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 01:42:10, INFO: Current episode=150
+2022-11-29 01:42:10, INFO: Current episilon=0.485
+2022-11-29 01:42:10, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:42:10, INFO: Current k = 0
+2022-11-29 01:42:15, INFO: Current k = 1
+2022-11-29 01:42:20, INFO: VAL   in episode 150 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:42:20, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:42:20, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:42:20, INFO: Current k = 0
+2022-11-29 01:42:23, INFO: TRAIN in episode 150 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2554
+2022-11-29 01:42:23, INFO: Current episode=151
+2022-11-29 01:42:23, INFO: Current episilon=0.4849
+2022-11-29 01:42:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:42:23, INFO: Current k = 0
+2022-11-29 01:42:25, INFO: TRAIN in episode 151 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1132
+2022-11-29 01:42:26, INFO: Current episode=152
+2022-11-29 01:42:26, INFO: Current episilon=0.4848
+2022-11-29 01:42:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:42:26, INFO: Current k = 0
+2022-11-29 01:42:34, INFO: TRAIN in episode 152 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.2067
+2022-11-29 01:42:34, INFO: Current episode=153
+2022-11-29 01:42:34, INFO: Current episilon=0.4847
+2022-11-29 01:42:34, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:42:34, INFO: Current k = 0
+2022-11-29 01:42:46, INFO: TRAIN in episode 153 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -5.6346
+2022-11-29 01:42:47, INFO: Current episode=154
+2022-11-29 01:42:47, INFO: Current episilon=0.4846
+2022-11-29 01:42:47, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:42:47, INFO: Current k = 0
+2022-11-29 01:42:52, INFO: TRAIN in episode 154 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:42:52, INFO: Current episode=155
+2022-11-29 01:42:52, INFO: Current episilon=0.4845
+2022-11-29 01:42:52, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:42:52, INFO: Current k = 0
+2022-11-29 01:42:57, INFO: TRAIN in episode 155 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:42:57, INFO: Current episode=156
+2022-11-29 01:42:57, INFO: Current episilon=0.4844
+2022-11-29 01:42:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:42:57, INFO: Current k = 0
+2022-11-29 01:43:00, INFO: TRAIN in episode 156 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:43:00, INFO: Current episode=157
+2022-11-29 01:43:00, INFO: Current episilon=0.4843
+2022-11-29 01:43:00, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:43:00, INFO: Current k = 0
+2022-11-29 01:43:08, INFO: TRAIN in episode 157 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8114
+2022-11-29 01:43:08, INFO: Current episode=158
+2022-11-29 01:43:08, INFO: Current episilon=0.4842
+2022-11-29 01:43:08, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:43:08, INFO: Current k = 0
+2022-11-29 01:43:11, INFO: TRAIN in episode 158 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1948
+2022-11-29 01:43:11, INFO: Current episode=159
+2022-11-29 01:43:11, INFO: Current episilon=0.4841
+2022-11-29 01:43:11, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:43:11, INFO: Current k = 0
+2022-11-29 01:43:13, INFO: TRAIN in episode 159 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2164
+2022-11-29 01:43:14, INFO: Current episode=160
+2022-11-29 01:43:14, INFO: Current episilon=0.484
+2022-11-29 01:43:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:43:14, INFO: Current k = 0
+2022-11-29 01:43:19, INFO: Current k = 1
+2022-11-29 01:43:24, INFO: VAL   in episode 160 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:43:24, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:43:24, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:43:24, INFO: Current k = 0
+2022-11-29 01:43:29, INFO: TRAIN in episode 160 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9879
+2022-11-29 01:43:29, INFO: Current episode=161
+2022-11-29 01:43:29, INFO: Current episilon=0.4839
+2022-11-29 01:43:29, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:43:29, INFO: Current k = 0
+2022-11-29 01:43:34, INFO: TRAIN in episode 161 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0029
+2022-11-29 01:43:35, INFO: Current episode=162
+2022-11-29 01:43:35, INFO: Current episilon=0.4838
+2022-11-29 01:43:35, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:43:35, INFO: Current k = 0
+2022-11-29 01:43:37, INFO: TRAIN in episode 162 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1901
+2022-11-29 01:43:37, INFO: Current episode=163
+2022-11-29 01:43:37, INFO: Current episilon=0.4837
+2022-11-29 01:43:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:43:37, INFO: Current k = 0
+2022-11-29 01:43:42, INFO: TRAIN in episode 163 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1809
+2022-11-29 01:43:43, INFO: Current episode=164
+2022-11-29 01:43:43, INFO: Current episilon=0.4836
+2022-11-29 01:43:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:43:43, INFO: Current k = 0
+2022-11-29 01:43:58, INFO: TRAIN in episode 164 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -10.4966
+2022-11-29 01:43:58, INFO: Current episode=165
+2022-11-29 01:43:58, INFO: Current episilon=0.4835
+2022-11-29 01:43:58, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:43:58, INFO: Current k = 0
+2022-11-29 01:44:09, INFO: TRAIN in episode 165 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8038
+2022-11-29 01:44:09, INFO: Current episode=166
+2022-11-29 01:44:09, INFO: Current episilon=0.4834
+2022-11-29 01:44:09, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:44:09, INFO: Current k = 0
+2022-11-29 01:44:12, INFO: TRAIN in episode 166 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:44:12, INFO: Current episode=167
+2022-11-29 01:44:12, INFO: Current episilon=0.4833
+2022-11-29 01:44:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:44:12, INFO: Current k = 0
+2022-11-29 01:44:12, INFO: TRAIN in episode 167 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:44:12, INFO: Current episode=168
+2022-11-29 01:44:12, INFO: Current episilon=0.4832
+2022-11-29 01:44:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:44:12, INFO: Current k = 0
+2022-11-29 01:44:15, INFO: TRAIN in episode 168 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0976
+2022-11-29 01:44:15, INFO: Current episode=169
+2022-11-29 01:44:15, INFO: Current episilon=0.4831
+2022-11-29 01:44:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:44:15, INFO: Current k = 0
+2022-11-29 01:44:15, INFO: TRAIN in episode 169 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:44:15, INFO: Current episode=170
+2022-11-29 01:44:15, INFO: Current episilon=0.483
+2022-11-29 01:44:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:44:15, INFO: Current k = 0
+2022-11-29 01:44:20, INFO: Current k = 1
+2022-11-29 01:44:25, INFO: VAL   in episode 170 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:44:25, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:44:25, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:44:25, INFO: Current k = 0
+2022-11-29 01:45:33, INFO: TRAIN in episode 170 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -23.3154
+2022-11-29 01:45:33, INFO: Current episode=171
+2022-11-29 01:45:33, INFO: Current episilon=0.4829
+2022-11-29 01:45:33, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:45:33, INFO: Current k = 0
+2022-11-29 01:45:41, INFO: TRAIN in episode 171 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1064
+2022-11-29 01:45:41, INFO: Current episode=172
+2022-11-29 01:45:41, INFO: Current episilon=0.4828
+2022-11-29 01:45:41, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:45:41, INFO: Current k = 0
+2022-11-29 01:45:46, INFO: TRAIN in episode 172 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:45:46, INFO: Current episode=173
+2022-11-29 01:45:46, INFO: Current episilon=0.4827
+2022-11-29 01:45:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:45:46, INFO: Current k = 0
+2022-11-29 01:45:49, INFO: TRAIN in episode 173 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:45:49, INFO: Current episode=174
+2022-11-29 01:45:49, INFO: Current episilon=0.4826
+2022-11-29 01:45:49, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:45:49, INFO: Current k = 0
+2022-11-29 01:45:57, INFO: TRAIN in episode 174 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0124
+2022-11-29 01:45:57, INFO: Current episode=175
+2022-11-29 01:45:57, INFO: Current episilon=0.4825
+2022-11-29 01:45:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:45:57, INFO: Current k = 0
+2022-11-29 01:46:00, INFO: TRAIN in episode 175 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2495
+2022-11-29 01:46:00, INFO: Current episode=176
+2022-11-29 01:46:00, INFO: Current episilon=0.4824
+2022-11-29 01:46:00, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:00, INFO: Current k = 0
+2022-11-29 01:46:05, INFO: TRAIN in episode 176 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1073
+2022-11-29 01:46:05, INFO: Current episode=177
+2022-11-29 01:46:05, INFO: Current episilon=0.4823
+2022-11-29 01:46:05, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:05, INFO: Current k = 0
+2022-11-29 01:46:10, INFO: TRAIN in episode 177 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:46:10, INFO: Current episode=178
+2022-11-29 01:46:10, INFO: Current episilon=0.4822
+2022-11-29 01:46:10, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:10, INFO: Current k = 0
+2022-11-29 01:46:16, INFO: TRAIN in episode 178 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9965
+2022-11-29 01:46:16, INFO: Current episode=179
+2022-11-29 01:46:16, INFO: Current episilon=0.4821
+2022-11-29 01:46:16, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:16, INFO: Current k = 0
+2022-11-29 01:46:18, INFO: TRAIN in episode 179 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2587
+2022-11-29 01:46:18, INFO: Current episode=180
+2022-11-29 01:46:18, INFO: Current episilon=0.482
+2022-11-29 01:46:18, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:18, INFO: Current k = 0
+2022-11-29 01:46:24, INFO: Current k = 1
+2022-11-29 01:46:29, INFO: VAL   in episode 180 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:46:29, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:46:29, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:29, INFO: Current k = 0
+2022-11-29 01:46:31, INFO: TRAIN in episode 180 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:46:31, INFO: Current episode=181
+2022-11-29 01:46:31, INFO: Current episilon=0.4819
+2022-11-29 01:46:31, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:31, INFO: Current k = 0
+2022-11-29 01:46:37, INFO: TRAIN in episode 181 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4825
+2022-11-29 01:46:37, INFO: Current episode=182
+2022-11-29 01:46:37, INFO: Current episilon=0.4818
+2022-11-29 01:46:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:37, INFO: Current k = 0
+2022-11-29 01:46:42, INFO: TRAIN in episode 182 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 01:46:42, INFO: Current episode=183
+2022-11-29 01:46:42, INFO: Current episilon=0.4817
+2022-11-29 01:46:42, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:42, INFO: Current k = 0
+2022-11-29 01:46:47, INFO: TRAIN in episode 183 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1824
+2022-11-29 01:46:48, INFO: Current episode=184
+2022-11-29 01:46:48, INFO: Current episilon=0.48160000000000003
+2022-11-29 01:46:48, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:48, INFO: Current k = 0
+2022-11-29 01:46:53, INFO: TRAIN in episode 184 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1913
+2022-11-29 01:46:53, INFO: Current episode=185
+2022-11-29 01:46:53, INFO: Current episilon=0.4815
+2022-11-29 01:46:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:53, INFO: Current k = 0
+2022-11-29 01:46:58, INFO: TRAIN in episode 185 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:46:58, INFO: Current episode=186
+2022-11-29 01:46:58, INFO: Current episilon=0.4814
+2022-11-29 01:46:58, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:46:58, INFO: Current k = 0
+2022-11-29 01:47:03, INFO: TRAIN in episode 186 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1853
+2022-11-29 01:47:03, INFO: Current episode=187
+2022-11-29 01:47:03, INFO: Current episilon=0.4813
+2022-11-29 01:47:03, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:47:03, INFO: Current k = 0
+2022-11-29 01:47:09, INFO: TRAIN in episode 187 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9862
+2022-11-29 01:47:09, INFO: Current episode=188
+2022-11-29 01:47:09, INFO: Current episilon=0.4812
+2022-11-29 01:47:09, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:47:09, INFO: Current k = 0
+2022-11-29 01:47:17, INFO: TRAIN in episode 188 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8175
+2022-11-29 01:47:17, INFO: Current episode=189
+2022-11-29 01:47:17, INFO: Current episilon=0.48109999999999997
+2022-11-29 01:47:17, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:47:17, INFO: Current k = 0
+2022-11-29 01:47:22, INFO: TRAIN in episode 189 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:47:22, INFO: Current episode=190
+2022-11-29 01:47:22, INFO: Current episilon=0.481
+2022-11-29 01:47:22, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:47:22, INFO: Current k = 0
+2022-11-29 01:47:27, INFO: Current k = 1
+2022-11-29 01:47:32, INFO: VAL   in episode 190 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:47:32, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:47:32, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:47:32, INFO: Current k = 0
+2022-11-29 01:47:37, INFO: TRAIN in episode 190 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0123
+2022-11-29 01:47:38, INFO: Current episode=191
+2022-11-29 01:47:38, INFO: Current episilon=0.4809
+2022-11-29 01:47:38, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:47:38, INFO: Current k = 0
+2022-11-29 01:47:53, INFO: TRAIN in episode 191 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -9.2318
+2022-11-29 01:47:53, INFO: Current episode=192
+2022-11-29 01:47:53, INFO: Current episilon=0.4808
+2022-11-29 01:47:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:47:53, INFO: Current k = 0
+2022-11-29 01:48:01, INFO: TRAIN in episode 192 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9851
+2022-11-29 01:48:01, INFO: Current episode=193
+2022-11-29 01:48:01, INFO: Current episilon=0.4807
+2022-11-29 01:48:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:48:01, INFO: Current k = 0
+2022-11-29 01:48:07, INFO: TRAIN in episode 193 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:48:07, INFO: Current episode=194
+2022-11-29 01:48:07, INFO: Current episilon=0.4806
+2022-11-29 01:48:07, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:48:07, INFO: Current k = 0
+2022-11-29 01:48:12, INFO: TRAIN in episode 194 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1955
+2022-11-29 01:48:12, INFO: Current episode=195
+2022-11-29 01:48:12, INFO: Current episilon=0.4805
+2022-11-29 01:48:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:48:12, INFO: Current k = 0
+2022-11-29 01:48:15, INFO: TRAIN in episode 195 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:48:15, INFO: Current episode=196
+2022-11-29 01:48:15, INFO: Current episilon=0.4804
+2022-11-29 01:48:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:48:15, INFO: Current k = 0
+2022-11-29 01:48:25, INFO: TRAIN in episode 196 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4134
+2022-11-29 01:48:25, INFO: Current episode=197
+2022-11-29 01:48:25, INFO: Current episilon=0.4803
+2022-11-29 01:48:25, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:48:25, INFO: Current k = 0
+2022-11-29 01:48:26, INFO: TRAIN in episode 197 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8809
+2022-11-29 01:48:26, INFO: Current episode=198
+2022-11-29 01:48:26, INFO: Current episilon=0.4802
+2022-11-29 01:48:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:48:26, INFO: Current k = 0
+2022-11-29 01:48:52, INFO: TRAIN in episode 198 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -13.2378
+2022-11-29 01:48:52, INFO: Current episode=199
+2022-11-29 01:48:52, INFO: Current episilon=0.48009999999999997
+2022-11-29 01:48:52, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:48:52, INFO: Current k = 0
+2022-11-29 01:48:55, INFO: TRAIN in episode 199 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2464
+2022-11-29 01:48:55, INFO: Current episode=200
+2022-11-29 01:48:55, INFO: Current episilon=0.48
+2022-11-29 01:48:55, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:48:55, INFO: Current k = 0
+2022-11-29 01:49:00, INFO: Current k = 1
+2022-11-29 01:49:05, INFO: VAL   in episode 200 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:49:05, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-29 01:49:05, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:49:05, INFO: Current k = 0
+2022-11-29 01:49:08, INFO: TRAIN in episode 200 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0896
+2022-11-29 01:49:08, INFO: Current episode=201
+2022-11-29 01:49:08, INFO: Current episilon=0.4799
+2022-11-29 01:49:08, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:49:08, INFO: Current k = 0
+2022-11-29 01:49:13, INFO: TRAIN in episode 201 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:49:14, INFO: Current episode=202
+2022-11-29 01:49:14, INFO: Current episilon=0.4798
+2022-11-29 01:49:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:49:14, INFO: Current k = 0
+2022-11-29 01:49:19, INFO: TRAIN in episode 202 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0965
+2022-11-29 01:49:19, INFO: Current episode=203
+2022-11-29 01:49:19, INFO: Current episilon=0.4797
+2022-11-29 01:49:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:49:19, INFO: Current k = 0
+2022-11-29 01:49:19, INFO: TRAIN in episode 203 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:49:19, INFO: Current episode=204
+2022-11-29 01:49:19, INFO: Current episilon=0.4796
+2022-11-29 01:49:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:49:19, INFO: Current k = 0
+2022-11-29 01:49:27, INFO: TRAIN in episode 204 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1127
+2022-11-29 01:49:27, INFO: Current episode=205
+2022-11-29 01:49:27, INFO: Current episilon=0.4795
+2022-11-29 01:49:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:49:27, INFO: Current k = 0
+2022-11-29 01:49:49, INFO: TRAIN in episode 205 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -11.0696
+2022-11-29 01:49:49, INFO: Current episode=206
+2022-11-29 01:49:49, INFO: Current episilon=0.4794
+2022-11-29 01:49:49, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:49:49, INFO: Current k = 0
+2022-11-29 01:49:59, INFO: TRAIN in episode 206 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4155
+2022-11-29 01:49:59, INFO: Current episode=207
+2022-11-29 01:49:59, INFO: Current episilon=0.4793
+2022-11-29 01:49:59, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:49:59, INFO: Current k = 0
+2022-11-29 01:50:05, INFO: TRAIN in episode 207 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1991
+2022-11-29 01:50:05, INFO: Current episode=208
+2022-11-29 01:50:05, INFO: Current episilon=0.4792
+2022-11-29 01:50:05, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:50:05, INFO: Current k = 0
+2022-11-29 01:50:10, INFO: TRAIN in episode 208 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 01:50:10, INFO: Current episode=209
+2022-11-29 01:50:10, INFO: Current episilon=0.47909999999999997
+2022-11-29 01:50:10, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:50:10, INFO: Current k = 0
+2022-11-29 01:50:15, INFO: TRAIN in episode 209 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:50:16, INFO: Current episode=210
+2022-11-29 01:50:16, INFO: Current episilon=0.479
+2022-11-29 01:50:16, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:50:16, INFO: Current k = 0
+2022-11-29 01:50:21, INFO: Current k = 1
+2022-11-29 01:50:26, INFO: VAL   in episode 210 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:50:26, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:50:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:50:26, INFO: Current k = 0
+2022-11-29 01:50:31, INFO: TRAIN in episode 210 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1920
+2022-11-29 01:50:31, INFO: Current episode=211
+2022-11-29 01:50:31, INFO: Current episilon=0.4789
+2022-11-29 01:50:31, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:50:31, INFO: Current k = 0
+2022-11-29 01:50:37, INFO: TRAIN in episode 211 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:50:37, INFO: Current episode=212
+2022-11-29 01:50:37, INFO: Current episilon=0.4788
+2022-11-29 01:50:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:50:37, INFO: Current k = 0
+2022-11-29 01:50:42, INFO: TRAIN in episode 212 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9815
+2022-11-29 01:50:42, INFO: Current episode=213
+2022-11-29 01:50:42, INFO: Current episilon=0.4787
+2022-11-29 01:50:42, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:50:42, INFO: Current k = 0
+2022-11-29 01:50:47, INFO: TRAIN in episode 213 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:50:47, INFO: Current episode=214
+2022-11-29 01:50:47, INFO: Current episilon=0.4786
+2022-11-29 01:50:47, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:50:47, INFO: Current k = 0
+2022-11-29 01:50:50, INFO: TRAIN in episode 214 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2079
+2022-11-29 01:50:50, INFO: Current episode=215
+2022-11-29 01:50:50, INFO: Current episilon=0.4785
+2022-11-29 01:50:50, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:50:50, INFO: Current k = 0
+2022-11-29 01:50:56, INFO: TRAIN in episode 215 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1097
+2022-11-29 01:50:56, INFO: Current episode=216
+2022-11-29 01:50:56, INFO: Current episilon=0.4784
+2022-11-29 01:50:56, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:50:56, INFO: Current k = 0
+2022-11-29 01:51:01, INFO: TRAIN in episode 216 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2119
+2022-11-29 01:51:01, INFO: Current episode=217
+2022-11-29 01:51:01, INFO: Current episilon=0.4783
+2022-11-29 01:51:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:51:01, INFO: Current k = 0
+2022-11-29 01:51:12, INFO: TRAIN in episode 217 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -9.2460
+2022-11-29 01:51:12, INFO: Current episode=218
+2022-11-29 01:51:12, INFO: Current episilon=0.4782
+2022-11-29 01:51:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:51:12, INFO: Current k = 0
+2022-11-29 01:51:17, INFO: TRAIN in episode 218 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:51:17, INFO: Current episode=219
+2022-11-29 01:51:17, INFO: Current episilon=0.4781
+2022-11-29 01:51:17, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:51:17, INFO: Current k = 0
+2022-11-29 01:51:23, INFO: TRAIN in episode 219 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:51:23, INFO: Current episode=220
+2022-11-29 01:51:23, INFO: Current episilon=0.478
+2022-11-29 01:51:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:51:23, INFO: Current k = 0
+2022-11-29 01:51:28, INFO: Current k = 1
+2022-11-29 01:51:33, INFO: VAL   in episode 220 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:51:33, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:51:33, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:51:33, INFO: Current k = 0
+2022-11-29 01:51:38, INFO: TRAIN in episode 220 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2012
+2022-11-29 01:51:38, INFO: Current episode=221
+2022-11-29 01:51:38, INFO: Current episilon=0.4779
+2022-11-29 01:51:38, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:51:38, INFO: Current k = 0
+2022-11-29 01:51:46, INFO: TRAIN in episode 221 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8101
+2022-11-29 01:51:47, INFO: Current episode=222
+2022-11-29 01:51:47, INFO: Current episilon=0.4778
+2022-11-29 01:51:47, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:51:47, INFO: Current k = 0
+2022-11-29 01:51:52, INFO: TRAIN in episode 222 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:51:52, INFO: Current episode=223
+2022-11-29 01:51:52, INFO: Current episilon=0.4777
+2022-11-29 01:51:52, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:51:52, INFO: Current k = 0
+2022-11-29 01:51:57, INFO: TRAIN in episode 223 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1824
+2022-11-29 01:51:58, INFO: Current episode=224
+2022-11-29 01:51:58, INFO: Current episilon=0.4776
+2022-11-29 01:51:58, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:51:58, INFO: Current k = 0
+2022-11-29 01:52:00, INFO: TRAIN in episode 224 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1889
+2022-11-29 01:52:01, INFO: Current episode=225
+2022-11-29 01:52:01, INFO: Current episilon=0.4775
+2022-11-29 01:52:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:52:01, INFO: Current k = 0
+2022-11-29 01:52:11, INFO: TRAIN in episode 225 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.2230
+2022-11-29 01:52:12, INFO: Current episode=226
+2022-11-29 01:52:12, INFO: Current episilon=0.4774
+2022-11-29 01:52:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:52:12, INFO: Current k = 0
+2022-11-29 01:52:14, INFO: TRAIN in episode 226 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2554
+2022-11-29 01:52:14, INFO: Current episode=227
+2022-11-29 01:52:14, INFO: Current episilon=0.4773
+2022-11-29 01:52:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:52:14, INFO: Current k = 0
+2022-11-29 01:52:20, INFO: TRAIN in episode 227 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 01:52:20, INFO: Current episode=228
+2022-11-29 01:52:20, INFO: Current episilon=0.4772
+2022-11-29 01:52:20, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:52:20, INFO: Current k = 0
+2022-11-29 01:52:25, INFO: TRAIN in episode 228 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2007
+2022-11-29 01:52:25, INFO: Current episode=229
+2022-11-29 01:52:25, INFO: Current episilon=0.4771
+2022-11-29 01:52:25, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:52:25, INFO: Current k = 0
+2022-11-29 01:52:30, INFO: TRAIN in episode 229 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:52:31, INFO: Current episode=230
+2022-11-29 01:52:31, INFO: Current episilon=0.477
+2022-11-29 01:52:31, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:52:31, INFO: Current k = 0
+2022-11-29 01:52:36, INFO: Current k = 1
+2022-11-29 01:52:41, INFO: VAL   in episode 230 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:52:41, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:52:41, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:52:41, INFO: Current k = 0
+2022-11-29 01:52:59, INFO: TRAIN in episode 230 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -11.0733
+2022-11-29 01:52:59, INFO: Current episode=231
+2022-11-29 01:52:59, INFO: Current episilon=0.4769
+2022-11-29 01:52:59, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:52:59, INFO: Current k = 0
+2022-11-29 01:53:07, INFO: TRAIN in episode 231 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -5.6534
+2022-11-29 01:53:07, INFO: Current episode=232
+2022-11-29 01:53:07, INFO: Current episilon=0.4768
+2022-11-29 01:53:07, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:53:07, INFO: Current k = 0
+2022-11-29 01:53:07, INFO: TRAIN in episode 232 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0045
+2022-11-29 01:53:08, INFO: Current episode=233
+2022-11-29 01:53:08, INFO: Current episilon=0.4767
+2022-11-29 01:53:08, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:53:08, INFO: Current k = 0
+2022-11-29 01:53:13, INFO: TRAIN in episode 233 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:53:13, INFO: Current episode=234
+2022-11-29 01:53:13, INFO: Current episilon=0.4766
+2022-11-29 01:53:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:53:13, INFO: Current k = 0
+2022-11-29 01:53:23, INFO: TRAIN in episode 234 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.1654
+2022-11-29 01:53:23, INFO: Current episode=235
+2022-11-29 01:53:23, INFO: Current episilon=0.4765
+2022-11-29 01:53:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:53:23, INFO: Current k = 0
+2022-11-29 01:53:29, INFO: TRAIN in episode 235 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4547
+2022-11-29 01:53:29, INFO: Current episode=236
+2022-11-29 01:53:29, INFO: Current episilon=0.4764
+2022-11-29 01:53:29, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:53:29, INFO: Current k = 0
+2022-11-29 01:53:34, INFO: TRAIN in episode 236 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:53:34, INFO: Current episode=237
+2022-11-29 01:53:34, INFO: Current episilon=0.4763
+2022-11-29 01:53:34, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:53:34, INFO: Current k = 0
+2022-11-29 01:53:40, INFO: TRAIN in episode 237 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:53:40, INFO: Current episode=238
+2022-11-29 01:53:40, INFO: Current episilon=0.4762
+2022-11-29 01:53:40, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:53:40, INFO: Current k = 0
+2022-11-29 01:53:45, INFO: TRAIN in episode 238 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4176
+2022-11-29 01:53:45, INFO: Current episode=239
+2022-11-29 01:53:45, INFO: Current episilon=0.4761
+2022-11-29 01:53:45, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:53:45, INFO: Current k = 0
+2022-11-29 01:53:48, INFO: TRAIN in episode 239 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:53:48, INFO: Current episode=240
+2022-11-29 01:53:48, INFO: Current episilon=0.476
+2022-11-29 01:53:48, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:53:48, INFO: Current k = 0
+2022-11-29 01:53:53, INFO: Current k = 1
+2022-11-29 01:53:58, INFO: VAL   in episode 240 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:53:58, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:53:58, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:53:58, INFO: Current k = 0
+2022-11-29 01:54:01, INFO: TRAIN in episode 240 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8333
+2022-11-29 01:54:01, INFO: Current episode=241
+2022-11-29 01:54:01, INFO: Current episilon=0.4759
+2022-11-29 01:54:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:01, INFO: Current k = 0
+2022-11-29 01:54:04, INFO: TRAIN in episode 241 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2464
+2022-11-29 01:54:04, INFO: Current episode=242
+2022-11-29 01:54:04, INFO: Current episilon=0.4758
+2022-11-29 01:54:04, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:04, INFO: Current k = 0
+2022-11-29 01:54:09, INFO: TRAIN in episode 242 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:54:09, INFO: Current episode=243
+2022-11-29 01:54:09, INFO: Current episilon=0.4757
+2022-11-29 01:54:09, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:09, INFO: Current k = 0
+2022-11-29 01:54:15, INFO: TRAIN in episode 243 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.9072
+2022-11-29 01:54:15, INFO: Current episode=244
+2022-11-29 01:54:15, INFO: Current episilon=0.4756
+2022-11-29 01:54:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:15, INFO: Current k = 0
+2022-11-29 01:54:17, INFO: TRAIN in episode 244 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2436
+2022-11-29 01:54:18, INFO: Current episode=245
+2022-11-29 01:54:18, INFO: Current episilon=0.4755
+2022-11-29 01:54:18, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:18, INFO: Current k = 0
+2022-11-29 01:54:18, INFO: TRAIN in episode 245 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:54:18, INFO: Current episode=246
+2022-11-29 01:54:18, INFO: Current episilon=0.4754
+2022-11-29 01:54:18, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:18, INFO: Current k = 0
+2022-11-29 01:54:23, INFO: TRAIN in episode 246 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:54:23, INFO: Current episode=247
+2022-11-29 01:54:23, INFO: Current episilon=0.4753
+2022-11-29 01:54:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:23, INFO: Current k = 0
+2022-11-29 01:54:28, INFO: TRAIN in episode 247 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1895
+2022-11-29 01:54:28, INFO: Current episode=248
+2022-11-29 01:54:28, INFO: Current episilon=0.4752
+2022-11-29 01:54:28, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:28, INFO: Current k = 0
+2022-11-29 01:54:31, INFO: TRAIN in episode 248 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2032
+2022-11-29 01:54:31, INFO: Current episode=249
+2022-11-29 01:54:31, INFO: Current episilon=0.4751
+2022-11-29 01:54:31, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:31, INFO: Current k = 0
+2022-11-29 01:54:37, INFO: TRAIN in episode 249 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9747
+2022-11-29 01:54:37, INFO: Current episode=250
+2022-11-29 01:54:37, INFO: Current episilon=0.475
+2022-11-29 01:54:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:37, INFO: Current k = 0
+2022-11-29 01:54:42, INFO: Current k = 1
+2022-11-29 01:54:47, INFO: VAL   in episode 250 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:54:47, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:54:47, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:47, INFO: Current k = 0
+2022-11-29 01:54:52, INFO: TRAIN in episode 250 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:54:53, INFO: Current episode=251
+2022-11-29 01:54:53, INFO: Current episilon=0.4749
+2022-11-29 01:54:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:53, INFO: Current k = 0
+2022-11-29 01:54:58, INFO: TRAIN in episode 251 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8406
+2022-11-29 01:54:58, INFO: Current episode=252
+2022-11-29 01:54:58, INFO: Current episilon=0.4748
+2022-11-29 01:54:58, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:54:58, INFO: Current k = 0
+2022-11-29 01:55:01, INFO: TRAIN in episode 252 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1169
+2022-11-29 01:55:01, INFO: Current episode=253
+2022-11-29 01:55:01, INFO: Current episilon=0.4747
+2022-11-29 01:55:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:55:01, INFO: Current k = 0
+2022-11-29 01:55:06, INFO: TRAIN in episode 253 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1806
+2022-11-29 01:55:06, INFO: Current episode=254
+2022-11-29 01:55:06, INFO: Current episilon=0.4746
+2022-11-29 01:55:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:55:06, INFO: Current k = 0
+2022-11-29 01:55:09, INFO: TRAIN in episode 254 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2185
+2022-11-29 01:55:09, INFO: Current episode=255
+2022-11-29 01:55:09, INFO: Current episilon=0.4745
+2022-11-29 01:55:09, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:55:09, INFO: Current k = 0
+2022-11-29 01:55:15, INFO: TRAIN in episode 255 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -5.6370
+2022-11-29 01:55:15, INFO: Current episode=256
+2022-11-29 01:55:15, INFO: Current episilon=0.4744
+2022-11-29 01:55:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:55:15, INFO: Current k = 0
+2022-11-29 01:55:20, INFO: TRAIN in episode 256 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:55:21, INFO: Current episode=257
+2022-11-29 01:55:21, INFO: Current episilon=0.4743
+2022-11-29 01:55:21, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:55:21, INFO: Current k = 0
+2022-11-29 01:55:26, INFO: TRAIN in episode 257 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0956
+2022-11-29 01:55:26, INFO: Current episode=258
+2022-11-29 01:55:26, INFO: Current episilon=0.4742
+2022-11-29 01:55:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:55:26, INFO: Current k = 0
+2022-11-29 01:55:34, INFO: TRAIN in episode 258 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9855
+2022-11-29 01:55:34, INFO: Current episode=259
+2022-11-29 01:55:34, INFO: Current episilon=0.4741
+2022-11-29 01:55:34, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:55:34, INFO: Current k = 0
+2022-11-29 01:55:42, INFO: TRAIN in episode 259 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8314
+2022-11-29 01:55:42, INFO: Current episode=260
+2022-11-29 01:55:42, INFO: Current episilon=0.474
+2022-11-29 01:55:42, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:55:42, INFO: Current k = 0
+2022-11-29 01:55:48, INFO: Current k = 1
+2022-11-29 01:55:53, INFO: VAL   in episode 260 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:55:53, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:55:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:55:53, INFO: Current k = 0
+2022-11-29 01:56:01, INFO: TRAIN in episode 260 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9804
+2022-11-29 01:56:01, INFO: Current episode=261
+2022-11-29 01:56:01, INFO: Current episilon=0.4739
+2022-11-29 01:56:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:56:01, INFO: Current k = 0
+2022-11-29 01:56:06, INFO: TRAIN in episode 261 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1076
+2022-11-29 01:56:06, INFO: Current episode=262
+2022-11-29 01:56:06, INFO: Current episilon=0.4738
+2022-11-29 01:56:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:56:06, INFO: Current k = 0
+2022-11-29 01:56:11, INFO: TRAIN in episode 262 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2083
+2022-11-29 01:56:12, INFO: Current episode=263
+2022-11-29 01:56:12, INFO: Current episilon=0.4737
+2022-11-29 01:56:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:56:12, INFO: Current k = 0
+2022-11-29 01:56:19, INFO: TRAIN in episode 263 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8203
+2022-11-29 01:56:20, INFO: Current episode=264
+2022-11-29 01:56:20, INFO: Current episilon=0.4736
+2022-11-29 01:56:20, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:56:20, INFO: Current k = 0
+2022-11-29 01:56:33, INFO: TRAIN in episode 264 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -9.2398
+2022-11-29 01:56:33, INFO: Current episode=265
+2022-11-29 01:56:33, INFO: Current episilon=0.4735
+2022-11-29 01:56:33, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:56:33, INFO: Current k = 0
+2022-11-29 01:56:33, INFO: TRAIN in episode 265 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:56:33, INFO: Current episode=266
+2022-11-29 01:56:33, INFO: Current episilon=0.4734
+2022-11-29 01:56:33, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:56:33, INFO: Current k = 0
+2022-11-29 01:56:36, INFO: TRAIN in episode 266 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2090
+2022-11-29 01:56:36, INFO: Current episode=267
+2022-11-29 01:56:36, INFO: Current episilon=0.4733
+2022-11-29 01:56:36, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:56:36, INFO: Current k = 0
+2022-11-29 01:56:41, INFO: TRAIN in episode 267 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:56:41, INFO: Current episode=268
+2022-11-29 01:56:41, INFO: Current episilon=0.4732
+2022-11-29 01:56:41, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:56:41, INFO: Current k = 0
+2022-11-29 01:56:46, INFO: TRAIN in episode 268 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 01:56:47, INFO: Current episode=269
+2022-11-29 01:56:47, INFO: Current episilon=0.4731
+2022-11-29 01:56:47, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:56:47, INFO: Current k = 0
+2022-11-29 01:56:52, INFO: TRAIN in episode 269 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1216
+2022-11-29 01:56:52, INFO: Current episode=270
+2022-11-29 01:56:52, INFO: Current episilon=0.473
+2022-11-29 01:56:52, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:56:52, INFO: Current k = 0
+2022-11-29 01:56:57, INFO: Current k = 1
+2022-11-29 01:57:02, INFO: VAL   in episode 270 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:57:02, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:57:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:02, INFO: Current k = 0
+2022-11-29 01:57:02, INFO: TRAIN in episode 270 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 01:57:02, INFO: Current episode=271
+2022-11-29 01:57:02, INFO: Current episilon=0.4729
+2022-11-29 01:57:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:02, INFO: Current k = 0
+2022-11-29 01:57:07, INFO: TRAIN in episode 271 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:57:08, INFO: Current episode=272
+2022-11-29 01:57:08, INFO: Current episilon=0.4728
+2022-11-29 01:57:08, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:08, INFO: Current k = 0
+2022-11-29 01:57:13, INFO: TRAIN in episode 272 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1940
+2022-11-29 01:57:13, INFO: Current episode=273
+2022-11-29 01:57:13, INFO: Current episilon=0.4727
+2022-11-29 01:57:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:13, INFO: Current k = 0
+2022-11-29 01:57:16, INFO: TRAIN in episode 273 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1234
+2022-11-29 01:57:16, INFO: Current episode=274
+2022-11-29 01:57:16, INFO: Current episilon=0.4726
+2022-11-29 01:57:16, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:16, INFO: Current k = 0
+2022-11-29 01:57:21, INFO: TRAIN in episode 274 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:57:21, INFO: Current episode=275
+2022-11-29 01:57:21, INFO: Current episilon=0.4725
+2022-11-29 01:57:21, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:21, INFO: Current k = 0
+2022-11-29 01:57:26, INFO: TRAIN in episode 275 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1855
+2022-11-29 01:57:26, INFO: Current episode=276
+2022-11-29 01:57:26, INFO: Current episilon=0.4724
+2022-11-29 01:57:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:26, INFO: Current k = 0
+2022-11-29 01:57:32, INFO: TRAIN in episode 276 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0244
+2022-11-29 01:57:32, INFO: Current episode=277
+2022-11-29 01:57:32, INFO: Current episilon=0.4723
+2022-11-29 01:57:32, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:32, INFO: Current k = 0
+2022-11-29 01:57:37, INFO: TRAIN in episode 277 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1889
+2022-11-29 01:57:37, INFO: Current episode=278
+2022-11-29 01:57:37, INFO: Current episilon=0.4722
+2022-11-29 01:57:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:37, INFO: Current k = 0
+2022-11-29 01:57:42, INFO: TRAIN in episode 278 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0484
+2022-11-29 01:57:43, INFO: Current episode=279
+2022-11-29 01:57:43, INFO: Current episilon=0.4721
+2022-11-29 01:57:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:43, INFO: Current k = 0
+2022-11-29 01:57:48, INFO: TRAIN in episode 279 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1149
+2022-11-29 01:57:48, INFO: Current episode=280
+2022-11-29 01:57:48, INFO: Current episilon=0.472
+2022-11-29 01:57:48, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:48, INFO: Current k = 0
+2022-11-29 01:57:53, INFO: Current k = 1
+2022-11-29 01:57:58, INFO: VAL   in episode 280 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:57:58, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:57:58, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:57:58, INFO: Current k = 0
+2022-11-29 01:58:01, INFO: TRAIN in episode 280 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 01:58:01, INFO: Current episode=281
+2022-11-29 01:58:01, INFO: Current episilon=0.4719
+2022-11-29 01:58:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:58:01, INFO: Current k = 0
+2022-11-29 01:58:06, INFO: TRAIN in episode 281 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:58:06, INFO: Current episode=282
+2022-11-29 01:58:06, INFO: Current episilon=0.4718
+2022-11-29 01:58:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:58:06, INFO: Current k = 0
+2022-11-29 01:58:11, INFO: TRAIN in episode 282 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1827
+2022-11-29 01:58:12, INFO: Current episode=283
+2022-11-29 01:58:12, INFO: Current episilon=0.4717
+2022-11-29 01:58:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:58:12, INFO: Current k = 0
+2022-11-29 01:58:22, INFO: TRAIN in episode 283 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -5.6404
+2022-11-29 01:58:22, INFO: Current episode=284
+2022-11-29 01:58:22, INFO: Current episilon=0.4716
+2022-11-29 01:58:22, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:58:22, INFO: Current k = 0
+2022-11-29 01:58:27, INFO: TRAIN in episode 284 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0094
+2022-11-29 01:58:27, INFO: Current episode=285
+2022-11-29 01:58:27, INFO: Current episilon=0.4715
+2022-11-29 01:58:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:58:27, INFO: Current k = 0
+2022-11-29 01:58:30, INFO: TRAIN in episode 285 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8607
+2022-11-29 01:58:30, INFO: Current episode=286
+2022-11-29 01:58:30, INFO: Current episilon=0.4714
+2022-11-29 01:58:30, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:58:30, INFO: Current k = 0
+2022-11-29 01:58:43, INFO: TRAIN in episode 286 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -8.6032
+2022-11-29 01:58:44, INFO: Current episode=287
+2022-11-29 01:58:44, INFO: Current episilon=0.4713
+2022-11-29 01:58:44, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:58:44, INFO: Current k = 0
+2022-11-29 01:58:49, INFO: TRAIN in episode 287 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:58:49, INFO: Current episode=288
+2022-11-29 01:58:49, INFO: Current episilon=0.4712
+2022-11-29 01:58:49, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:58:49, INFO: Current k = 0
+2022-11-29 01:58:54, INFO: TRAIN in episode 288 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:58:54, INFO: Current episode=289
+2022-11-29 01:58:54, INFO: Current episilon=0.4711
+2022-11-29 01:58:54, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:58:54, INFO: Current k = 0
+2022-11-29 01:58:59, INFO: TRAIN in episode 289 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1927
+2022-11-29 01:59:00, INFO: Current episode=290
+2022-11-29 01:59:00, INFO: Current episilon=0.471
+2022-11-29 01:59:00, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:59:00, INFO: Current k = 0
+2022-11-29 01:59:05, INFO: Current k = 1
+2022-11-29 01:59:10, INFO: VAL   in episode 290 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:59:10, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 01:59:10, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:59:10, INFO: Current k = 0
+2022-11-29 01:59:15, INFO: TRAIN in episode 290 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:59:15, INFO: Current episode=291
+2022-11-29 01:59:15, INFO: Current episilon=0.4709
+2022-11-29 01:59:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:59:15, INFO: Current k = 0
+2022-11-29 01:59:23, INFO: TRAIN in episode 291 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.1658
+2022-11-29 01:59:23, INFO: Current episode=292
+2022-11-29 01:59:23, INFO: Current episilon=0.4708
+2022-11-29 01:59:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:59:23, INFO: Current k = 0
+2022-11-29 01:59:28, INFO: TRAIN in episode 292 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8615
+2022-11-29 01:59:29, INFO: Current episode=293
+2022-11-29 01:59:29, INFO: Current episilon=0.4707
+2022-11-29 01:59:29, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:59:29, INFO: Current k = 0
+2022-11-29 01:59:34, INFO: TRAIN in episode 293 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:59:34, INFO: Current episode=294
+2022-11-29 01:59:34, INFO: Current episilon=0.4706
+2022-11-29 01:59:34, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:59:34, INFO: Current k = 0
+2022-11-29 01:59:39, INFO: TRAIN in episode 294 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 01:59:39, INFO: Current episode=295
+2022-11-29 01:59:39, INFO: Current episilon=0.4705
+2022-11-29 01:59:39, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:59:39, INFO: Current k = 0
+2022-11-29 01:59:42, INFO: TRAIN in episode 295 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2217
+2022-11-29 01:59:42, INFO: Current episode=296
+2022-11-29 01:59:42, INFO: Current episilon=0.4704
+2022-11-29 01:59:42, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:59:42, INFO: Current k = 0
+2022-11-29 01:59:47, INFO: TRAIN in episode 296 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2007
+2022-11-29 01:59:47, INFO: Current episode=297
+2022-11-29 01:59:47, INFO: Current episilon=0.4703
+2022-11-29 01:59:47, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:59:47, INFO: Current k = 0
+2022-11-29 01:59:52, INFO: TRAIN in episode 297 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 01:59:53, INFO: Current episode=298
+2022-11-29 01:59:53, INFO: Current episilon=0.4702
+2022-11-29 01:59:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 01:59:53, INFO: Current k = 0
+2022-11-29 02:00:00, INFO: TRAIN in episode 298 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9865
+2022-11-29 02:00:01, INFO: Current episode=299
+2022-11-29 02:00:01, INFO: Current episilon=0.4701
+2022-11-29 02:00:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:01, INFO: Current k = 0
+2022-11-29 02:00:01, INFO: TRAIN in episode 299 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1866
+2022-11-29 02:00:01, INFO: Current episode=300
+2022-11-29 02:00:01, INFO: Current episilon=0.47
+2022-11-29 02:00:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:01, INFO: Current k = 0
+2022-11-29 02:00:06, INFO: Current k = 1
+2022-11-29 02:00:11, INFO: VAL   in episode 300 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:00:11, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:00:11, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:11, INFO: Current k = 0
+2022-11-29 02:00:16, INFO: TRAIN in episode 300 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1006
+2022-11-29 02:00:16, INFO: Current episode=301
+2022-11-29 02:00:16, INFO: Current episilon=0.4699
+2022-11-29 02:00:16, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:16, INFO: Current k = 0
+2022-11-29 02:00:22, INFO: TRAIN in episode 301 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1981
+2022-11-29 02:00:22, INFO: Current episode=302
+2022-11-29 02:00:22, INFO: Current episilon=0.4698
+2022-11-29 02:00:22, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:22, INFO: Current k = 0
+2022-11-29 02:00:27, INFO: TRAIN in episode 302 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:00:27, INFO: Current episode=303
+2022-11-29 02:00:27, INFO: Current episilon=0.4697
+2022-11-29 02:00:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:27, INFO: Current k = 0
+2022-11-29 02:00:32, INFO: TRAIN in episode 303 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1016
+2022-11-29 02:00:32, INFO: Current episode=304
+2022-11-29 02:00:32, INFO: Current episilon=0.4696
+2022-11-29 02:00:32, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:32, INFO: Current k = 0
+2022-11-29 02:00:38, INFO: TRAIN in episode 304 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:00:38, INFO: Current episode=305
+2022-11-29 02:00:38, INFO: Current episilon=0.4695
+2022-11-29 02:00:38, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:38, INFO: Current k = 0
+2022-11-29 02:00:40, INFO: TRAIN in episode 305 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2495
+2022-11-29 02:00:41, INFO: Current episode=306
+2022-11-29 02:00:41, INFO: Current episilon=0.4694
+2022-11-29 02:00:41, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:41, INFO: Current k = 0
+2022-11-29 02:00:46, INFO: TRAIN in episode 306 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9867
+2022-11-29 02:00:46, INFO: Current episode=307
+2022-11-29 02:00:46, INFO: Current episilon=0.4693
+2022-11-29 02:00:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:46, INFO: Current k = 0
+2022-11-29 02:00:54, INFO: TRAIN in episode 307 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8642
+2022-11-29 02:00:54, INFO: Current episode=308
+2022-11-29 02:00:54, INFO: Current episilon=0.4692
+2022-11-29 02:00:54, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:54, INFO: Current k = 0
+2022-11-29 02:00:54, INFO: TRAIN in episode 308 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2508
+2022-11-29 02:00:54, INFO: Current episode=309
+2022-11-29 02:00:54, INFO: Current episilon=0.4691
+2022-11-29 02:00:54, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:54, INFO: Current k = 0
+2022-11-29 02:00:57, INFO: TRAIN in episode 309 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1194
+2022-11-29 02:00:57, INFO: Current episode=310
+2022-11-29 02:00:57, INFO: Current episilon=0.469
+2022-11-29 02:00:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:00:57, INFO: Current k = 0
+2022-11-29 02:01:02, INFO: Current k = 1
+2022-11-29 02:01:07, INFO: VAL   in episode 310 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:01:07, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:01:07, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:07, INFO: Current k = 0
+2022-11-29 02:01:12, INFO: TRAIN in episode 310 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:01:12, INFO: Current episode=311
+2022-11-29 02:01:12, INFO: Current episilon=0.4689
+2022-11-29 02:01:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:12, INFO: Current k = 0
+2022-11-29 02:01:13, INFO: TRAIN in episode 311 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2508
+2022-11-29 02:01:13, INFO: Current episode=312
+2022-11-29 02:01:13, INFO: Current episilon=0.4688
+2022-11-29 02:01:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:13, INFO: Current k = 0
+2022-11-29 02:01:18, INFO: TRAIN in episode 312 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:01:18, INFO: Current episode=313
+2022-11-29 02:01:18, INFO: Current episilon=0.4687
+2022-11-29 02:01:18, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:18, INFO: Current k = 0
+2022-11-29 02:01:23, INFO: TRAIN in episode 313 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:01:23, INFO: Current episode=314
+2022-11-29 02:01:23, INFO: Current episilon=0.4686
+2022-11-29 02:01:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:23, INFO: Current k = 0
+2022-11-29 02:01:28, INFO: TRAIN in episode 314 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:01:29, INFO: Current episode=315
+2022-11-29 02:01:29, INFO: Current episilon=0.4685
+2022-11-29 02:01:29, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:29, INFO: Current k = 0
+2022-11-29 02:01:36, INFO: TRAIN in episode 315 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8420
+2022-11-29 02:01:37, INFO: Current episode=316
+2022-11-29 02:01:37, INFO: Current episilon=0.4684
+2022-11-29 02:01:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:37, INFO: Current k = 0
+2022-11-29 02:01:39, INFO: TRAIN in episode 316 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:01:39, INFO: Current episode=317
+2022-11-29 02:01:39, INFO: Current episilon=0.4683
+2022-11-29 02:01:39, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:39, INFO: Current k = 0
+2022-11-29 02:01:44, INFO: TRAIN in episode 317 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:01:45, INFO: Current episode=318
+2022-11-29 02:01:45, INFO: Current episilon=0.4682
+2022-11-29 02:01:45, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:45, INFO: Current k = 0
+2022-11-29 02:01:47, INFO: TRAIN in episode 318 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2587
+2022-11-29 02:01:47, INFO: Current episode=319
+2022-11-29 02:01:47, INFO: Current episilon=0.4681
+2022-11-29 02:01:47, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:47, INFO: Current k = 0
+2022-11-29 02:01:52, INFO: TRAIN in episode 319 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:01:53, INFO: Current episode=320
+2022-11-29 02:01:53, INFO: Current episilon=0.46799999999999997
+2022-11-29 02:01:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:01:53, INFO: Current k = 0
+2022-11-29 02:01:58, INFO: Current k = 1
+2022-11-29 02:02:03, INFO: VAL   in episode 320 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:02:03, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:02:03, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:02:03, INFO: Current k = 0
+2022-11-29 02:02:08, INFO: TRAIN in episode 320 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:02:08, INFO: Current episode=321
+2022-11-29 02:02:08, INFO: Current episilon=0.4679
+2022-11-29 02:02:08, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:02:08, INFO: Current k = 0
+2022-11-29 02:02:13, INFO: TRAIN in episode 321 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1439
+2022-11-29 02:02:14, INFO: Current episode=322
+2022-11-29 02:02:14, INFO: Current episilon=0.4678
+2022-11-29 02:02:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:02:14, INFO: Current k = 0
+2022-11-29 02:02:19, INFO: TRAIN in episode 322 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8392
+2022-11-29 02:02:19, INFO: Current episode=323
+2022-11-29 02:02:19, INFO: Current episilon=0.4677
+2022-11-29 02:02:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:02:19, INFO: Current k = 0
+2022-11-29 02:02:27, INFO: TRAIN in episode 323 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4331
+2022-11-29 02:02:27, INFO: Current episode=324
+2022-11-29 02:02:27, INFO: Current episilon=0.4676
+2022-11-29 02:02:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:02:27, INFO: Current k = 0
+2022-11-29 02:02:32, INFO: TRAIN in episode 324 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:02:32, INFO: Current episode=325
+2022-11-29 02:02:32, INFO: Current episilon=0.4675
+2022-11-29 02:02:32, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:02:32, INFO: Current k = 0
+2022-11-29 02:02:35, INFO: TRAIN in episode 325 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1904
+2022-11-29 02:02:35, INFO: Current episode=326
+2022-11-29 02:02:35, INFO: Current episilon=0.4674
+2022-11-29 02:02:35, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:02:35, INFO: Current k = 0
+2022-11-29 02:02:48, INFO: TRAIN in episode 326 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4156
+2022-11-29 02:02:48, INFO: Current episode=327
+2022-11-29 02:02:48, INFO: Current episilon=0.4673
+2022-11-29 02:02:48, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:02:48, INFO: Current k = 0
+2022-11-29 02:02:56, INFO: TRAIN in episode 327 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -5.6609
+2022-11-29 02:02:56, INFO: Current episode=328
+2022-11-29 02:02:56, INFO: Current episilon=0.4672
+2022-11-29 02:02:56, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:02:56, INFO: Current k = 0
+2022-11-29 02:02:59, INFO: TRAIN in episode 328 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1217
+2022-11-29 02:02:59, INFO: Current episode=329
+2022-11-29 02:02:59, INFO: Current episilon=0.4671
+2022-11-29 02:02:59, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:02:59, INFO: Current k = 0
+2022-11-29 02:03:04, INFO: TRAIN in episode 329 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1150
+2022-11-29 02:03:04, INFO: Current episode=330
+2022-11-29 02:03:04, INFO: Current episilon=0.46699999999999997
+2022-11-29 02:03:04, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:03:04, INFO: Current k = 0
+2022-11-29 02:03:10, INFO: Current k = 1
+2022-11-29 02:03:15, INFO: VAL   in episode 330 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:03:15, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:03:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:03:15, INFO: Current k = 0
+2022-11-29 02:03:20, INFO: TRAIN in episode 330 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:03:20, INFO: Current episode=331
+2022-11-29 02:03:20, INFO: Current episilon=0.4669
+2022-11-29 02:03:20, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:03:20, INFO: Current k = 0
+2022-11-29 02:03:31, INFO: TRAIN in episode 331 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -8.6230
+2022-11-29 02:03:31, INFO: Current episode=332
+2022-11-29 02:03:31, INFO: Current episilon=0.4668
+2022-11-29 02:03:31, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:03:31, INFO: Current k = 0
+2022-11-29 02:03:36, INFO: TRAIN in episode 332 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:03:36, INFO: Current episode=333
+2022-11-29 02:03:36, INFO: Current episilon=0.4667
+2022-11-29 02:03:36, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:03:36, INFO: Current k = 0
+2022-11-29 02:03:41, INFO: TRAIN in episode 333 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1991
+2022-11-29 02:03:41, INFO: Current episode=334
+2022-11-29 02:03:41, INFO: Current episilon=0.4666
+2022-11-29 02:03:41, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:03:41, INFO: Current k = 0
+2022-11-29 02:03:52, INFO: TRAIN in episode 334 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.8923
+2022-11-29 02:03:52, INFO: Current episode=335
+2022-11-29 02:03:52, INFO: Current episilon=0.4665
+2022-11-29 02:03:52, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:03:52, INFO: Current k = 0
+2022-11-29 02:03:57, INFO: TRAIN in episode 335 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 02:03:57, INFO: Current episode=336
+2022-11-29 02:03:57, INFO: Current episilon=0.4664
+2022-11-29 02:03:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:03:57, INFO: Current k = 0
+2022-11-29 02:04:05, INFO: TRAIN in episode 336 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.1713
+2022-11-29 02:04:05, INFO: Current episode=337
+2022-11-29 02:04:05, INFO: Current episilon=0.4663
+2022-11-29 02:04:05, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:04:05, INFO: Current k = 0
+2022-11-29 02:04:13, INFO: TRAIN in episode 337 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9818
+2022-11-29 02:04:13, INFO: Current episode=338
+2022-11-29 02:04:13, INFO: Current episilon=0.4662
+2022-11-29 02:04:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:04:13, INFO: Current k = 0
+2022-11-29 02:04:18, INFO: TRAIN in episode 338 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2072
+2022-11-29 02:04:19, INFO: Current episode=339
+2022-11-29 02:04:19, INFO: Current episilon=0.4661
+2022-11-29 02:04:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:04:19, INFO: Current k = 0
+2022-11-29 02:04:24, INFO: TRAIN in episode 339 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:04:24, INFO: Current episode=340
+2022-11-29 02:04:24, INFO: Current episilon=0.46599999999999997
+2022-11-29 02:04:24, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:04:24, INFO: Current k = 0
+2022-11-29 02:04:29, INFO: Current k = 1
+2022-11-29 02:04:34, INFO: VAL   in episode 340 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:04:34, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:04:34, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:04:34, INFO: Current k = 0
+2022-11-29 02:04:39, INFO: TRAIN in episode 340 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:04:39, INFO: Current episode=341
+2022-11-29 02:04:39, INFO: Current episilon=0.4659
+2022-11-29 02:04:39, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:04:39, INFO: Current k = 0
+2022-11-29 02:04:44, INFO: TRAIN in episode 341 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2185
+2022-11-29 02:04:45, INFO: Current episode=342
+2022-11-29 02:04:45, INFO: Current episilon=0.4658
+2022-11-29 02:04:45, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:04:45, INFO: Current k = 0
+2022-11-29 02:04:52, INFO: TRAIN in episode 342 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8429
+2022-11-29 02:04:53, INFO: Current episode=343
+2022-11-29 02:04:53, INFO: Current episilon=0.4657
+2022-11-29 02:04:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:04:53, INFO: Current k = 0
+2022-11-29 02:04:58, INFO: TRAIN in episode 343 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:04:58, INFO: Current episode=344
+2022-11-29 02:04:58, INFO: Current episilon=0.4656
+2022-11-29 02:04:58, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:04:58, INFO: Current k = 0
+2022-11-29 02:05:01, INFO: TRAIN in episode 344 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:05:01, INFO: Current episode=345
+2022-11-29 02:05:01, INFO: Current episilon=0.4655
+2022-11-29 02:05:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:01, INFO: Current k = 0
+2022-11-29 02:05:03, INFO: TRAIN in episode 345 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 02:05:03, INFO: Current episode=346
+2022-11-29 02:05:03, INFO: Current episilon=0.4654
+2022-11-29 02:05:03, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:03, INFO: Current k = 0
+2022-11-29 02:05:06, INFO: TRAIN in episode 346 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2301
+2022-11-29 02:05:06, INFO: Current episode=347
+2022-11-29 02:05:06, INFO: Current episilon=0.4653
+2022-11-29 02:05:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:06, INFO: Current k = 0
+2022-11-29 02:05:12, INFO: TRAIN in episode 347 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0894
+2022-11-29 02:05:12, INFO: Current episode=348
+2022-11-29 02:05:12, INFO: Current episilon=0.4652
+2022-11-29 02:05:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:12, INFO: Current k = 0
+2022-11-29 02:05:17, INFO: TRAIN in episode 348 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:05:17, INFO: Current episode=349
+2022-11-29 02:05:17, INFO: Current episilon=0.4651
+2022-11-29 02:05:17, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:17, INFO: Current k = 0
+2022-11-29 02:05:20, INFO: TRAIN in episode 349 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2452
+2022-11-29 02:05:20, INFO: Current episode=350
+2022-11-29 02:05:20, INFO: Current episilon=0.46499999999999997
+2022-11-29 02:05:20, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:20, INFO: Current k = 0
+2022-11-29 02:05:25, INFO: Current k = 1
+2022-11-29 02:05:30, INFO: VAL   in episode 350 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:05:30, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:05:30, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:30, INFO: Current k = 0
+2022-11-29 02:05:35, INFO: TRAIN in episode 350 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:05:35, INFO: Current episode=351
+2022-11-29 02:05:35, INFO: Current episilon=0.4649
+2022-11-29 02:05:35, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:35, INFO: Current k = 0
+2022-11-29 02:05:43, INFO: TRAIN in episode 351 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.8938
+2022-11-29 02:05:43, INFO: Current episode=352
+2022-11-29 02:05:43, INFO: Current episilon=0.4648
+2022-11-29 02:05:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:43, INFO: Current k = 0
+2022-11-29 02:05:51, INFO: TRAIN in episode 352 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9901
+2022-11-29 02:05:51, INFO: Current episode=353
+2022-11-29 02:05:51, INFO: Current episilon=0.4647
+2022-11-29 02:05:51, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:51, INFO: Current k = 0
+2022-11-29 02:05:56, INFO: TRAIN in episode 353 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:05:57, INFO: Current episode=354
+2022-11-29 02:05:57, INFO: Current episilon=0.4646
+2022-11-29 02:05:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:05:57, INFO: Current k = 0
+2022-11-29 02:06:02, INFO: TRAIN in episode 354 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:06:02, INFO: Current episode=355
+2022-11-29 02:06:02, INFO: Current episilon=0.4645
+2022-11-29 02:06:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:02, INFO: Current k = 0
+2022-11-29 02:06:04, INFO: TRAIN in episode 355 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:06:05, INFO: Current episode=356
+2022-11-29 02:06:05, INFO: Current episilon=0.4644
+2022-11-29 02:06:05, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:05, INFO: Current k = 0
+2022-11-29 02:06:10, INFO: TRAIN in episode 356 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -5.6493
+2022-11-29 02:06:10, INFO: Current episode=357
+2022-11-29 02:06:10, INFO: Current episilon=0.4643
+2022-11-29 02:06:10, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:10, INFO: Current k = 0
+2022-11-29 02:06:15, INFO: TRAIN in episode 357 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8449
+2022-11-29 02:06:16, INFO: Current episode=358
+2022-11-29 02:06:16, INFO: Current episilon=0.4642
+2022-11-29 02:06:16, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:16, INFO: Current k = 0
+2022-11-29 02:06:21, INFO: TRAIN in episode 358 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:06:21, INFO: Current episode=359
+2022-11-29 02:06:21, INFO: Current episilon=0.4641
+2022-11-29 02:06:21, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:21, INFO: Current k = 0
+2022-11-29 02:06:26, INFO: TRAIN in episode 359 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:06:26, INFO: Current episode=360
+2022-11-29 02:06:26, INFO: Current episilon=0.46399999999999997
+2022-11-29 02:06:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:26, INFO: Current k = 0
+2022-11-29 02:06:31, INFO: Current k = 1
+2022-11-29 02:06:36, INFO: VAL   in episode 360 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:06:36, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:06:36, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:36, INFO: Current k = 0
+2022-11-29 02:06:41, INFO: TRAIN in episode 360 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1955
+2022-11-29 02:06:42, INFO: Current episode=361
+2022-11-29 02:06:42, INFO: Current episilon=0.4639
+2022-11-29 02:06:42, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:42, INFO: Current k = 0
+2022-11-29 02:06:47, INFO: TRAIN in episode 361 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:06:47, INFO: Current episode=362
+2022-11-29 02:06:47, INFO: Current episilon=0.4638
+2022-11-29 02:06:47, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:47, INFO: Current k = 0
+2022-11-29 02:06:50, INFO: TRAIN in episode 362 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1931
+2022-11-29 02:06:50, INFO: Current episode=363
+2022-11-29 02:06:50, INFO: Current episilon=0.4637
+2022-11-29 02:06:50, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:50, INFO: Current k = 0
+2022-11-29 02:06:55, INFO: TRAIN in episode 363 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:06:55, INFO: Current episode=364
+2022-11-29 02:06:55, INFO: Current episilon=0.4636
+2022-11-29 02:06:55, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:06:55, INFO: Current k = 0
+2022-11-29 02:07:00, INFO: TRAIN in episode 364 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8686
+2022-11-29 02:07:01, INFO: Current episode=365
+2022-11-29 02:07:01, INFO: Current episilon=0.4635
+2022-11-29 02:07:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:01, INFO: Current k = 0
+2022-11-29 02:07:03, INFO: TRAIN in episode 365 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:07:03, INFO: Current episode=366
+2022-11-29 02:07:03, INFO: Current episilon=0.4634
+2022-11-29 02:07:03, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:03, INFO: Current k = 0
+2022-11-29 02:07:14, INFO: TRAIN in episode 366 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -5.6459
+2022-11-29 02:07:14, INFO: Current episode=367
+2022-11-29 02:07:14, INFO: Current episilon=0.4633
+2022-11-29 02:07:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:14, INFO: Current k = 0
+2022-11-29 02:07:19, INFO: TRAIN in episode 367 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:07:19, INFO: Current episode=368
+2022-11-29 02:07:19, INFO: Current episilon=0.4632
+2022-11-29 02:07:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:19, INFO: Current k = 0
+2022-11-29 02:07:24, INFO: TRAIN in episode 368 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:07:24, INFO: Current episode=369
+2022-11-29 02:07:24, INFO: Current episilon=0.4631
+2022-11-29 02:07:24, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:24, INFO: Current k = 0
+2022-11-29 02:07:27, INFO: TRAIN in episode 369 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2587
+2022-11-29 02:07:27, INFO: Current episode=370
+2022-11-29 02:07:27, INFO: Current episilon=0.46299999999999997
+2022-11-29 02:07:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:27, INFO: Current k = 0
+2022-11-29 02:07:32, INFO: Current k = 1
+2022-11-29 02:07:37, INFO: VAL   in episode 370 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:07:37, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:07:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:37, INFO: Current k = 0
+2022-11-29 02:07:43, INFO: TRAIN in episode 370 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:07:43, INFO: Current episode=371
+2022-11-29 02:07:43, INFO: Current episilon=0.4629
+2022-11-29 02:07:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:43, INFO: Current k = 0
+2022-11-29 02:07:45, INFO: TRAIN in episode 371 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2024
+2022-11-29 02:07:46, INFO: Current episode=372
+2022-11-29 02:07:46, INFO: Current episilon=0.4628
+2022-11-29 02:07:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:46, INFO: Current k = 0
+2022-11-29 02:07:51, INFO: TRAIN in episode 372 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1933
+2022-11-29 02:07:51, INFO: Current episode=373
+2022-11-29 02:07:51, INFO: Current episilon=0.4627
+2022-11-29 02:07:51, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:51, INFO: Current k = 0
+2022-11-29 02:07:56, INFO: TRAIN in episode 373 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1067
+2022-11-29 02:07:56, INFO: Current episode=374
+2022-11-29 02:07:56, INFO: Current episilon=0.4626
+2022-11-29 02:07:56, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:07:56, INFO: Current k = 0
+2022-11-29 02:08:01, INFO: TRAIN in episode 374 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:08:02, INFO: Current episode=375
+2022-11-29 02:08:02, INFO: Current episilon=0.4625
+2022-11-29 02:08:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:08:02, INFO: Current k = 0
+2022-11-29 02:08:07, INFO: TRAIN in episode 375 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0088
+2022-11-29 02:08:07, INFO: Current episode=376
+2022-11-29 02:08:07, INFO: Current episilon=0.4624
+2022-11-29 02:08:07, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:08:07, INFO: Current k = 0
+2022-11-29 02:08:15, INFO: TRAIN in episode 376 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8252
+2022-11-29 02:08:15, INFO: Current episode=377
+2022-11-29 02:08:15, INFO: Current episilon=0.4623
+2022-11-29 02:08:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:08:15, INFO: Current k = 0
+2022-11-29 02:08:23, INFO: TRAIN in episode 377 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0269
+2022-11-29 02:08:23, INFO: Current episode=378
+2022-11-29 02:08:23, INFO: Current episilon=0.4622
+2022-11-29 02:08:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:08:23, INFO: Current k = 0
+2022-11-29 02:08:28, INFO: TRAIN in episode 378 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:08:28, INFO: Current episode=379
+2022-11-29 02:08:28, INFO: Current episilon=0.4621
+2022-11-29 02:08:28, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:08:28, INFO: Current k = 0
+2022-11-29 02:08:31, INFO: TRAIN in episode 379 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:08:31, INFO: Current episode=380
+2022-11-29 02:08:31, INFO: Current episilon=0.462
+2022-11-29 02:08:31, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:08:31, INFO: Current k = 0
+2022-11-29 02:08:36, INFO: Current k = 1
+2022-11-29 02:08:41, INFO: VAL   in episode 380 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:08:41, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:08:41, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:08:41, INFO: Current k = 0
+2022-11-29 02:08:44, INFO: TRAIN in episode 380 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1298
+2022-11-29 02:08:44, INFO: Current episode=381
+2022-11-29 02:08:44, INFO: Current episilon=0.4619
+2022-11-29 02:08:44, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:08:44, INFO: Current k = 0
+2022-11-29 02:08:49, INFO: TRAIN in episode 381 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:08:49, INFO: Current episode=382
+2022-11-29 02:08:49, INFO: Current episilon=0.4618
+2022-11-29 02:08:49, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:08:49, INFO: Current k = 0
+2022-11-29 02:08:57, INFO: TRAIN in episode 382 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1259
+2022-11-29 02:08:57, INFO: Current episode=383
+2022-11-29 02:08:57, INFO: Current episilon=0.4617
+2022-11-29 02:08:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:08:57, INFO: Current k = 0
+2022-11-29 02:09:02, INFO: TRAIN in episode 383 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8195
+2022-11-29 02:09:03, INFO: Current episode=384
+2022-11-29 02:09:03, INFO: Current episilon=0.4616
+2022-11-29 02:09:03, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:03, INFO: Current k = 0
+2022-11-29 02:09:08, INFO: TRAIN in episode 384 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:09:08, INFO: Current episode=385
+2022-11-29 02:09:08, INFO: Current episilon=0.4615
+2022-11-29 02:09:08, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:08, INFO: Current k = 0
+2022-11-29 02:09:13, INFO: TRAIN in episode 385 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1842
+2022-11-29 02:09:13, INFO: Current episode=386
+2022-11-29 02:09:13, INFO: Current episilon=0.4614
+2022-11-29 02:09:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:13, INFO: Current k = 0
+2022-11-29 02:09:18, INFO: TRAIN in episode 386 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1152
+2022-11-29 02:09:19, INFO: Current episode=387
+2022-11-29 02:09:19, INFO: Current episilon=0.4613
+2022-11-29 02:09:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:19, INFO: Current k = 0
+2022-11-29 02:09:24, INFO: TRAIN in episode 387 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1827
+2022-11-29 02:09:24, INFO: Current episode=388
+2022-11-29 02:09:24, INFO: Current episilon=0.4612
+2022-11-29 02:09:24, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:24, INFO: Current k = 0
+2022-11-29 02:09:26, INFO: TRAIN in episode 388 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 02:09:27, INFO: Current episode=389
+2022-11-29 02:09:27, INFO: Current episilon=0.4611
+2022-11-29 02:09:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:27, INFO: Current k = 0
+2022-11-29 02:09:32, INFO: TRAIN in episode 389 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 02:09:32, INFO: Current episode=390
+2022-11-29 02:09:32, INFO: Current episilon=0.461
+2022-11-29 02:09:32, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:32, INFO: Current k = 0
+2022-11-29 02:09:37, INFO: Current k = 1
+2022-11-29 02:09:42, INFO: VAL   in episode 390 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2519
+2022-11-29 02:09:42, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.11
+2022-11-29 02:09:42, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:42, INFO: Current k = 0
+2022-11-29 02:09:45, INFO: TRAIN in episode 390 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2495
+2022-11-29 02:09:45, INFO: Current episode=391
+2022-11-29 02:09:45, INFO: Current episilon=0.4609
+2022-11-29 02:09:45, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:45, INFO: Current k = 0
+2022-11-29 02:09:50, INFO: TRAIN in episode 391 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2034
+2022-11-29 02:09:50, INFO: Current episode=392
+2022-11-29 02:09:50, INFO: Current episilon=0.4608
+2022-11-29 02:09:50, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:50, INFO: Current k = 0
+2022-11-29 02:09:55, INFO: TRAIN in episode 392 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.9008
+2022-11-29 02:09:56, INFO: Current episode=393
+2022-11-29 02:09:56, INFO: Current episilon=0.4607
+2022-11-29 02:09:56, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:09:56, INFO: Current k = 0
+2022-11-29 02:10:01, INFO: TRAIN in episode 393 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2047
+2022-11-29 02:10:01, INFO: Current episode=394
+2022-11-29 02:10:01, INFO: Current episilon=0.4606
+2022-11-29 02:10:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:01, INFO: Current k = 0
+2022-11-29 02:10:01, INFO: TRAIN in episode 394 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2587
+2022-11-29 02:10:01, INFO: Current episode=395
+2022-11-29 02:10:01, INFO: Current episilon=0.4605
+2022-11-29 02:10:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:01, INFO: Current k = 0
+2022-11-29 02:10:06, INFO: TRAIN in episode 395 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:10:07, INFO: Current episode=396
+2022-11-29 02:10:07, INFO: Current episilon=0.4604
+2022-11-29 02:10:07, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:07, INFO: Current k = 0
+2022-11-29 02:10:14, INFO: TRAIN in episode 396 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9726
+2022-11-29 02:10:14, INFO: Current episode=397
+2022-11-29 02:10:14, INFO: Current episilon=0.4603
+2022-11-29 02:10:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:14, INFO: Current k = 0
+2022-11-29 02:10:17, INFO: TRAIN in episode 397 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 02:10:17, INFO: Current episode=398
+2022-11-29 02:10:17, INFO: Current episilon=0.4602
+2022-11-29 02:10:17, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:17, INFO: Current k = 0
+2022-11-29 02:10:22, INFO: TRAIN in episode 398 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:10:22, INFO: Current episode=399
+2022-11-29 02:10:22, INFO: Current episilon=0.4601
+2022-11-29 02:10:22, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:22, INFO: Current k = 0
+2022-11-29 02:10:28, INFO: TRAIN in episode 399 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -5.6424
+2022-11-29 02:10:28, INFO: Current episode=400
+2022-11-29 02:10:28, INFO: Current episilon=0.46
+2022-11-29 02:10:28, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:28, INFO: Current k = 0
+2022-11-29 02:10:33, INFO: Current k = 1
+2022-11-29 02:10:38, INFO: VAL   in episode 400 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:10:38, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:10:38, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:38, INFO: Current k = 0
+2022-11-29 02:10:46, INFO: TRAIN in episode 400 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4081
+2022-11-29 02:10:46, INFO: Current episode=401
+2022-11-29 02:10:46, INFO: Current episilon=0.4599
+2022-11-29 02:10:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:46, INFO: Current k = 0
+2022-11-29 02:10:49, INFO: TRAIN in episode 401 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 02:10:49, INFO: Current episode=402
+2022-11-29 02:10:49, INFO: Current episilon=0.4598
+2022-11-29 02:10:49, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:49, INFO: Current k = 0
+2022-11-29 02:10:57, INFO: TRAIN in episode 402 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1099
+2022-11-29 02:10:57, INFO: Current episode=403
+2022-11-29 02:10:57, INFO: Current episilon=0.4597
+2022-11-29 02:10:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:10:57, INFO: Current k = 0
+2022-11-29 02:10:59, INFO: TRAIN in episode 403 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2587
+2022-11-29 02:11:00, INFO: Current episode=404
+2022-11-29 02:11:00, INFO: Current episilon=0.4596
+2022-11-29 02:11:00, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:00, INFO: Current k = 0
+2022-11-29 02:11:02, INFO: TRAIN in episode 404 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2032
+2022-11-29 02:11:02, INFO: Current episode=405
+2022-11-29 02:11:02, INFO: Current episilon=0.4595
+2022-11-29 02:11:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:02, INFO: Current k = 0
+2022-11-29 02:11:10, INFO: TRAIN in episode 405 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0903
+2022-11-29 02:11:10, INFO: Current episode=406
+2022-11-29 02:11:10, INFO: Current episilon=0.4594
+2022-11-29 02:11:10, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:10, INFO: Current k = 0
+2022-11-29 02:11:16, INFO: TRAIN in episode 406 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0923
+2022-11-29 02:11:16, INFO: Current episode=407
+2022-11-29 02:11:16, INFO: Current episilon=0.4593
+2022-11-29 02:11:16, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:16, INFO: Current k = 0
+2022-11-29 02:11:18, INFO: TRAIN in episode 407 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:11:19, INFO: Current episode=408
+2022-11-29 02:11:19, INFO: Current episilon=0.4592
+2022-11-29 02:11:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:19, INFO: Current k = 0
+2022-11-29 02:11:21, INFO: TRAIN in episode 408 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1262
+2022-11-29 02:11:21, INFO: Current episode=409
+2022-11-29 02:11:21, INFO: Current episilon=0.4591
+2022-11-29 02:11:21, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:21, INFO: Current k = 0
+2022-11-29 02:11:27, INFO: TRAIN in episode 409 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:11:27, INFO: Current episode=410
+2022-11-29 02:11:27, INFO: Current episilon=0.459
+2022-11-29 02:11:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:27, INFO: Current k = 0
+2022-11-29 02:11:32, INFO: Current k = 1
+2022-11-29 02:11:37, INFO: VAL   in episode 410 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:11:37, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:11:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:37, INFO: Current k = 0
+2022-11-29 02:11:45, INFO: TRAIN in episode 410 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1085
+2022-11-29 02:11:45, INFO: Current episode=411
+2022-11-29 02:11:45, INFO: Current episilon=0.4589
+2022-11-29 02:11:45, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:45, INFO: Current k = 0
+2022-11-29 02:11:52, INFO: TRAIN in episode 411 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0066
+2022-11-29 02:11:53, INFO: Current episode=412
+2022-11-29 02:11:53, INFO: Current episilon=0.4588
+2022-11-29 02:11:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:53, INFO: Current k = 0
+2022-11-29 02:11:53, INFO: TRAIN in episode 412 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2414
+2022-11-29 02:11:53, INFO: Current episode=413
+2022-11-29 02:11:53, INFO: Current episilon=0.4587
+2022-11-29 02:11:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:53, INFO: Current k = 0
+2022-11-29 02:11:58, INFO: TRAIN in episode 413 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2009
+2022-11-29 02:11:58, INFO: Current episode=414
+2022-11-29 02:11:58, INFO: Current episilon=0.4586
+2022-11-29 02:11:58, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:11:58, INFO: Current k = 0
+2022-11-29 02:12:03, INFO: TRAIN in episode 414 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1838
+2022-11-29 02:12:04, INFO: Current episode=415
+2022-11-29 02:12:04, INFO: Current episilon=0.4585
+2022-11-29 02:12:04, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:12:04, INFO: Current k = 0
+2022-11-29 02:12:09, INFO: TRAIN in episode 415 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1281
+2022-11-29 02:12:09, INFO: Current episode=416
+2022-11-29 02:12:09, INFO: Current episilon=0.4584
+2022-11-29 02:12:09, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:12:09, INFO: Current k = 0
+2022-11-29 02:12:12, INFO: TRAIN in episode 416 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1911
+2022-11-29 02:12:12, INFO: Current episode=417
+2022-11-29 02:12:12, INFO: Current episilon=0.4583
+2022-11-29 02:12:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:12:12, INFO: Current k = 0
+2022-11-29 02:12:17, INFO: TRAIN in episode 417 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:12:17, INFO: Current episode=418
+2022-11-29 02:12:17, INFO: Current episilon=0.4582
+2022-11-29 02:12:17, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:12:17, INFO: Current k = 0
+2022-11-29 02:12:22, INFO: TRAIN in episode 418 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:12:22, INFO: Current episode=419
+2022-11-29 02:12:22, INFO: Current episilon=0.4581
+2022-11-29 02:12:22, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:12:22, INFO: Current k = 0
+2022-11-29 02:12:27, INFO: TRAIN in episode 419 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1963
+2022-11-29 02:12:28, INFO: Current episode=420
+2022-11-29 02:12:28, INFO: Current episilon=0.458
+2022-11-29 02:12:28, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:12:28, INFO: Current k = 0
+2022-11-29 02:12:33, INFO: Current k = 1
+2022-11-29 02:12:38, INFO: VAL   in episode 420 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:12:38, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:12:38, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:12:38, INFO: Current k = 0
+2022-11-29 02:12:46, INFO: TRAIN in episode 420 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -7.1828
+2022-11-29 02:12:46, INFO: Current episode=421
+2022-11-29 02:12:46, INFO: Current episilon=0.4579
+2022-11-29 02:12:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:12:46, INFO: Current k = 0
+2022-11-29 02:12:51, INFO: TRAIN in episode 421 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:12:51, INFO: Current episode=422
+2022-11-29 02:12:51, INFO: Current episilon=0.4578
+2022-11-29 02:12:51, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:12:51, INFO: Current k = 0
+2022-11-29 02:12:56, INFO: TRAIN in episode 422 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1931
+2022-11-29 02:12:57, INFO: Current episode=423
+2022-11-29 02:12:57, INFO: Current episilon=0.4577
+2022-11-29 02:12:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:12:57, INFO: Current k = 0
+2022-11-29 02:13:02, INFO: TRAIN in episode 423 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1842
+2022-11-29 02:13:02, INFO: Current episode=424
+2022-11-29 02:13:02, INFO: Current episilon=0.4576
+2022-11-29 02:13:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:02, INFO: Current k = 0
+2022-11-29 02:13:02, INFO: TRAIN in episode 424 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 02:13:02, INFO: Current episode=425
+2022-11-29 02:13:02, INFO: Current episilon=0.4575
+2022-11-29 02:13:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:02, INFO: Current k = 0
+2022-11-29 02:13:10, INFO: TRAIN in episode 425 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4374
+2022-11-29 02:13:10, INFO: Current episode=426
+2022-11-29 02:13:10, INFO: Current episilon=0.45740000000000003
+2022-11-29 02:13:10, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:10, INFO: Current k = 0
+2022-11-29 02:13:13, INFO: TRAIN in episode 426 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 02:13:13, INFO: Current episode=427
+2022-11-29 02:13:13, INFO: Current episilon=0.4573
+2022-11-29 02:13:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:13, INFO: Current k = 0
+2022-11-29 02:13:16, INFO: TRAIN in episode 427 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 02:13:16, INFO: Current episode=428
+2022-11-29 02:13:16, INFO: Current episilon=0.4572
+2022-11-29 02:13:16, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:16, INFO: Current k = 0
+2022-11-29 02:13:21, INFO: TRAIN in episode 428 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 02:13:21, INFO: Current episode=429
+2022-11-29 02:13:21, INFO: Current episilon=0.4571
+2022-11-29 02:13:21, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:21, INFO: Current k = 0
+2022-11-29 02:13:24, INFO: TRAIN in episode 429 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2452
+2022-11-29 02:13:24, INFO: Current episode=430
+2022-11-29 02:13:24, INFO: Current episilon=0.457
+2022-11-29 02:13:24, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:24, INFO: Current k = 0
+2022-11-29 02:13:29, INFO: Current k = 1
+2022-11-29 02:13:34, INFO: VAL   in episode 430 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:13:34, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:13:34, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:34, INFO: Current k = 0
+2022-11-29 02:13:39, INFO: TRAIN in episode 430 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1347
+2022-11-29 02:13:40, INFO: Current episode=431
+2022-11-29 02:13:40, INFO: Current episilon=0.4569
+2022-11-29 02:13:40, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:40, INFO: Current k = 0
+2022-11-29 02:13:45, INFO: TRAIN in episode 431 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:13:45, INFO: Current episode=432
+2022-11-29 02:13:45, INFO: Current episilon=0.4568
+2022-11-29 02:13:45, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:45, INFO: Current k = 0
+2022-11-29 02:13:47, INFO: TRAIN in episode 432 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 02:13:48, INFO: Current episode=433
+2022-11-29 02:13:48, INFO: Current episilon=0.4567
+2022-11-29 02:13:48, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:48, INFO: Current k = 0
+2022-11-29 02:13:53, INFO: TRAIN in episode 433 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1933
+2022-11-29 02:13:53, INFO: Current episode=434
+2022-11-29 02:13:53, INFO: Current episilon=0.4566
+2022-11-29 02:13:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:53, INFO: Current k = 0
+2022-11-29 02:13:58, INFO: TRAIN in episode 434 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:13:58, INFO: Current episode=435
+2022-11-29 02:13:58, INFO: Current episilon=0.4565
+2022-11-29 02:13:58, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:13:58, INFO: Current k = 0
+2022-11-29 02:14:01, INFO: TRAIN in episode 435 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1986
+2022-11-29 02:14:01, INFO: Current episode=436
+2022-11-29 02:14:01, INFO: Current episilon=0.45640000000000003
+2022-11-29 02:14:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:14:01, INFO: Current k = 0
+2022-11-29 02:14:06, INFO: TRAIN in episode 436 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:14:06, INFO: Current episode=437
+2022-11-29 02:14:06, INFO: Current episilon=0.4563
+2022-11-29 02:14:06, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:14:06, INFO: Current k = 0
+2022-11-29 02:14:11, INFO: TRAIN in episode 437 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:14:12, INFO: Current episode=438
+2022-11-29 02:14:12, INFO: Current episilon=0.4562
+2022-11-29 02:14:12, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:14:12, INFO: Current k = 0
+2022-11-29 02:14:17, INFO: TRAIN in episode 438 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:14:17, INFO: Current episode=439
+2022-11-29 02:14:17, INFO: Current episilon=0.4561
+2022-11-29 02:14:17, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:14:17, INFO: Current k = 0
+2022-11-29 02:14:25, INFO: TRAIN in episode 439 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0903
+2022-11-29 02:14:25, INFO: Current episode=440
+2022-11-29 02:14:25, INFO: Current episilon=0.456
+2022-11-29 02:14:25, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:14:25, INFO: Current k = 0
+2022-11-29 02:14:30, INFO: Current k = 1
+2022-11-29 02:14:35, INFO: VAL   in episode 440 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:14:35, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:14:35, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:14:35, INFO: Current k = 0
+2022-11-29 02:14:46, INFO: TRAIN in episode 440 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -11.0891
+2022-11-29 02:14:46, INFO: Current episode=441
+2022-11-29 02:14:46, INFO: Current episilon=0.45589999999999997
+2022-11-29 02:14:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:14:46, INFO: Current k = 0
+2022-11-29 02:14:49, INFO: TRAIN in episode 441 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.9786
+2022-11-29 02:14:49, INFO: Current episode=442
+2022-11-29 02:14:49, INFO: Current episilon=0.4558
+2022-11-29 02:14:49, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:14:49, INFO: Current k = 0
+2022-11-29 02:14:55, INFO: TRAIN in episode 442 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:14:55, INFO: Current episode=443
+2022-11-29 02:14:55, INFO: Current episilon=0.4557
+2022-11-29 02:14:55, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:14:55, INFO: Current k = 0
+2022-11-29 02:17:07, INFO: TRAIN in episode 443 has success rate: 0.00, collision rate: 0.00, nav time: 25.00, total reward: -25.1960
+2022-11-29 02:17:07, INFO: Current episode=444
+2022-11-29 02:17:07, INFO: Current episilon=0.4556
+2022-11-29 02:17:07, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:17:07, INFO: Current k = 0
+2022-11-29 02:17:10, INFO: TRAIN in episode 444 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1087
+2022-11-29 02:17:10, INFO: Current episode=445
+2022-11-29 02:17:10, INFO: Current episilon=0.4555
+2022-11-29 02:17:10, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:17:10, INFO: Current k = 0
+2022-11-29 02:17:12, INFO: TRAIN in episode 445 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1838
+2022-11-29 02:17:13, INFO: Current episode=446
+2022-11-29 02:17:13, INFO: Current episilon=0.4554
+2022-11-29 02:17:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:17:13, INFO: Current k = 0
+2022-11-29 02:17:18, INFO: TRAIN in episode 446 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:17:18, INFO: Current episode=447
+2022-11-29 02:17:18, INFO: Current episilon=0.4553
+2022-11-29 02:17:18, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:17:18, INFO: Current k = 0
+2022-11-29 02:17:23, INFO: TRAIN in episode 447 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2012
+2022-11-29 02:17:23, INFO: Current episode=448
+2022-11-29 02:17:23, INFO: Current episilon=0.4552
+2022-11-29 02:17:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:17:23, INFO: Current k = 0
+2022-11-29 02:17:26, INFO: TRAIN in episode 448 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.0322
+2022-11-29 02:17:26, INFO: Current episode=449
+2022-11-29 02:17:26, INFO: Current episilon=0.4551
+2022-11-29 02:17:26, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:17:26, INFO: Current k = 0
+2022-11-29 02:17:34, INFO: TRAIN in episode 449 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8225
+2022-11-29 02:17:34, INFO: Current episode=450
+2022-11-29 02:17:34, INFO: Current episilon=0.455
+2022-11-29 02:17:34, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:17:34, INFO: Current k = 0
+2022-11-29 02:17:39, INFO: Current k = 1
+2022-11-29 02:17:44, INFO: VAL   in episode 450 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:17:44, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:17:44, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:17:44, INFO: Current k = 0
+2022-11-29 02:17:49, INFO: TRAIN in episode 450 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:17:50, INFO: Current episode=451
+2022-11-29 02:17:50, INFO: Current episilon=0.45489999999999997
+2022-11-29 02:17:50, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:17:50, INFO: Current k = 0
+2022-11-29 02:17:55, INFO: TRAIN in episode 451 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1838
+2022-11-29 02:17:55, INFO: Current episode=452
+2022-11-29 02:17:55, INFO: Current episilon=0.4548
+2022-11-29 02:17:55, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:17:55, INFO: Current k = 0
+2022-11-29 02:18:00, INFO: TRAIN in episode 452 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1466
+2022-11-29 02:18:00, INFO: Current episode=453
+2022-11-29 02:18:00, INFO: Current episilon=0.4547
+2022-11-29 02:18:00, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:00, INFO: Current k = 0
+2022-11-29 02:18:00, INFO: TRAIN in episode 453 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1960
+2022-11-29 02:18:01, INFO: Current episode=454
+2022-11-29 02:18:01, INFO: Current episilon=0.4546
+2022-11-29 02:18:01, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:01, INFO: Current k = 0
+2022-11-29 02:18:03, INFO: TRAIN in episode 454 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2308
+2022-11-29 02:18:03, INFO: Current episode=455
+2022-11-29 02:18:03, INFO: Current episilon=0.4545
+2022-11-29 02:18:03, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:03, INFO: Current k = 0
+2022-11-29 02:18:08, INFO: TRAIN in episode 455 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:18:09, INFO: Current episode=456
+2022-11-29 02:18:09, INFO: Current episilon=0.4544
+2022-11-29 02:18:09, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:09, INFO: Current k = 0
+2022-11-29 02:18:16, INFO: TRAIN in episode 456 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8381
+2022-11-29 02:18:17, INFO: Current episode=457
+2022-11-29 02:18:17, INFO: Current episilon=0.4543
+2022-11-29 02:18:17, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:17, INFO: Current k = 0
+2022-11-29 02:18:22, INFO: TRAIN in episode 457 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:18:22, INFO: Current episode=458
+2022-11-29 02:18:22, INFO: Current episilon=0.4542
+2022-11-29 02:18:22, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:22, INFO: Current k = 0
+2022-11-29 02:18:27, INFO: TRAIN in episode 458 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:18:27, INFO: Current episode=459
+2022-11-29 02:18:27, INFO: Current episilon=0.4541
+2022-11-29 02:18:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:27, INFO: Current k = 0
+2022-11-29 02:18:32, INFO: TRAIN in episode 459 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2235
+2022-11-29 02:18:33, INFO: Current episode=460
+2022-11-29 02:18:33, INFO: Current episilon=0.454
+2022-11-29 02:18:33, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:33, INFO: Current k = 0
+2022-11-29 02:18:35, INFO: Current k = 1
+2022-11-29 02:18:38, INFO: VAL   in episode 460 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 02:18:38, INFO: Frequency of being in danger: 0.00 and average min separate distance in danger: 0.00
+2022-11-29 02:18:38, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:38, INFO: Current k = 0
+2022-11-29 02:18:40, INFO: TRAIN in episode 460 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1891
+2022-11-29 02:18:41, INFO: Current episode=461
+2022-11-29 02:18:41, INFO: Current episilon=0.45389999999999997
+2022-11-29 02:18:41, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:41, INFO: Current k = 0
+2022-11-29 02:18:43, INFO: TRAIN in episode 461 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 02:18:43, INFO: Current episode=462
+2022-11-29 02:18:43, INFO: Current episilon=0.4538
+2022-11-29 02:18:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:43, INFO: Current k = 0
+2022-11-29 02:18:48, INFO: TRAIN in episode 462 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:18:49, INFO: Current episode=463
+2022-11-29 02:18:49, INFO: Current episilon=0.4537
+2022-11-29 02:18:49, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:49, INFO: Current k = 0
+2022-11-29 02:18:56, INFO: TRAIN in episode 463 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -5.6524
+2022-11-29 02:18:57, INFO: Current episode=464
+2022-11-29 02:18:57, INFO: Current episilon=0.4536
+2022-11-29 02:18:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:18:57, INFO: Current k = 0
+2022-11-29 02:19:02, INFO: TRAIN in episode 464 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1201
+2022-11-29 02:19:02, INFO: Current episode=465
+2022-11-29 02:19:02, INFO: Current episilon=0.4535
+2022-11-29 02:19:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:02, INFO: Current k = 0
+2022-11-29 02:19:07, INFO: TRAIN in episode 465 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:19:07, INFO: Current episode=466
+2022-11-29 02:19:07, INFO: Current episilon=0.4534
+2022-11-29 02:19:07, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:07, INFO: Current k = 0
+2022-11-29 02:19:10, INFO: TRAIN in episode 466 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2495
+2022-11-29 02:19:10, INFO: Current episode=467
+2022-11-29 02:19:10, INFO: Current episilon=0.4533
+2022-11-29 02:19:10, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:10, INFO: Current k = 0
+2022-11-29 02:19:15, INFO: TRAIN in episode 467 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:19:15, INFO: Current episode=468
+2022-11-29 02:19:15, INFO: Current episilon=0.4532
+2022-11-29 02:19:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:15, INFO: Current k = 0
+2022-11-29 02:19:23, INFO: TRAIN in episode 468 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1259
+2022-11-29 02:19:23, INFO: Current episode=469
+2022-11-29 02:19:23, INFO: Current episilon=0.4531
+2022-11-29 02:19:23, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:23, INFO: Current k = 0
+2022-11-29 02:19:28, INFO: TRAIN in episode 469 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8173
+2022-11-29 02:19:29, INFO: Current episode=470
+2022-11-29 02:19:29, INFO: Current episilon=0.453
+2022-11-29 02:19:29, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:29, INFO: Current k = 0
+2022-11-29 02:19:34, INFO: Current k = 1
+2022-11-29 02:19:39, INFO: VAL   in episode 470 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:19:39, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:19:39, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:39, INFO: Current k = 0
+2022-11-29 02:19:44, INFO: TRAIN in episode 470 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1964
+2022-11-29 02:19:44, INFO: Current episode=471
+2022-11-29 02:19:44, INFO: Current episilon=0.45289999999999997
+2022-11-29 02:19:44, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:44, INFO: Current k = 0
+2022-11-29 02:19:47, INFO: TRAIN in episode 471 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2604
+2022-11-29 02:19:47, INFO: Current episode=472
+2022-11-29 02:19:47, INFO: Current episilon=0.4528
+2022-11-29 02:19:47, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:47, INFO: Current k = 0
+2022-11-29 02:19:52, INFO: TRAIN in episode 472 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:19:52, INFO: Current episode=473
+2022-11-29 02:19:52, INFO: Current episilon=0.4527
+2022-11-29 02:19:52, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:52, INFO: Current k = 0
+2022-11-29 02:19:55, INFO: TRAIN in episode 473 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1920
+2022-11-29 02:19:55, INFO: Current episode=474
+2022-11-29 02:19:55, INFO: Current episilon=0.4526
+2022-11-29 02:19:55, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:19:55, INFO: Current k = 0
+2022-11-29 02:20:03, INFO: TRAIN in episode 474 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8157
+2022-11-29 02:20:03, INFO: Current episode=475
+2022-11-29 02:20:03, INFO: Current episilon=0.4525
+2022-11-29 02:20:03, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:03, INFO: Current k = 0
+2022-11-29 02:20:08, INFO: TRAIN in episode 475 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:20:08, INFO: Current episode=476
+2022-11-29 02:20:08, INFO: Current episilon=0.4524
+2022-11-29 02:20:08, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:08, INFO: Current k = 0
+2022-11-29 02:20:13, INFO: TRAIN in episode 476 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1257
+2022-11-29 02:20:14, INFO: Current episode=477
+2022-11-29 02:20:14, INFO: Current episilon=0.4523
+2022-11-29 02:20:14, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:14, INFO: Current k = 0
+2022-11-29 02:20:19, INFO: TRAIN in episode 477 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 02:20:19, INFO: Current episode=478
+2022-11-29 02:20:19, INFO: Current episilon=0.4522
+2022-11-29 02:20:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:19, INFO: Current k = 0
+2022-11-29 02:20:22, INFO: TRAIN in episode 478 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 02:20:22, INFO: Current episode=479
+2022-11-29 02:20:22, INFO: Current episilon=0.4521
+2022-11-29 02:20:22, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:22, INFO: Current k = 0
+2022-11-29 02:20:27, INFO: TRAIN in episode 479 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1105
+2022-11-29 02:20:27, INFO: Current episode=480
+2022-11-29 02:20:27, INFO: Current episilon=0.452
+2022-11-29 02:20:27, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:27, INFO: Current k = 0
+2022-11-29 02:20:32, INFO: Current k = 1
+2022-11-29 02:20:37, INFO: VAL   in episode 480 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:20:37, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:20:37, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:37, INFO: Current k = 0
+2022-11-29 02:20:42, INFO: TRAIN in episode 480 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:20:43, INFO: Current episode=481
+2022-11-29 02:20:43, INFO: Current episilon=0.45189999999999997
+2022-11-29 02:20:43, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:43, INFO: Current k = 0
+2022-11-29 02:20:50, INFO: TRAIN in episode 481 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1011
+2022-11-29 02:20:50, INFO: Current episode=482
+2022-11-29 02:20:50, INFO: Current episilon=0.4518
+2022-11-29 02:20:50, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:50, INFO: Current k = 0
+2022-11-29 02:20:53, INFO: TRAIN in episode 482 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 02:20:53, INFO: Current episode=483
+2022-11-29 02:20:53, INFO: Current episilon=0.4517
+2022-11-29 02:20:53, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:53, INFO: Current k = 0
+2022-11-29 02:20:56, INFO: TRAIN in episode 483 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -0.2500
+2022-11-29 02:20:56, INFO: Current episode=484
+2022-11-29 02:20:56, INFO: Current episilon=0.4516
+2022-11-29 02:20:56, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:56, INFO: Current k = 0
+2022-11-29 02:20:59, INFO: TRAIN in episode 484 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2452
+2022-11-29 02:20:59, INFO: Current episode=485
+2022-11-29 02:20:59, INFO: Current episilon=0.4515
+2022-11-29 02:20:59, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:20:59, INFO: Current k = 0
+2022-11-29 02:21:04, INFO: TRAIN in episode 485 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1798
+2022-11-29 02:21:04, INFO: Current episode=486
+2022-11-29 02:21:04, INFO: Current episilon=0.4514
+2022-11-29 02:21:04, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:21:04, INFO: Current k = 0
+2022-11-29 02:21:07, INFO: TRAIN in episode 486 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2587
+2022-11-29 02:21:07, INFO: Current episode=487
+2022-11-29 02:21:07, INFO: Current episilon=0.4513
+2022-11-29 02:21:07, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:21:07, INFO: Current k = 0
+2022-11-29 02:21:09, INFO: TRAIN in episode 487 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2403
+2022-11-29 02:21:10, INFO: Current episode=488
+2022-11-29 02:21:10, INFO: Current episilon=0.4512
+2022-11-29 02:21:10, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:21:10, INFO: Current k = 0
+2022-11-29 02:21:15, INFO: TRAIN in episode 488 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:21:15, INFO: Current episode=489
+2022-11-29 02:21:15, INFO: Current episilon=0.4511
+2022-11-29 02:21:15, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:21:15, INFO: Current k = 0
+2022-11-29 02:21:20, INFO: TRAIN in episode 489 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.1820
+2022-11-29 02:21:20, INFO: Current episode=490
+2022-11-29 02:21:20, INFO: Current episilon=0.451
+2022-11-29 02:21:20, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:21:20, INFO: Current k = 0
+2022-11-29 02:21:25, INFO: Current k = 1
+2022-11-29 02:21:30, INFO: VAL   in episode 490 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:21:30, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
+2022-11-29 02:21:30, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:21:30, INFO: Current k = 0
+2022-11-29 02:21:35, INFO: TRAIN in episode 490 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:21:36, INFO: Current episode=491
+2022-11-29 02:21:36, INFO: Current episilon=0.45089999999999997
+2022-11-29 02:21:36, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:21:36, INFO: Current k = 0
+2022-11-29 02:21:41, INFO: TRAIN in episode 491 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8263
+2022-11-29 02:21:41, INFO: Current episode=492
+2022-11-29 02:21:41, INFO: Current episilon=0.4508
+2022-11-29 02:21:41, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:21:41, INFO: Current k = 0
+2022-11-29 02:21:46, INFO: TRAIN in episode 492 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2290
+2022-11-29 02:21:46, INFO: Current episode=493
+2022-11-29 02:21:46, INFO: Current episilon=0.4507
+2022-11-29 02:21:46, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:21:46, INFO: Current k = 0
+2022-11-29 02:21:57, INFO: TRAIN in episode 493 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -6.4267
+2022-11-29 02:21:57, INFO: Current episode=494
+2022-11-29 02:21:57, INFO: Current episilon=0.4506
+2022-11-29 02:21:57, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:21:57, INFO: Current k = 0
+2022-11-29 02:22:02, INFO: TRAIN in episode 494 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -2.2036
+2022-11-29 02:22:02, INFO: Current episode=495
+2022-11-29 02:22:02, INFO: Current episilon=0.4505
+2022-11-29 02:22:02, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:22:02, INFO: Current k = 0
+2022-11-29 02:22:08, INFO: TRAIN in episode 495 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -8.6594
+2022-11-29 02:22:08, INFO: Current episode=496
+2022-11-29 02:22:08, INFO: Current episilon=0.4504
+2022-11-29 02:22:08, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:22:08, INFO: Current k = 0
+2022-11-29 02:22:13, INFO: TRAIN in episode 496 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:22:13, INFO: Current episode=497
+2022-11-29 02:22:13, INFO: Current episilon=0.4503
+2022-11-29 02:22:13, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:22:13, INFO: Current k = 0
+2022-11-29 02:22:16, INFO: TRAIN in episode 497 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -4.8599
+2022-11-29 02:22:16, INFO: Current episode=498
+2022-11-29 02:22:16, INFO: Current episilon=0.4502
+2022-11-29 02:22:16, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:22:16, INFO: Current k = 0
+2022-11-29 02:22:19, INFO: TRAIN in episode 498 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.1206
+2022-11-29 02:22:19, INFO: Current episode=499
+2022-11-29 02:22:19, INFO: Current episilon=0.4501
+2022-11-29 02:22:19, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:22:19, INFO: Current k = 0
+2022-11-29 02:22:24, INFO: TRAIN in episode 499 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -3.0915
+2022-11-29 02:22:24, INFO: INSIDE THE run_k_episodes FUNCTION.
+2022-11-29 02:22:24, INFO: Current k = 0
+2022-11-29 02:22:29, INFO: Current k = 1
+2022-11-29 02:22:34, INFO: TEST  in episode 500 has success rate: 0.00, collision rate: 1.00, nav time: 25.00, total reward: -1.2412
+2022-11-29 02:22:34, INFO: Frequency of being in danger: 0.50 and average min separate distance in danger: 0.19
