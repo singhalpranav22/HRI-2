@@ -112,21 +112,24 @@ class CrowdSim(gym.Env):
 
         # initial min separation distance to avoid danger penalty at beginning
         if rule == 'square_crossing':
+            # print("###$$$###$$$### Hemlo square")
             self.humans = []
             for i in range(human_num):
                 self.humans.append(self.generate_square_crossing_human())
-        elif rule == 'circle_crossing': # here we have generated random positions
-            # print("###$$$###$$$###:")
+        elif rule == 'circle_crossing':
+            # print("###$$$###$$$###Circle Crossing:")
             ##### Case-1
             # humanPosHc = [[(-7.5,-1),(7.5,-1)],[(0,7.5),(0,-7.5)],[(-7.5,1),(1,-7.5)],[(-1,7.5),(1,-7.5)]]
             ##### Case-2 overtaking condition
             human = Human(self.config, 'humans')
-            # generateRandomPositions
             humanPos = generateRandomPositions(human_num, human.radius)
-            # Hardcoded values for testing
             # humanPos = [[(0, 4),(-2.9, -1.4)], [(1.2, -5), (1.3, 5.5)], [(7, 1.5), (-1.3, -4)]]
             self.humans = []
             for i in range(human_num):
+                # if i < 2:
+                #     human = self.generate_circle_crossing_human()
+                # else:
+                # human = self.generate_square_crossing_human()
                 human = Human(self.config, 'humans')
                 [(px, py), (gx, gy)] = humanPos[i]
                 (px, py) = addRandomNoise(px, py, 0.2)
@@ -230,6 +233,10 @@ class CrowdSim(gym.Env):
                 humanPosHc = [[(-7.5, -1), (7.5, -1)], [(0, 7.5), (0, -7.5)], [(-7.5, 1), (7.5, 1)],
                               [(-1, 7.5), (1, 7.5)]]
                 for i in range(human_num):
+                    # if i < 2:
+                    #     human = self.generate_circle_crossing_human()
+                    # else:
+                    # human = self.generate_square_crossing_human()
                     human = Human(self.config, 'humans')
                     [(px, py), (gx, gy)] = humanPosHc[i]
                     human.set(px, py, gx, gy, 0, 0, 0)
@@ -237,7 +244,6 @@ class CrowdSim(gym.Env):
         else:
             raise ValueError("Rule doesn't exist")
 
-    # Not required
     def generate_circle_crossing_human(self):
         human = Human(self.config, 'humans')
         if self.randomize_attributes:
@@ -261,7 +267,6 @@ class CrowdSim(gym.Env):
         human.set(px, py, -px, -py, 0, 0, 0)
         return human
 
-    # Not required
     def generate_square_crossing_human(self):
         human = Human(self.config, 'humans')
         if self.randomize_attributes:
@@ -298,21 +303,20 @@ class CrowdSim(gym.Env):
         Run the whole simulation to the end and compute the average time for human to reach goal.
         Once an agent reaches the goal, it stops moving and becomes an obstacle
         (doesn't need to take half responsibility to avoid collision).
+
+        :return:
         """
         # centralized orca simulator for all humans
         if not self.robot.reached_destination():
             raise ValueError('Episode is not done yet')
         params = (10, 10, 5, 5)
         sim = rvo2.PyRVOSimulator(self.time_step, *params, 0.3, 1)
-        # Tried to add obstacles as line segments for the margins of the intersection
         # l1 = sim.addObstacle([(-2, 8), (-2, 2),(-2,2)])
         # l2 = sim.addObstacle([(-8, -2), (-2, -2),(-2,-2)])
         # print("########",l1,l2)
-       #  sim.processObstacles()
-       # Here robot is added to the env
+        sim.processObstacles()
         sim.addAgent(self.robot.get_position(), *params, self.robot.radius, self.robot.v_pref,
                      self.robot.get_velocity())
-        # Here n-humans are added to the env
         for human in self.humans:
             sim.addAgent(human.get_position(), *params, human.radius, human.v_pref, human.get_velocity())
 
@@ -340,7 +344,6 @@ class CrowdSim(gym.Env):
         del sim
         return self.human_times
 
-    # One of the abstract function
     def reset(self, phase='test', test_case=None):
         """
         Set px, py, gx, gy, vx, vy, theta for robot and humans
@@ -431,14 +434,12 @@ class CrowdSim(gym.Env):
                 ob += [self.robot.get_observable_state()]
             # print("########",human.act(ob))
             human_actions.append(human.act(ob))
-
-        ### Tried intersection crowding here
-        # intersectionCrowded = isIntersectionCrowded(self.humans, [self.robot])
-        # if intersectionCrowded:
-        #     for human in self.humans:
-        #         isCrossing = isIntersectionCrossing(human)
-        #         if isCrossing:
-        #             pass
+        intersectionCrowded = isIntersectionCrowded(self.humans, [self.robot])
+        if intersectionCrowded:
+            for human in self.humans:
+                isCrossing = isIntersectionCrossing(human)
+                if isCrossing:
+                    pass
 
         # collision detection
         dmin = float('inf')
@@ -480,7 +481,7 @@ class CrowdSim(gym.Env):
         reaching_subgoal = True
         isCsvRequired = False
 
-        # calculate angle in radians between velocity and current position to goal vector for the reward function
+        # calculate angle in radians between velocity and current position to goal vector
         px = self.robot.px
         py = self.robot.py
         vx = self.robot.vx
@@ -491,29 +492,39 @@ class CrowdSim(gym.Env):
         egy = self.robot.egy
 
         angle = np.arctan2(gy - py, gx - px) - np.arctan2(vy, vx)
-        reward = np.cos(angle) * self.subgoal_velocity_dirn_factor * norm((vx, vy)) - 1
-        if math.isclose(gx, egx) and math.isclose(gy, egy): # Doubles work with equality in python
+        reward = (np.cos(angle) * self.subgoal_velocity_dirn_factor * norm((vx, vy)) - 1) * self.time_step
+        if math.isclose(gx, egx) and math.isclose(gy, egy):  # RK check if doubles can be compared for equality(checked)
             reaching_subgoal = False
         else:
             reaching_subgoal = norm(end_position - np.array(self.robot.get_goal_position())) < self.robot.radius
-            if reaching_subgoal:
-                reward += self.subgoal_reached
+
+        done = False
+        info = ""
 
         if self.global_time >= self.time_limit - 1:
             reward = 0
             done = True
             info = Timeout()
-            isCsvRequired = True
+            # isCsvRequired = True
+        elif px<-8 or px>8 or py<-8 or py>8:
+            reward = 0
+            done = True
+            info = Timeout()
+            # isCsvRequired = True
         elif collision:
             reward = self.collision_penalty
             done = True
             info = Collision()
-            isCsvRequired = True
+            # isCsvRequired = True
         elif reaching_goal:
             reward = self.success_reward
             done = True
             info = ReachGoal()
-            isCsvRequired = False
+            # isCsvRequired = False
+        elif reaching_subgoal:
+            done = False
+            reward = self.subgoal_reached
+            info = ReachSubgoal()
         elif dmin < self.discomfort_dist:
             # only penalize agent for getting too close if it's visible
             # adjust the reward based on FPS
@@ -523,6 +534,7 @@ class CrowdSim(gym.Env):
         else:
             done = False
             info = Nothing()
+
 
         if isCsvRequired:
             # print("&&&&&&&&",self.data)

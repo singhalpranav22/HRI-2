@@ -13,6 +13,12 @@ class ReachGoal(object):
     def __str__(self):
         return 'Reaching goal'
 
+class ReachSubgoal(object):
+    def __init__(self):
+        pass
+
+    def __str__(self):
+        return 'Reaching subgoal'
 
 class Danger(object):
     def __init__(self, min_dist):

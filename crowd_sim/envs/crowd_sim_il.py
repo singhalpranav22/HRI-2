@@ -492,29 +492,39 @@ class CrowdSim(gym.Env):
         egy = self.robot.egy
 
         angle = np.arctan2(gy - py, gx - px) - np.arctan2(vy, vx)
-        reward = np.cos(angle) * self.subgoal_velocity_dirn_factor * norm((vx, vy)) - 1
+        reward = (np.cos(angle) * self.subgoal_velocity_dirn_factor * norm((vx, vy)) - 1) * self.time_step
         if math.isclose(gx, egx) and math.isclose(gy, egy):  # RK check if doubles can be compared for equality(checked)
             reaching_subgoal = False
         else:
             reaching_subgoal = norm(end_position - np.array(self.robot.get_goal_position())) < self.robot.radius
-            if reaching_subgoal:
-                reward += self.subgoal_reached
+
+        done = False
+        info = ""
 
         if self.global_time >= self.time_limit - 1:
             reward = 0
             done = True
             info = Timeout()
-            isCsvRequired = True
+            # isCsvRequired = True
+        elif px<-8 or px>8 or py<-8 or py>8:
+            reward = 0
+            done = True
+            info = Timeout()
+            # isCsvRequired = True
         elif collision:
             reward = self.collision_penalty
             done = True
             info = Collision()
-            isCsvRequired = True
+            # isCsvRequired = True
         elif reaching_goal:
             reward = self.success_reward
             done = True
             info = ReachGoal()
-            isCsvRequired = False
+            # isCsvRequired = False
+        elif reaching_subgoal:
+            done = False
+            reward = self.subgoal_reached
+            info = ReachSubgoal()
         elif dmin < self.discomfort_dist:
             # only penalize agent for getting too close if it's visible
             # adjust the reward based on FPS
@@ -524,6 +534,7 @@ class CrowdSim(gym.Env):
         else:
             done = False
             info = Nothing()
+
 
         if isCsvRequired:
             # print("&&&&&&&&",self.data)

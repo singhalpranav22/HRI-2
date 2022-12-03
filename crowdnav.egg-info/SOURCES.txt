@@ -19,7 +19,8 @@ crowd_nav/utils/trainer.py
 crowd_sim/__init__.py
 crowd_sim/envs/__init__.py
 crowd_sim/envs/crowd_sim.py
-crowd_sim/envs/crowd_sim2.py
+crowd_sim/envs/crowd_sim_il.py
+crowd_sim/envs/crowd_sim_rl.py
 crowd_sim/envs/generateRandomPositions.py
 crowd_sim/envs/generateRandomRobotPositions.py
 crowd_sim/envs/policy/__init__.py
