@@ -508,7 +508,7 @@ class CrowdSim(gym.Env):
         elif px<-8 or px>8 or py<-8 or py>8:
             reward = 0
             done = True
-            info = Collision()
+            info = Timeout()
         elif collision:
             reward = self.collision_penalty
             done = True
