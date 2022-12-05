@@ -110,13 +110,13 @@ def determineSubGoal(px, py, egx, egy):
         return (egx, egy)
     else:  # RK: check if 2 and 4 are swapped(resolved)
         if current_quadrant == 1:
-            return closest_point_on_segment(1.9, -1.9, 1.9, 1.9, egx, egy)
+            return closest_point_on_segment(1.6, -1.6, 1.6, 1.6, egx, egy)
         if current_quadrant == 2:
-            return closest_point_on_segment(-1.9, 1.9, 1.9, 1.9, egx, egy)
+            return closest_point_on_segment(-1.6, 1.6, 1.6, 1.6, egx, egy)
         if current_quadrant == 3:
-            return closest_point_on_segment(-1.9, -1.9, -1.9, 1.9, egx, egy)
+            return closest_point_on_segment(-1.6, -1.6, -1.6, 1.6, egx, egy)
         if current_quadrant == 4:
-            return closest_point_on_segment(-1.9, -1.9, 1.9, -1.9, egx, egy)
+            return closest_point_on_segment(-1.6, -1.6, 1.6, -1.6, egx, egy)
 
 
 def addRandomNoise(x, y, noise):

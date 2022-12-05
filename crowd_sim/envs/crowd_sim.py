@@ -123,7 +123,8 @@ class CrowdSim(gym.Env):
             ##### Case-2 overtaking condition
             human = Human(self.config, 'humans')
             humanPos = generateRandomPositions(human_num, human.radius)
-            # humanPos = [[(0, 4),(-2.9, -1.4)], [(1.2, -5), (1.3, 5.5)], [(7, 1.5), (-1.3, -4)]]
+            # humanPos =  [[(5.9, 0.4), (3.3, 0.4)], [(-1.3, 2.5), (-0.4, -5.1)], [(0.8, -2.6), (-4.9, -0.5)]]
+            print("Human Positions: ", humanPos)
             self.humans = []
             for i in range(human_num):
                 # if i < 2:
@@ -140,47 +141,48 @@ class CrowdSim(gym.Env):
             curr = -7.5
             while curr <= -2.5:
                 human1 = Human(self.config, 'humans')
-                human1.radius = 0.3
+                human1.radius = 0.35
                 human1.v_pref = 0
                 human1.set(curr, 2, curr, 2, 0, 0, 0)
                 self.humans.append(human1)
                 human2 = Human(self.config, 'humans')
-                human2.radius = 0.3
+                human2.radius = 0.35
                 human2.v_pref = 0
                 human2.set(curr, -2, curr, -2, 0, 0, 0)
                 self.humans.append(human2)
                 human3 = Human(self.config, 'humans')
-                human3.radius = 0.3
+                human3.radius = 0.35
                 human3.v_pref = 0
                 human3.set(-2, curr, -2, curr, 0, 0, 0)
                 self.humans.append(human3)
                 human4 = Human(self.config, 'humans')
-                human4.radius = 0.3
+                human4.radius = 0.35
                 human4.v_pref = 0
                 human4.set(2, curr, 2, curr, 0, 0, 0)
                 self.humans.append(human4)
                 curr2 = curr * -1
                 human5 = Human(self.config, 'humans')
-                human5.radius = 0.3
+                human5.radius = 0.35
                 human5.v_pref = 0
                 human5.set(curr2, -2, curr2, -2, 0, 0, 0)
                 self.humans.append(human5)
                 human6 = Human(self.config, 'humans')
-                human6.radius = 0.3
+                human6.radius = 0.35
                 human6.v_pref = 0
                 human6.set(curr2, 2, curr2, 2, 0, 0, 0)
                 self.humans.append(human6)
                 human7 = Human(self.config, 'humans')
-                human7.radius = 0.3
+                human7.radius = 0.35
                 human7.v_pref = 0
                 human7.set(2, curr2, 2, curr2, 0, 0, 0)
                 self.humans.append(human7)
                 human8 = Human(self.config, 'humans')
-                human8.radius = 0.3
+                human8.radius = 0.35
                 human8.v_pref = 0
                 human8.set(-2, curr2, -2, curr2, 0, 0, 0)
                 self.humans.append(human8)
-                curr += 0.7
+                curr += 0.8
+
                 # for i in range(human_num):
             #     self.humans.append(self.generate_circle_crossing_human())
         elif rule == 'mixed':
@@ -371,12 +373,12 @@ class CrowdSim(gym.Env):
             robotPos = generateRandomRobotPositions(1, self.robot_radius)
             # robotPos = [(),()]
             # print(robotPos)
-            #robotPos = [(-6, 1), (-1, 3)]
+            # robotPos = [[(-1.2, 6.1), (5.2, 1.2)]]
             # robotPos[0] = addRandomNoise(robotPos[0][0], robotPos[0][1], 0.2)
             # robotPos[1] = addRandomNoise(robotPos[1][0], robotPos[1][1], 0.2)
-            # print("Robot init", robotPos[0])
-            # print("Robot goal", robotPos[1])
-            #self.robot.set(robotPos[0][0], robotPos[0][1], robotPos[1][0], robotPos[1][1], 0, 0, np.pi / 2)
+            print("Robot position: ", robotPos)
+            # print("Robot goal:", robotPos[1])
+            # self.robot.set(robotPos[0][0], robotPos[0][1], robotPos[1][0], robotPos[1][1], 0, 0, np.pi / 2)
             self.robot.set(robotPos[0][0][0], robotPos[0][0][1], robotPos[0][1][0], robotPos[0][1][1], 0, 0, np.pi / 2)
             if self.case_counter[phase] >= 0:
                 np.random.seed(counter_offset[phase] + self.case_counter[phase])
@@ -458,8 +460,9 @@ class CrowdSim(gym.Env):
             # closest distance between boundaries of two agents
             closest_dist = point_to_segment_dist(px, py, ex, ey, 0, 0) - human.radius - self.robot.radius
             if closest_dist < 0:
+                # print("Closest distance: ", closest_dist)
                 collision = True
-                # logging.debug("Collision: distance between robot and p{} is {:.2E}".format(i, closest_dist))
+                # print("Collision: distance between robot and p{} is {:.2E}".format(i, closest_dist))
                 break
             elif closest_dist < dmin:
                 dmin = closest_dist
@@ -704,10 +707,10 @@ class CrowdSim(gym.Env):
             ax.add_artist(time)
 
             # compute attention scores
-            if self.attention_weights is not None:
-                attention_scores = [
-                    plt.text(-5.5, 5 - 0.5 * i, 'Human {}: {:.2f}'.format(i + 1, self.attention_weights[0][i]),
-                             fontsize=16) for i in range(len(self.humans))]
+            # if self.attention_weights is not None:
+            #     attention_scores = [
+            #         plt.text(-5.5, 5 - 0.5 * i, 'Human {}: {:.2f}'.format(i + 1, self.attention_weights[0][i]),
+            #                  fontsize=16) for i in range(len(self.humans))]
 
             # compute orientation in each step and use arrow to show the direction
             radius = self.robot.radius
@@ -750,9 +753,9 @@ class CrowdSim(gym.Env):
                                                       arrowstyle=arrow_style) for orientation in orientations]
                     for arrow in arrows:
                         ax.add_artist(arrow)
-                    if self.attention_weights is not None:
-                        human.set_color(str(self.attention_weights[frame_num][i]))
-                        attention_scores[i].set_text('human {}: {:.2f}'.format(i, self.attention_weights[frame_num][i]))
+                    # if self.attention_weights is not None:
+                    #     human.set_color(str(self.attention_weights[frame_num][i]))
+                    #     attention_scores[i].set_text('human {}: {:.2f}'.format(i, self.attention_weights[frame_num][i]))
 
                 time.set_text('Time: {:.2f}'.format(frame_num * self.time_step))
 
