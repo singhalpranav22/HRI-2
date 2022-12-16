@@ -90,7 +90,7 @@ class Explorer(object):
         if print_failure:
             logging.info('Collision cases: ' + ' '.join([str(x) for x in collision_cases]))
             logging.info('Timeout cases: ' + ' '.join([str(x) for x in timeout_cases]))
-
+        return [success_rate,collision_rate,avg_nav_time,average(cumulative_rewards), too_close / num_step,average(min_dist)]
     def update_memory(self, states, actions, rewards, imitation_learning=False):
         if self.memory is None or self.gamma is None:
             raise ValueError('Memory or gamma value is not set!')
@@ -132,3 +132,4 @@ def average(input_list):
         return sum(input_list) / len(input_list)
     else:
         return 0
+
