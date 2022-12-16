@@ -29,110 +29,108 @@ def main():
     parser.add_argument('--traj', default=False, action='store_true')
     args = parser.parse_args()
 
-    test_cases = 10
-    fields = ['Sno.','k','Success Rate','Collision Rate','Nav Time','Total Reward','Freq. Danger',
-    'Avg. Min. Seperation dist in Danger'] 
-    rows = []
-    for i in test_cases:
-        row = []
-        row.append(i+1)
-        row.append(env.case_size[args.phase])
-        if args.model_dir is not None:
-            env_config_file = os.path.join(args.model_dir, os.path.basename(args.env_config))
-            policy_config_file = os.path.join(args.model_dir, os.path.basename(args.policy_config))
-            if args.il:
-                print("Il done")
-                model_weights = os.path.join(args.model_dir, 'il_model.pth')
-            else:
-                if os.path.exists(os.path.join(args.model_dir, 'resumed_rl_model.pth')):
-                    model_weights = os.path.join(args.model_dir, 'resumed_rl_model.pth')
-                else:
-                    print("RL done")
-                    model_weights = os.path.join(args.model_dir, 'rl_model.pth')
+    # test_cases = 3
+    # fields = ['S.no.', 'k', 'Success Rate', 'Collision Rate', 'Nav Time', 'Total Reward', 'Freq. Danger',
+    #           'Avg. Min. Separation dist in Danger']
+    # rows = []
+    row = []
+    if args.model_dir is not None:
+        env_config_file = os.path.join(args.model_dir, os.path.basename(args.env_config))
+        policy_config_file = os.path.join(args.model_dir, os.path.basename(args.policy_config))
+        if args.il:
+            print("Il done")
+            model_weights = os.path.join(args.model_dir, 'il_model.pth')
         else:
-            env_config_file = args.env_config
-            policy_config_file = args.env_config
-
-        # configure logging and device
-        print("Something happened!")
-        logging.basicConfig(level=logging.INFO, format='%(asctime)s, %(levelname)s: %(message)s',
-                            datefmt="%Y-%m-%d %H:%M:%S")
-        device = torch.device("cuda:0" if torch.cuda.is_available() and args.gpu else "cpu")
-        logging.info('Using device: %s', device)
-
-        # configure policy
-        policy = policy_factory[args.policy]()
-        policy_config = configparser.RawConfigParser()
-        policy_config.read(policy_config_file)
-        policy.configure(policy_config)
-        if policy.trainable:
-            if args.model_dir is None:
-                parser.error('Trainable policy must be specified with a model weights directory')
-            policy.get_model().load_state_dict(torch.load(model_weights))
-
-        # configure environment
-        env_config = configparser.RawConfigParser()
-        env_config.read(env_config_file)
-        env = gym.make('CrowdSim-v0')
-        env.configure(env_config)
-        if args.square:
-            env.test_sim = 'square_crossing'
-        if args.circle:
-            env.test_sim = 'circle_crossing'
-        robot = Robot(env_config, 'robot')
-        robot.set_policy(policy)
-        env.set_robot(robot)
-        explorer = Explorer(env, robot, device, gamma=0.9)
-
-        policy.set_phase(args.phase)
-        policy.set_device(device)
-        # set safety space for ORCA in non-cooperative simulation
-        if isinstance(robot.policy, ORCA):
-            if robot.visible:
-                robot.policy.safety_space = 0
+            if os.path.exists(os.path.join(args.model_dir, 'resumed_rl_model.pth')):
+                model_weights = os.path.join(args.model_dir, 'resumed_rl_model.pth')
             else:
-                # because invisible case breaks the reciprocal assumption
-                # adding some safety space improves ORCA performance. Tune this value based on your need.
-                robot.policy.safety_space = 0
-            logging.info('ORCA agent buffer: %f', robot.policy.safety_space)
+                print("RL done")
+                model_weights = os.path.join(args.model_dir, 'rl_model.pth')
+    else:
+        env_config_file = args.env_config
+        policy_config_file = args.env_config
+    # configure logging and device
+    print("Something happened!")
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s, %(levelname)s: %(message)s',
+                        datefmt="%Y-%m-%d %H:%M:%S")
+    device = torch.device("cuda:0" if torch.cuda.is_available() and args.gpu else "cpu")
+    logging.info('Using device: %s', device)
+    # configure policy
+    policy = policy_factory[args.policy]()
+    policy_config = configparser.RawConfigParser()
+    policy_config.read(policy_config_file)
+    policy.configure(policy_config)
+    if policy.trainable:
+        if args.model_dir is None:
+            parser.error('Trainable policy must be specified with a model weights directory')
+        policy.get_model().load_state_dict(torch.load(model_weights))
+    # configure environment
+    env_config = configparser.RawConfigParser()
+    env_config.read(env_config_file)
+    env = gym.make('CrowdSim-v0')
+    env.configure(env_config)
+    row.append(1)
+    row.append(env.case_size[args.phase])
+    if args.square:
+        env.test_sim = 'square_crossing'
+    if args.circle:
+        env.test_sim = 'circle_crossing'
+    robot = Robot(env_config, 'robot')
+    robot.set_policy(policy)
+    env.set_robot(robot)
+    explorer = Explorer(env, robot, device, gamma=0.9)
+    policy.set_phase(args.phase)
+    policy.set_device(device)
 
-        policy.set_env(env)
-        robot.print_info()
-        if args.visualize:
-            ob = env.reset(args.phase, args.test_case)
-            done = False
-            last_pos = np.array(robot.get_position())
-            while not done:
-                action = robot.act(ob)
-                ob, _, done, info = env.step(action)
-                current_pos = np.array(robot.get_position())
-                logging.debug('Speed: %.2f', np.linalg.norm(current_pos - last_pos) / robot.time_step)
-                last_pos = current_pos
-            if args.traj:
-                env.render('traj', args.video_file)
-            else:
-                env.render('video', args.video_file)
-
-            logging.info('It takes %.2f seconds to finish. Final status is %s', env.global_time, info)
-            if robot.visible and info == 'reach goal':
-                human_times = env.get_human_times()
-                logging.info('Average time for humans to reach goal: %.2f', sum(human_times) / len(human_times))
+    # set safety space for ORCA in non-cooperative simulation
+    if isinstance(robot.policy, ORCA):
+        if robot.visible:
+            robot.policy.safety_space = 0
         else:
-            row.append(explorer.run_k_episodes(env.case_size[args.phase], args.phase, print_failure=True))
-        rows.append(row)
+            # because invisible case breaks the reciprocal assumption
+            # adding some safety space improves ORCA performance. Tune this value based on your need.
+            robot.policy.safety_space = 0
+        logging.info('ORCA agent buffer: %f', robot.policy.safety_space)
+
+    policy.set_env(env)
+    robot.print_info()
+
+    if args.visualize:
+        ob = env.reset(args.phase, args.test_case)
+        done = False
+        last_pos = np.array(robot.get_position())
+        while not done:
+            action = robot.act(ob)
+            ob, _, done, info = env.step(action)
+            current_pos = np.array(robot.get_position())
+            logging.debug('Speed: %.2f', np.linalg.norm(current_pos - last_pos) / robot.time_step)
+            last_pos = current_pos
+        if args.traj:
+            env.render('traj', args.video_file)
+        else:
+            env.render('video', args.video_file)
+
+        logging.info('It takes %.2f seconds to finish. Final status is %s', env.global_time, info)
+        if robot.visible and info == 'reach goal':
+            human_times = env.get_human_times()
+            logging.info('Average time for humans to reach goal: %.2f', sum(human_times) / len(human_times))
+    else:
+        row_result = explorer.run_k_episodes(env.case_size[args.phase], args.phase, print_failure=True)
+        # row.append(explorer.run_k_episodes(env.case_size[args.phase], args.phase, print_failure=True))
+        for item in row_result:
+            row.append(item)
+
+    # rows.append(row)
     filename = "results.csv"
-    
+
     # writing to csv file 
-    with open(filename, 'w') as csvfile: 
+    with open(filename, 'a') as csvfile:
         # creating a csv writer object 
-        csvwriter = csv.writer(csvfile) 
-            
-        # writing the fields 
-        csvwriter.writerow(fields) 
-            
+        csvwriter = csv.writer(csvfile)
+
         # writing the data rows 
-        csvwriter.writerows(rows)
+        csvwriter.writerow(row)
+
 
 if __name__ == '__main__':
     main()
-
