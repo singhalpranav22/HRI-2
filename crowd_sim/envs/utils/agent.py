@@ -20,6 +20,8 @@ class Agent(object):
         self.kinematics = self.policy.kinematics if self.policy is not None else None
         self.px = None
         self.py = None
+        self.ipx = None
+        self.ipy = None
         self.gx = None
         self.gy = None
         self.egx = None
@@ -57,6 +59,9 @@ class Agent(object):
             self.radius = radius
         if v_pref is not None:
             self.v_pref = v_pref
+        if self.ipx is None and self.ipy is None:
+            self.ipx = px
+            self.ipy = py
 
     def get_observable_state(self):
         return ObservableState(self.px, self.py, self.vx, self.vy, self.radius)
@@ -79,6 +84,9 @@ class Agent(object):
 
     def get_position(self):
         return self.px, self.py
+
+    def get_initial_position(self):
+        return self.ipx, self.ipy
 
     def set_position(self, position):
         self.px = position[0]

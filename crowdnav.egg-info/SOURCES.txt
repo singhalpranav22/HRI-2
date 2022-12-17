@@ -3,6 +3,7 @@ README.md
 setup.py
 crowd_nav/__init__.py
 crowd_nav/generateTestCases.py
+crowd_nav/multipleTests.py
 crowd_nav/test.py
 crowd_nav/train.py
 crowd_nav/policy/__init__.py

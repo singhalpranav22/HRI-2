@@ -14,8 +14,6 @@ from crowd_sim.envs.utils.utils import point_to_segment_dist
 from .generateRandomPositions import generateRandomPositions
 from .generateRandomRobotPositions import generateRandomRobotPositions
 from .utils.utils import isIntersectionCrowded, isIntersectionCrossing, addRandomNoise
-import csv
-import os
 
 
 class CrowdSim(gym.Env):
@@ -59,7 +57,10 @@ class CrowdSim(gym.Env):
         self.action_values = None
         self.attention_weights = None
         self.data = []
-        # print('Look out for me=======',os.system('pwd'))
+
+        # Variable to store initial human and robot positions
+        self.initialHumanPositions = []
+        self.initialRobotPosition = []
 
     def configure(self, config):
         self.config = config
@@ -99,6 +100,9 @@ class CrowdSim(gym.Env):
     def set_robot(self, robot):
         self.robot = robot
 
+    def sendInitialPositions(self):
+        return self.initialRobotPosition, self.initialHumanPositions
+
     def generate_random_human_position(self, human_num, rule):
         """
         Generate human position according to certain rule
@@ -124,7 +128,8 @@ class CrowdSim(gym.Env):
             human = Human(self.config, 'humans')
             humanPos = generateRandomPositions(human_num, human.radius)
             # humanPos =  [[(5.9, 0.4), (3.3, 0.4)], [(-1.3, 2.5), (-0.4, -5.1)], [(0.8, -2.6), (-4.9, -0.5)]]
-            print("Human Positions: ", humanPos)
+            # print("Human Positions: ", humanPos)
+            self.initialHumanPositions = humanPos
             self.humans = []
             for i in range(human_num):
                 # if i < 2:
@@ -371,12 +376,11 @@ class CrowdSim(gym.Env):
                               'val': 0, 'test': self.case_capacity['val']}
             #self.robot.set(0, -6, 7, 0, 0, 0, np.pi / 2)
             robotPos = generateRandomRobotPositions(1, self.robot_radius)
-            # robotPos = [(),()]
-            # print(robotPos)
+            self.initialRobotPosition = robotPos
             # robotPos = [[(-1.2, 6.1), (5.2, 1.2)]]
             # robotPos[0] = addRandomNoise(robotPos[0][0], robotPos[0][1], 0.2)
             # robotPos[1] = addRandomNoise(robotPos[1][0], robotPos[1][1], 0.2)
-            print("Robot position: ", robotPos)
+            # print("Robot position: ", robotPos)
             # print("Robot goal:", robotPos[1])
             # self.robot.set(robotPos[0][0], robotPos[0][1], robotPos[1][0], robotPos[1][1], 0, 0, np.pi / 2)
             self.robot.set(robotPos[0][0][0], robotPos[0][0][1], robotPos[0][1][0], robotPos[0][1][1], 0, 0, np.pi / 2)
@@ -388,7 +392,6 @@ class CrowdSim(gym.Env):
                 else:
                     self.generate_random_human_position(human_num=self.human_num, rule=self.test_sim)
                 # case_counter is always between 0 and case_size[phase]
-                ########## task to understand
                 self.case_counter[phase] = (self.case_counter[phase] + 1) % self.case_size[phase]
             else:
                 assert phase == 'test'
@@ -599,6 +602,7 @@ class CrowdSim(gym.Env):
                 raise NotImplementedError
 
         return ob, reward, done, info
+
 
     def render(self, mode='human', output_file=None):
         # pass
