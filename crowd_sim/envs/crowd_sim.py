@@ -375,7 +375,7 @@ class CrowdSim(gym.Env):
             counter_offset = {'train': self.case_capacity['val'] + self.case_capacity['test'],
                               'val': 0, 'test': self.case_capacity['val']}
             #self.robot.set(0, -6, 7, 0, 0, 0, np.pi / 2)
-            robotPos = generateRandomRobotPositions(1, self.robot_radius)
+            robotPos = generateRandomRobotPositions(1, self.robot_radius, self.initialHumanPositions)
             self.initialRobotPosition = robotPos
             # robotPos = [[(-1.2, 6.1), (5.2, 1.2)]]
             # robotPos[0] = addRandomNoise(robotPos[0][0], robotPos[0][1], 0.2)
