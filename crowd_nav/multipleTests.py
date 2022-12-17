@@ -1,9 +1,9 @@
 import csv
 import os
 
-test_cases = 1
+test_cases = 100
 fields = ['S.no.', 'k', 'Success Rate', 'Collision Rate', 'Nav Time', 'Total Reward', 'Freq. Danger',
-          'Avg. Min. Separation dist in Danger']
+          'Avg. Min. Separation dist in Danger', 'Configuration of Robot', 'Configuration of humans']
 
 # rows.append(row)
 filename = "results.csv"

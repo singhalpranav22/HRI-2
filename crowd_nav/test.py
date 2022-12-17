@@ -10,6 +10,7 @@ from crowd_nav.utils.explorer import Explorer
 from crowd_nav.policy.policy_factory import policy_factory
 from crowd_sim.envs.utils.robot import Robot
 from crowd_sim.envs.policy.orca import ORCA
+# from crowd_sim.envs.crowd_sim import sendInitialPositions
 
 
 def main():
@@ -119,6 +120,9 @@ def main():
         # row.append(explorer.run_k_episodes(env.case_size[args.phase], args.phase, print_failure=True))
         for item in row_result:
             row.append(item)
+        positions = env.sendInitialPositions()
+        row.append(positions[0])
+        row.append(positions[1])
 
     # rows.append(row)
     filename = "results.csv"
