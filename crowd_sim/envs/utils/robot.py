@@ -41,7 +41,8 @@ class Robot(Agent):
             self.set_goal_position(self.egx,self.egy)
         else:
             subGoal = determineSubGoal(self.px,self.py,self.egx,self.egy)
-            self.set_goal_position(subGoal[0],subGoal[1])
+            # self.set_goal_position(subGoal[0],subGoal[1])
+            self.set_goal_position(self.egx,self.egy)
         self.vx = vx
         self.vy = vy
         self.theta = theta
@@ -134,7 +135,8 @@ class Robot(Agent):
         else:
             subGoal = determineSubGoal(self.px,self.py,self.egx,self.egy)
             # print("subgoal=",subGoal)
-            self.set_goal_position(subGoal[0],subGoal[1])
+            # self.set_goal_position(subGoal[0],subGoal[1])
+            self.set_goal_position(self.egx,self.egy)
         if self.kinematics == 'holonomic':
             self.vx = action.vx
             self.vy = action.vy

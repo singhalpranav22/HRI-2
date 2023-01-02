@@ -17,7 +17,7 @@ def generateRandomRobotPositions(robot_nums, robot_radius, initialHumanPositions
     Returns in this format:  robotPosHc = [[(-6,0),(7,-1.5)],[(1,-7),(-1.5,7.5)],[(4.5,0),(-1.5,-4)]]
     """
     robotPos = []
-    random.seed(time.asctime)
+    random.seed(time.time())
 
     # Filter out the starting and goal positions
     starting_positions = []

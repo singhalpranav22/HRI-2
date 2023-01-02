@@ -30,7 +30,7 @@ def main():
     # configure paths
     make_new_dir = True
     if os.path.exists(args.output_dir):
-        key = 'y'
+        key = 'n'
         if key == 'y' and not args.resume:
             shutil.rmtree(args.output_dir)
         else:

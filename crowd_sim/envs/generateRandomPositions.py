@@ -9,7 +9,8 @@ def generateRandomPositions(human_nums,human_radius):
     Returns in this format:  humanPosHc = [[(-6,0),(7,-1.5)],[(1,-7),(-1.5,7.5)],[(4.5,0),(-1.5,-4)]]
     """
     humanPos = []
-    random.seed(time.time)
+    random.seed(time.time())
+    print("Reacheddddd",time.time())
     # for i in range(human_nums):
     while True and len(humanPos)<human_nums:
         while True:
