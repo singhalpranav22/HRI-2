@@ -126,9 +126,9 @@ class CrowdSim(gym.Env):
             # humanPosHc = [[(-7.5,-1),(7.5,-1)],[(0,7.5),(0,-7.5)],[(-7.5,1),(1,-7.5)],[(-1,7.5),(1,-7.5)]]
             ##### Case-2 overtaking condition
             human = Human(self.config, 'humans')
-            # humanPos = generateRandomPositions(human_num, human.radius)
+            humanPos = generateRandomPositions(human_num, human.radius)
             # humanPos =  [[(5.9, 0.4), (3.3, 0.4)], [(-1.3, 2.5), (-0.4, -5.1)], [(0.8, -2.6), (-4.9, -0.5)]]
-            humanPos = [[(0, 4),(-2.9, -1.4)], [(1.2, -5), (1.3, 5.5)], [(7, 1.5), (-1.3, -4)]]
+            #humanPos = [[(0, 4),(-2.9, -1.4)], [(1.2, -5), (1.3, 5.5)], [(7, 1.5), (-1.3, -4)]]
             print("Human Positions: ", humanPos)
             self.initialHumanPositions = humanPos
             self.humans = []
@@ -376,16 +376,16 @@ class CrowdSim(gym.Env):
             counter_offset = {'train': self.case_capacity['val'] + self.case_capacity['test'],
                               'val': 0, 'test': self.case_capacity['val']}
             #self.robot.set(0, -6, 7, 0, 0, 0, np.pi / 2)
-            # robotPos = generateRandomRobotPositions(1, self.robot_radius, self.initialHumanPositions)
-            robotPos = [(-6, 0), (-1, 3)]
+            robotPos = generateRandomRobotPositions(1, self.robot_radius, self.initialHumanPositions)
+            #robotPos = [(-6, 0), (-1, 3)]
             self.initialRobotPosition = robotPos
             # robotPos = [[(-1.2, 6.1), (5.2, 1.2)]]
             # robotPos[0] = addRandomNoise(robotPos[0][0], robotPos[0][1], 0.2)
             # robotPos[1] = addRandomNoise(robotPos[1][0], robotPos[1][1], 0.2)
             # print("Robot position: ", robotPos)
             # print("Robot goal:", robotPos[1])
-            self.robot.set(robotPos[0][0], robotPos[0][1], robotPos[1][0], robotPos[1][1], 0, 0, np.pi / 2)
-            # self.robot.set(robotPos[0][0][0], robotPos[0][0][1], robotPos[0][1][0], robotPos[0][1][1], 0, 0, np.pi / 2)
+            #self.robot.set(robotPos[0][0], robotPos[0][1], robotPos[1][0], robotPos[1][1], 0, 0, np.pi / 2)
+            self.robot.set(robotPos[0][0][0], robotPos[0][0][1], robotPos[0][1][0], robotPos[0][1][1], 0, 0, np.pi / 2)
             if self.case_counter[phase] >= 0:
                 np.random.seed(counter_offset[phase] + self.case_counter[phase])
                 if phase in ['train', 'val']:
@@ -530,10 +530,10 @@ class CrowdSim(gym.Env):
             done = True
             info = ReachGoal()
             # isCsvRequired = False
-        # elif reaching_subgoal:
-        #     done = False
-        #     reward = self.subgoal_reached
-        #     info = ReachSubgoal()
+        elif reaching_subgoal:
+            done = False
+            reward = self.subgoal_reached
+            info = ReachSubgoal()
         elif dmin < self.discomfort_dist:
             # only penalize agent for getting too close if it's visible
             # adjust the reward based on FPS
@@ -542,6 +542,7 @@ class CrowdSim(gym.Env):
             done = False
             info = Danger(dmin)
         else:
+            reward = 0
             done = False
             info = Nothing()
 

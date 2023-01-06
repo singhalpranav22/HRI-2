@@ -10,7 +10,7 @@ def generateRandomPositions(human_nums,human_radius):
     """
     humanPos = []
     random.seed(time.time())
-    print("Reacheddddd",time.time())
+    # print("Reacheddddd",time.time())
     # for i in range(human_nums):
     while True and len(humanPos)<human_nums:
         while True:
