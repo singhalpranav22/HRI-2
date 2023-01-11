@@ -8,8 +8,9 @@ from numpy.linalg import norm
 
 def checkIfPreexistingCoordinates(x, y, coordinates):
     for coordinate in coordinates:
-        if abs(coordinate[0] - x) <= 0.3 and abs(coordinate[1] - y) <= 0.3:
+        if abs(coordinate[0] - x) <= 0.5 or abs(coordinate[1] - y) <= 0.5:
             return True
+    # print("Called checkIfPreexistingCoordinates")
     return False
 
 def generateRandomRobotPositions(robot_nums, robot_radius, initialHumanPositions):
@@ -30,8 +31,8 @@ def generateRandomRobotPositions(robot_nums, robot_radius, initialHumanPositions
     while True and len(robotPos) < robot_nums:
         while True:
             # generate random source and goal positions
-            xSource = round(random.uniform(-8, 8), 1)
-            ySource = round(random.uniform(-8, 8), 1)
+            xSource = round(random.uniform(-7.3, 7.3), 1)
+            ySource = round(random.uniform(-7.3, 7.3), 1)
 
             while ((-8 <= xSource <= -1.5 and -8 <= ySource <= -1.5) or (
                     -8 <= xSource <= -1.5 and 1.5 <= ySource <= 8) or (
@@ -39,17 +40,18 @@ def generateRandomRobotPositions(robot_nums, robot_radius, initialHumanPositions
                            1.5 <= xSource <= 8 and 1.5 <= ySource <= 8) or
                    checkIfPreexistingCoordinates(xSource, ySource, starting_positions)):
                 # print(xSource,ySource)
-                xSource = round(random.uniform(-8, 8), 1)
-                ySource = round(random.uniform(-8, 8), 1)
+                xSource = round(random.uniform(-7.3, 7.3), 1)
+                ySource = round(random.uniform(-7.3, 7.3), 1)
+                # print("Called xsource ysource")
 
-            xGoal = round(random.uniform(-7.5, 7.5), 1)
-            yGoal = round(random.uniform(-7.5, 7.5), 1)
+            xGoal = round(random.uniform(-7.3, 7.3), 1)
+            yGoal = round(random.uniform(-7.3, 7.3), 1)
 
             while ((-8 <= xGoal <= -1.5 and -8 <= yGoal <= -1.5) or (-8 <= xGoal <= -1.5 and 1.5 <= yGoal <= 8) or (
                     1.5 <= xGoal <= 8 and -8 <= yGoal <= -1.5) or (1.5 <= xGoal <= 8 and 1.5 <= yGoal <= 8) or
                    checkIfPreexistingCoordinates(xGoal, yGoal, goal_positions)):
-                xGoal = round(random.uniform(-7.5, 7.5), 1)
-                yGoal = round(random.uniform(-7.5, 7.5), 1)
+                xGoal = round(random.uniform(-7.3, 7.3), 1)
+                yGoal = round(random.uniform(-7.3, 7.3), 1)
 
             collide = False
             for [(xS, yS), (xG, yG)] in robotPos:
