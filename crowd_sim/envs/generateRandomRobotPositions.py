@@ -10,6 +10,7 @@ def checkIfPreexistingCoordinates(x, y, coordinates):
     for coordinate in coordinates:
         if abs(coordinate[0] - x) <= 0.3 and abs(coordinate[1] - y) <= 0.3:
             return True
+    print("CHECK HERE REACHED")
     return False
 
 def generateRandomRobotPositions(robot_nums, robot_radius, initialHumanPositions):

@@ -1,7 +1,7 @@
 import csv
 import os
 
-test_cases = 5
+test_cases = 1
 fields = ['S.no.', 'k', 'Success Rate', 'Collision Rate', 'Nav Time', 'Total Reward', 'Freq. Danger',
           'Avg. Min. Separation dist in Danger', 'Configuration of Robot', 'Configuration of humans']
 
