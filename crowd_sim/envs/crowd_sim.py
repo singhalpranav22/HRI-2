@@ -1,5 +1,6 @@
 import logging
 from turtle import position
+import csv, os
 import gym
 import math
 import matplotlib.lines as mlines
@@ -14,9 +15,9 @@ from crowd_sim.envs.utils.utils import point_to_segment_dist
 from .generateRandomPositions import generateRandomPositions
 from .generateRandomRobotPositions import generateRandomRobotPositions
 from .utils.info import ReachSubgoal
-from .utils.utils import isIntersectionCrowded, isIntersectionCrossing, addRandomNoise
-
-
+from .utils.utils import isIntersectionCrowded, isIntersectionCrossing, addRandomNoise, getDistance
+from .getHumansPositionsFromCsv import getHumanPositionsFromCsv
+from .getRobotPositionFromCsv import getRobotPositionFromCsv
 class CrowdSim(gym.Env):
     metadata = {'render.modes': ['human']}
 
@@ -63,6 +64,16 @@ class CrowdSim(gym.Env):
         self.initialHumanPositions = []
         self.initialRobotPosition = []
 
+        self.inflatedRadius = None
+        # read string from file configs/csvLocation.txt
+        with open('configs/csvLocation.txt', 'r') as file:
+            self.csvFilePath = file.read().replace('\n', '')
+            if(self.csvFilePath == ""):
+                self.configFromCSV = False
+            else:
+                self.configFromCSV = True
+
+
     def configure(self, config):
         self.config = config
         self.time_limit = config.getint('env', 'time_limit')
@@ -76,7 +87,8 @@ class CrowdSim(gym.Env):
         self.subgoal_reached = config.getfloat('reward', 'subgoal_reached')
         self.robot_radius = config.getfloat('robot', 'radius')
         print("###$$$###$$$### subgoal_velocity_dirn_factor:", self.subgoal_velocity_dirn_factor)
-        # self.human_radius = config.getfloat('human','radius')
+        self.human_radius = config.getfloat('humans','radius')
+        self.inflatedRadius =  self.human_radius * 2
         if self.config.get('humans', 'policy') == 'orca':
             self.case_capacity = {'train': np.iinfo(np.uint32).max - 2000, 'val': 1000, 'test': 1000}
             self.case_size = {'train': np.iinfo(np.uint32).max - 2000, 'val': config.getint('env', 'val_size'),
@@ -86,6 +98,14 @@ class CrowdSim(gym.Env):
             self.square_width = config.getfloat('sim', 'square_width')
             self.circle_radius = config.getfloat('sim', 'circle_radius')
             self.human_num = config.getint('sim', 'human_num')
+            if(self.configFromCSV):
+                with open(self.csvFilePath, 'r') as csvFile:
+                    csvReader = csv.reader(csvFile)
+                    i = 0
+                    for row in csvReader:
+                        if(i==0):
+                            self.human_num = len(row) - 2
+                            break
         else:
             raise NotImplementedError
         self.case_counter = {'train': 0, 'test': 0, 'val': 0}
@@ -127,7 +147,11 @@ class CrowdSim(gym.Env):
             # humanPosHc = [[(-7.5,-1),(7.5,-1)],[(0,7.5),(0,-7.5)],[(-7.5,1),(1,-7.5)],[(-1,7.5),(1,-7.5)]]
             ##### Case-2 overtaking condition
             human = Human(self.config, 'humans')
-            humanPos = generateRandomPositions(human_num, human.radius)
+            humanPos = []
+            if(self.configFromCSV):
+                humanPos = getHumanPositionsFromCsv(self.csvFilePath,self.human_num)
+            else :
+                humanPos = generateRandomPositions(self.human_num, human.radius)
             # humanPos =  [[(5.9, 0.4), (3.3, 0.4)], [(-1.3, 2.5), (-0.4, -5.1)], [(0.8, -2.6), (-4.9, -0.5)]]
             #humanPos = [[(0, 4),(-2.9, -1.4)], [(1.2, -5), (1.3, 5.5)], [(7, 1.5), (-1.3, -4)]]
             print("Human Positions: ", humanPos)
@@ -377,7 +401,11 @@ class CrowdSim(gym.Env):
             counter_offset = {'train': self.case_capacity['val'] + self.case_capacity['test'],
                               'val': 0, 'test': self.case_capacity['val']}
             #self.robot.set(0, -6, 7, 0, 0, 0, np.pi / 2)
-            robotPos = generateRandomRobotPositions(1, self.robot_radius, self.initialHumanPositions)
+            robotPos = []
+            if(self.configFromCSV):
+                robotPos = getRobotPositionFromCsv(self.csvFilePath)
+            else: 
+                robotPos = generateRandomRobotPositions(1, self.robot_radius, self.initialHumanPositions)
             #robotPos = [(-6, 0), (-1, 3)]
             self.initialRobotPosition = robotPos
             # robotPos = [[(-1.2, 6.1), (5.2, 1.2)]]
@@ -434,6 +462,14 @@ class CrowdSim(gym.Env):
         Compute actions for all agents, detect collision, update environment and return (ob, reward, done, info)
 
         """
+        # data to be stored in csv later
+        row = [self.global_time]
+        robotState = self.robot.get_full_state()
+        row.append(robotState.toDictionary())
+        for human in self.humans:
+            humanState = human.get_full_state()
+            row.append(humanState.toDictionary())
+        self.data.append(row)
         human_actions = []
         for human in self.humans:
             # observation for humans is always coordinates
@@ -472,9 +508,35 @@ class CrowdSim(gym.Env):
                 break
             elif closest_dist < dmin:
                 dmin = closest_dist
-
+    
         # collision detection between humans
         human_num = len(self.humans)
+        # For robot, traverse to each human and check whether there it lies in the visibility of robot or not
+        for i in range(5):
+            currentAgent = self.humans[i]
+            d = getDistance(self.robot.px, self.robot.py, currentAgent.px, currentAgent.py)
+            # find tan inverse of angle between robot and human
+            theta = np.arctan2(currentAgent.py - self.robot.py, currentAgent.px - self.robot.px)
+            # find sin inverse between robot and human
+            alpha = np.arcsin(self.inflatedRadius / d)
+            d1 = d * np.cos(alpha)
+            # q1 is one of the tangent points on the circle
+            q1_x = self.robot.px + d1 * np.cos(theta+alpha)
+            q1_y = self.robot.py + d1 * np.sin(theta+alpha)
+            # q2 is the other point tangent on the circle
+            q2_x = self.robot.px + d1 * np.cos(theta-alpha)
+            q2_y = self.robot.py + d1 * np.sin(theta-alpha)
+            # line can be found using y = mx + c where m is the slope and c is the y intercept
+            # equation of line between robot and q1
+            m1 = (q1_y - self.robot.py) / (q1_x - self.robot.px)
+            c1 = self.robot.py - m1 * self.robot.px
+            # equation of line between robot and q2
+            m2 = (q2_y - self.robot.py) / (q2_x - self.robot.px)
+            c2 = self.robot.py - m2 * self.robot.px
+            # Line 1: y = m1x + c1
+            # Line 2: y = m2x + c2
+
+
         for i in range(human_num):
             for j in range(i + 1, human_num):
                 dx = self.humans[i].px - self.humans[j].px
@@ -518,7 +580,7 @@ class CrowdSim(gym.Env):
             reward = 0
             done = True
             info = Timeout()
-            # isCsvRequired = True
+            isCsvRequired = True
         elif px < -8 or px > 8 or py < -8 or py > 8:
             reward = 0
             done = True
@@ -528,12 +590,12 @@ class CrowdSim(gym.Env):
             reward = self.collision_penalty
             done = True
             info = Collision()
-            # isCsvRequired = True
+            isCsvRequired = True
         elif reaching_goal:
             reward = self.success_reward
             done = True
             info = ReachGoal()
-            # isCsvRequired = False
+            isCsvRequired = False
         elif dmin < self.discomfort_dist:
             # only penalize agent for getting too close if it's visible
             # adjust the reward based on FPS
@@ -546,8 +608,9 @@ class CrowdSim(gym.Env):
             done = False
             info = Nothing()
 
-
-        if isCsvRequired:
+      
+        if isCsvRequired and self.configFromCSV != True:
+            print("CsvRequired as ORCA failed!")
             # print("&&&&&&&&",self.data)
             header = ['time']
             for i in range(self.robot_num):
@@ -555,28 +618,21 @@ class CrowdSim(gym.Env):
             for i in range(self.human_num):
                 header.append(f'human{i + 1}')
             self.writer = None
-            # files = os.listdir('testcases')
-            # lastFileNum = 0
-            # for file in files:
-            #     if len(file)>5:
-            #         currFileNum = int(file[-5])
-            #         lastFileNum = max(lastFileNum,currFileNum)
-            # lastFileNum += 1
-            # self.csvFileName = f'testcases/testcase{lastFileNum}.csv'
-            # with open(f'testcases/testcase{lastFileNum}.csv', 'w', encoding='UTF8') as f:
-            #     self.writer = csv.writer(f)
-            #     self.writer.writerow(header)
-            #     self.writer.writerows(self.data)
+            files = os.listdir('testcases')
+            lastFileNum = 0
+            for file in files:
+                if len(file)>5:
+                    currFileNum = int(file[-5])
+                    lastFileNum = max(lastFileNum,currFileNum)
+            lastFileNum += 1
+            self.csvFileName = f'testcases/testcase{lastFileNum}.csv'
+            with open(f'testcases/testcase{lastFileNum}.csv', 'w', encoding='UTF8') as f:
+                self.writer = csv.writer(f)
+                self.writer.writerow(header)
+                for(i,row) in enumerate(self.data):
+                    self.writer.writerow(row[0:self.human_num+2])
 
         if update:
-            # csv generation
-            row = [self.global_time]
-            robotState = self.robot.get_full_state()
-            row.append(robotState.toDictionary())
-            for human in self.humans:
-                humanState = human.get_full_state()
-                row.append(humanState.toDictionary())
-            self.data.append(row)
             # store state, action value and attention weights
             self.states.append([self.robot.get_full_state(), [human.get_full_state() for human in self.humans]])
             if hasattr(self.robot.policy, 'action_values'):

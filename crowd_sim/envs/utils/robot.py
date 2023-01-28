@@ -67,6 +67,8 @@ class Robot(Agent):
             next_vy = action.v * np.sin(next_theta)
         return ObservableState(next_px, next_py, next_vx, next_vy, self.radius)
 
+    
+
     def get_full_state(self):
         return FullState(self.px, self.py, self.vx, self.vy, self.radius, self.gx, self.gy, self.v_pref, self.theta)
 

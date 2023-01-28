@@ -128,3 +128,7 @@ def addRandomNoise(x, y, noise):
     # print("y_noise",y_noise)
     y += y_noise
     return x, y
+
+
+def getDistance(x1, y1, x2, y2):
+    return np.linalg.norm((x1 - x2, y1 - y2))
