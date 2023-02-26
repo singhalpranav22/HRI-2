@@ -15,9 +15,11 @@ from crowd_sim.envs.utils.utils import point_to_segment_dist
 from .generateRandomPositions import generateRandomPositions
 from .generateRandomRobotPositions import generateRandomRobotPositions
 from .utils.info import ReachSubgoal
-from .utils.utils import isIntersectionCrowded, isIntersectionCrossing, addRandomNoise, getDistance
+from .utils.utils import isIntersectionCrowded, isIntersectionCrossing, addRandomNoise, getDistance,  shouldRobotStopHeuristic
 from .getHumansPositionsFromCsv import getHumanPositionsFromCsv
 from .getRobotPositionFromCsv import getRobotPositionFromCsv
+import threading
+
 class CrowdSim(gym.Env):
     metadata = {'render.modes': ['human']}
 
@@ -550,7 +552,7 @@ class CrowdSim(gym.Env):
         end_position = np.array(self.robot.compute_position(action, self.time_step))
         reaching_goal = norm(end_position - np.array(self.robot.get_end_goal_position())) < self.robot.radius
         reaching_subgoal = True
-        isCsvRequired = False
+        isCsvRequired = True
 
         # calculate angle in radians between velocity and current position to goal vector
         px = self.robot.px
@@ -580,22 +582,22 @@ class CrowdSim(gym.Env):
             reward = 0
             done = True
             info = Timeout()
-            isCsvRequired = True
+            isCsvRequired = False
         elif px < -8 or px > 8 or py < -8 or py > 8:
             reward = 0
             done = True
             info = Timeout()
-            # isCsvRequired = True
+            isCsvRequired = False
         elif collision:
             reward = self.collision_penalty
             done = True
             info = Collision()
-            isCsvRequired = True
+            isCsvRequired = False
         elif reaching_goal:
             reward = self.success_reward
             done = True
             info = ReachGoal()
-            isCsvRequired = False
+            isCsvRequired = True
         elif dmin < self.discomfort_dist:
             # only penalize agent for getting too close if it's visible
             # adjust the reward based on FPS
@@ -607,10 +609,11 @@ class CrowdSim(gym.Env):
             # reward = 0
             done = False
             info = Nothing()
+            isCsvRequired = True
 
       
-        if isCsvRequired and self.configFromCSV != True:
-            print("CsvRequired as ORCA failed!")
+        if isCsvRequired and self.configFromCSV != True and done==True:
+            # print("CsvRequired as ORCA failed!")
             # print("&&&&&&&&",self.data)
             header = ['time']
             for i in range(self.robot_num):
@@ -620,6 +623,7 @@ class CrowdSim(gym.Env):
             self.writer = None
             files = os.listdir('testcases')
             lastFileNum = 0
+            print("files===",files)
             for file in files:
                 if len(file)>5:
                     currFileNum = int(file[-5])
@@ -641,6 +645,11 @@ class CrowdSim(gym.Env):
                 self.attention_weights.append(self.robot.policy.get_attention_weights())
             # update all agents
             self.robot.step(action)
+            if shouldRobotStopHeuristic(self.robot,self.humans):
+                self.robot.vx = 0
+                self.robot.vy = 0
+            else:
+                self.robot.step(action)
             for i, human_action in enumerate(human_actions):
                 self.humans[i].step(human_action)
             self.global_time += self.time_step
@@ -650,7 +659,7 @@ class CrowdSim(gym.Env):
                 # only record the first time the human reaches the goal
                 if self.human_times[i] == 0 and human.reached_destination():
                     self.human_times[i] = self.global_time
-
+    
             # compute the observation
             if self.robot.sensor == 'coordinates':
                 ob = [human.get_observable_state() for human in self.humans]

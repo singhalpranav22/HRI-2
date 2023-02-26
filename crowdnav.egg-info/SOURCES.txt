@@ -3,6 +3,7 @@ README.md
 setup.py
 crowd_nav/__init__.py
 crowd_nav/generateTestCases.py
+crowd_nav/gui.py
 crowd_nav/multipleTests.py
 crowd_nav/temp.py
 crowd_nav/test.py
@@ -25,6 +26,8 @@ crowd_sim/envs/crowd_sim_il.py
 crowd_sim/envs/crowd_sim_rl.py
 crowd_sim/envs/generateRandomPositions.py
 crowd_sim/envs/generateRandomRobotPositions.py
+crowd_sim/envs/getHumansPositionsFromCsv.py
+crowd_sim/envs/getRobotPositionFromCsv.py
 crowd_sim/envs/policy/__init__.py
 crowd_sim/envs/policy/linear.py
 crowd_sim/envs/policy/orca.py

@@ -19,4 +19,5 @@ def getHumanPositionsFromCsv(csvFilePath,human_num):
             i += 1
             if(i>=2):
                 break
+    print(humanPositions)
     return humanPositions

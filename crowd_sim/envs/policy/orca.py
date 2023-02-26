@@ -67,6 +67,7 @@ class ORCA(Policy):
         self.sim = None
 
     def configure(self, config):
+        # print("ORCA CONFIG=====",config," ",config.getfloat('orca', 'time_step'))
         # self.time_step = config.getfloat('orca', 'time_step')
         # self.neighbor_dist = config.getfloat('orca', 'neighbor_dist')
         # self.max_neighbors = config.getint('orca', 'max_neighbors')
@@ -97,15 +98,6 @@ class ORCA(Policy):
             self.sim = None
         if self.sim is None:
             self.sim = rvo2.PyRVOSimulator(self.time_step, *params, self.radius, self.max_speed)
-            # l1 = self.sim.addObstacle([(-2, 8), (-2, 2)])
-            # l2 = self.sim.addObstacle([(-8, 2), (-2, 2)])
-            # l3 = self.sim.addObstacle([(-8, -2), (-2, -2)])
-            # l4 = self.sim.addObstacle([(-2, -8), (-2,-2)])
-            # l5 = self.sim.addObstacle([(2, -8), (2,-2)])
-            # l6 = self.sim.addObstacle([(2, -2), (8,-2)])
-            # l7 = self.sim.addObstacle([(2, 2), (8,2)])
-            # l8 = self.sim.addObstacle([(2, 2), (2,8)])
-            # self.sim.processObstacles()
             self.sim.addAgent(self_state.position, *params, self_state.radius + 0.01 + self.safety_space,
                               self_state.v_pref, self_state.velocity)
             for human_state in state.human_states:
@@ -115,6 +107,7 @@ class ORCA(Policy):
             self.sim.setAgentPosition(0, self_state.position)
             self.sim.setAgentVelocity(0, self_state.velocity)
             for i, human_state in enumerate(state.human_states):
+                #print(i,"=",human_state.position," ",human_state.velocity)
                 self.sim.setAgentPosition(i + 1, human_state.position)
                 self.sim.setAgentVelocity(i + 1, human_state.velocity)
 

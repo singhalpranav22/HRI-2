@@ -132,3 +132,26 @@ def addRandomNoise(x, y, noise):
 
 def getDistance(x1, y1, x2, y2):
     return np.linalg.norm((x1 - x2, y1 - y2))
+
+def shouldRobotStopHeuristic(robot,humans):
+    px = robot.px
+    py = robot.py
+    robotQuadrantNumber = determineQuadrant(px,py)
+    shouldRobotStop = False
+    if robotQuadrantNumber == 2:
+        if abs(py - 2) >1 or robot.vy > 0:
+            return shouldRobotStop
+    if robotQuadrantNumber == 4:
+        if abs(py + 2) >1 or robot.vy < 0:
+            return shouldRobotStop
+
+    if robotQuadrantNumber in [2,4]:
+        for human in humans :
+            humanX = human.px
+            humanY = human.py
+            humanQuadrantNumber = determineQuadrant(humanX, humanY)
+            if humanQuadrantNumber == 0:
+                if abs(human.vx) > abs(human.vy):
+                    shouldRobotStop = True 
+                    break 
+    return shouldRobotStop
