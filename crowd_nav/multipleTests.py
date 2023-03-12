@@ -1,7 +1,7 @@
 import csv
 import os
 
-test_cases = 1
+test_cases = 100
 fields = ['S.no.', 'k', 'Success Rate', 'Collision Rate', 'Nav Time', 'Total Reward', 'Freq. Danger',
           'Avg. Min. Separation dist in Danger', 'Configuration of Robot', 'Configuration of humans']
 
@@ -17,4 +17,4 @@ with open(filename, 'w') as csvfile:
     csvwriter.writerow(fields)
 
 for i in range(test_cases):
-    os.system("python3 test.py --policy sarl --model_dir data/output --phase test")
+    os.system("python3 test.py --policy orca --phase test")

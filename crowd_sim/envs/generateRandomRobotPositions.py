@@ -4,13 +4,16 @@ Script to generate random human positions within the constraints
 import time
 import random
 from numpy.linalg import norm
+from .utils.utils import determineQuadrant
 
 
 def checkIfPreexistingCoordinates(x, y, coordinates):
+    print("check if pe coordinates called")
     for coordinate in coordinates:
         if abs(coordinate[0] - x) <= 1.5 or abs(coordinate[1] - y) <= 1.5:
+            print("Violated condition", x, y, coordinates)
             return True
-    # print("Called checkIfPreexistingCoordinates")
+    print("Called checkIfPreexistingCoordinates for ", x, y, coordinates)
     return False
 
 def generateRandomRobotPositions(robot_nums, robot_radius, initialHumanPositions):
@@ -19,6 +22,8 @@ def generateRandomRobotPositions(robot_nums, robot_radius, initialHumanPositions
     """
     robotPos = []
     random.seed(time.time())
+
+    checkIfPreexistingCoordinates(2.5, -3.5, [])
 
     # Filter out the starting and goal positions
     starting_positions = []
@@ -34,22 +39,26 @@ def generateRandomRobotPositions(robot_nums, robot_radius, initialHumanPositions
             xSource = round(random.uniform(-7.3, 7.3), 1)
             ySource = round(random.uniform(-7.3, 7.3), 1)
 
-            while ((-7.75 <= xSource <= -1.25 and -7.75 <= ySource <= -1.25) or (
+            while (checkIfPreexistingCoordinates(xSource, ySource, starting_positions) or 
+                    (-7.75 <= xSource <= -1.25 and -7.75 <= ySource <= -1.25) or (
                     -7.75 <= xSource <= -1.25 and 1.25 <= ySource <= 7.75) or (
                            1.25 <= xSource <= 7.75 and -7.75 <= ySource <= -1.25) or (
                            1.25 <= xSource <= 7.75 and 1.25 <= ySource <= 7.75) or
-                   checkIfPreexistingCoordinates(xSource, ySource, starting_positions)):
+                    (determineQuadrant(xSource, ySource) == 0)):
                 # print(xSource,ySource)
                 xSource = round(random.uniform(-7.3, 7.3), 1)
                 ySource = round(random.uniform(-7.3, 7.3), 1)
                 # print("Called xsource ysource")
 
+            quadrant_for_source = determineQuadrant(xSource, ySource)
+
             xGoal = round(random.uniform(-7.3, 7.3), 1)
             yGoal = round(random.uniform(-7.3, 7.3), 1)
 
-            while ((-7.75 <= xGoal <= -1.25 and -7.75 <= yGoal <= -1.25) or (-7.75 <= xGoal <= -1.25 and 1.25 <= yGoal <= 7.75) or (
+            while (checkIfPreexistingCoordinates(xGoal, yGoal, goal_positions) or 
+                (-7.75 <= xGoal <= -1.25 and -7.75 <= yGoal <= -1.25) or (-7.75 <= xGoal <= -1.25 and 1.25 <= yGoal <= 7.75) or (
                     1.25 <= xGoal <= 7.75 and -7.75 <= yGoal <= -1.25) or (1.25 <= xGoal <= 7.75 and 1.25 <= yGoal <= 7.75) or ( (-2<=xGoal<=2 and -2<=yGoal<=2)) or
-                   checkIfPreexistingCoordinates(xGoal, yGoal, goal_positions)):
+                   (quadrant_for_source == determineQuadrant(xGoal, yGoal) or (determineQuadrant(xGoal, yGoal) == 0))):
                 xGoal = round(random.uniform(-7.3, 7.3), 1)
                 yGoal = round(random.uniform(-7.3, 7.3), 1)
 

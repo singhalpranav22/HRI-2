@@ -19,6 +19,7 @@ from .utils.utils import isIntersectionCrowded, isIntersectionCrossing, addRando
 from .getHumansPositionsFromCsv import getHumanPositionsFromCsv
 from .getRobotPositionFromCsv import getRobotPositionFromCsv
 import threading
+import re
 
 class CrowdSim(gym.Env):
     metadata = {'render.modes': ['human']}
@@ -88,7 +89,7 @@ class CrowdSim(gym.Env):
         self.subgoal_velocity_dirn_factor = config.getfloat('reward', 'subgoal_velocity_dirn_factor')
         self.subgoal_reached = config.getfloat('reward', 'subgoal_reached')
         self.robot_radius = config.getfloat('robot', 'radius')
-        print("###$$$###$$$### subgoal_velocity_dirn_factor:", self.subgoal_velocity_dirn_factor)
+        # print("###$$$###$$$### subgoal_velocity_dirn_factor:", self.subgoal_velocity_dirn_factor)
         self.human_radius = config.getfloat('humans','radius')
         self.inflatedRadius =  self.human_radius * 2
         if self.config.get('humans', 'policy') == 'orca':
@@ -623,10 +624,14 @@ class CrowdSim(gym.Env):
             self.writer = None
             files = os.listdir('testcases')
             lastFileNum = 0
-            print("files===",files)
             for file in files:
                 if len(file)>5:
-                    currFileNum = int(file[-5])
+                    match = re.search(r'\d+(?=\.csv)', file)
+                    if match:
+                        currFileNum = int(match.group())
+                        # print(currFileNum)
+                    else:
+                        currFileNum = 0
                     lastFileNum = max(lastFileNum,currFileNum)
             lastFileNum += 1
             self.csvFileName = f'testcases/testcase{lastFileNum}.csv'

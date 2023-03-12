@@ -69,7 +69,7 @@ while True:
         with open('configs/csvLocation.txt', 'w') as f:
             f.write(file)
         # run the visualisation
-        os.system("python test.py --policy orca --phase test --visualize --test_case 0")
+        os.system("python3 test.py --policy orca --phase test --visualize --test_case 0")
         # empty the contents of the file
         with open('configs/csvLocation.txt', 'w') as f:
             f.write('')
