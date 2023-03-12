@@ -4,16 +4,22 @@ Script to generate random human positions within the constraints
 import time
 import random
 from numpy.linalg import norm
+from .utils.utils import determineQuadrant, getDistance
 from .utils.utils import determineQuadrant
 
 
-def checkIfPreexistingCoordinates(x, y, coordinates):
+def checkIfPreexistingCoordinates(x, y, humanCoordinates):
     print("check if pe coordinates called")
-    for coordinate in coordinates:
-        if abs(coordinate[0] - x) <= 1.5 or abs(coordinate[1] - y) <= 1.5:
-            print("Violated condition", x, y, coordinates)
+    # print(humanCoordinates)
+    for humanCoordinate in humanCoordinates:
+        # print("Robot position: ", x, y)
+        # print("Human position: ", humanCoordinates[0], humanCoordinates[1])
+        # print("Ditsance between them: ", getDistance(x, y, humanCoordinate[0], humanCoordinate[1]))
+        if (getDistance(x, y, humanCoordinate[0], humanCoordinate[1]) <= 1.5) :
+        # if abs(coordinate[0] - x) <= 3 or abs(coordinate[1] - y) <= 3:
+            # print("Violated condition", x, y, humanCoordinates)
             return True
-    print("Called checkIfPreexistingCoordinates for ", x, y, coordinates)
+    # print("Called checkIfPreexistingCoordinates for ", x, y, humanCoordinates)
     return False
 
 def generateRandomRobotPositions(robot_nums, robot_radius, initialHumanPositions):
@@ -26,6 +32,7 @@ def generateRandomRobotPositions(robot_nums, robot_radius, initialHumanPositions
     checkIfPreexistingCoordinates(2.5, -3.5, [])
 
     # Filter out the starting and goal positions
+    print("INITIAL HUMAN POSITIONS: ", initialHumanPositions)
     starting_positions = []
     goal_positions = []
     for item in initialHumanPositions:

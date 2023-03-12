@@ -159,6 +159,7 @@ class CrowdSim(gym.Env):
             #humanPos = [[(0, 4),(-2.9, -1.4)], [(1.2, -5), (1.3, 5.5)], [(7, 1.5), (-1.3, -4)]]
             print("Human Positions: ", humanPos)
             self.initialHumanPositions = humanPos
+            print("CHECK IF HUMAN POSITIONS ARRAY IS POPULATED IN CROWD SIM", self.initialHumanPositions)
             self.humans = []
             for i in range(human_num):
                 # if i < 2:
@@ -404,20 +405,7 @@ class CrowdSim(gym.Env):
             counter_offset = {'train': self.case_capacity['val'] + self.case_capacity['test'],
                               'val': 0, 'test': self.case_capacity['val']}
             #self.robot.set(0, -6, 7, 0, 0, 0, np.pi / 2)
-            robotPos = []
-            if(self.configFromCSV):
-                robotPos = getRobotPositionFromCsv(self.csvFilePath)
-            else: 
-                robotPos = generateRandomRobotPositions(1, self.robot_radius, self.initialHumanPositions)
-            #robotPos = [(-6, 0), (-1, 3)]
-            self.initialRobotPosition = robotPos
-            # robotPos = [[(-1.2, 6.1), (5.2, 1.2)]]
-            # robotPos[0] = addRandomNoise(robotPos[0][0], robotPos[0][1], 0.2)
-            # robotPos[1] = addRandomNoise(robotPos[1][0], robotPos[1][1], 0.2)
-            # print("Robot position: ", robotPos)
-            # print("Robot goal:", robotPos[1])
-            #self.robot.set(robotPos[0][0], robotPos[0][1], robotPos[1][0], robotPos[1][1], 0, 0, np.pi / 2)
-            self.robot.set(robotPos[0][0][0], robotPos[0][0][1], robotPos[0][1][0], robotPos[0][1][1], 0, 0, np.pi / 2)
+            
             if self.case_counter[phase] >= 0:
                 np.random.seed(counter_offset[phase] + self.case_counter[phase])
                 if phase in ['train', 'val']:
@@ -438,6 +426,21 @@ class CrowdSim(gym.Env):
                     self.humans[2].set(5, -5, 5, 5, 0, 0, np.pi / 2)
                 else:
                     raise NotImplementedError
+
+            robotPos = []
+            if(self.configFromCSV):
+                robotPos = getRobotPositionFromCsv(self.csvFilePath)
+            else: 
+                robotPos = generateRandomRobotPositions(1, self.robot_radius, self.initialHumanPositions)
+            #robotPos = [(-6, 0), (-1, 3)]
+            self.initialRobotPosition = robotPos
+            # robotPos = [[(-1.2, 6.1), (5.2, 1.2)]]
+            # robotPos[0] = addRandomNoise(robotPos[0][0], robotPos[0][1], 0.2)
+            # robotPos[1] = addRandomNoise(robotPos[1][0], robotPos[1][1], 0.2)
+            # print("Robot position: ", robotPos)
+            # print("Robot goal:", robotPos[1])
+            #self.robot.set(robotPos[0][0], robotPos[0][1], robotPos[1][0], robotPos[1][1], 0, 0, np.pi / 2)
+            self.robot.set(robotPos[0][0][0], robotPos[0][0][1], robotPos[0][1][0], robotPos[0][1][1], 0, 0, np.pi / 2)
 
         for agent in [self.robot] + self.humans:
             agent.time_step = self.time_step
@@ -583,22 +586,22 @@ class CrowdSim(gym.Env):
             reward = 0
             done = True
             info = Timeout()
-            isCsvRequired = False
+            isCsvRequired = True
         elif px < -8 or px > 8 or py < -8 or py > 8:
             reward = 0
             done = True
             info = Timeout()
-            isCsvRequired = False
+            # isCsvRequired = False
         elif collision:
             reward = self.collision_penalty
             done = True
             info = Collision()
-            isCsvRequired = False
+            isCsvRequired = True
         elif reaching_goal:
             reward = self.success_reward
             done = True
             info = ReachGoal()
-            isCsvRequired = True
+            isCsvRequired = False
         elif dmin < self.discomfort_dist:
             # only penalize agent for getting too close if it's visible
             # adjust the reward based on FPS
@@ -610,7 +613,7 @@ class CrowdSim(gym.Env):
             # reward = 0
             done = False
             info = Nothing()
-            isCsvRequired = True
+            # isCsvRequired = True
 
       
         if isCsvRequired and self.configFromCSV != True and done==True:
@@ -635,6 +638,7 @@ class CrowdSim(gym.Env):
                     lastFileNum = max(lastFileNum,currFileNum)
             lastFileNum += 1
             self.csvFileName = f'testcases/testcase{lastFileNum}.csv'
+            print("TESTCASE NUMBER", self.csvFileName)
             with open(f'testcases/testcase{lastFileNum}.csv', 'w', encoding='UTF8') as f:
                 self.writer = csv.writer(f)
                 self.writer.writerow(header)

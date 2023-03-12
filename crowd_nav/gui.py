@@ -56,7 +56,7 @@ while True:
         iterations = values['-ITERATIONS-']
         iterations = int(iterations)
         for i in range(iterations):
-            os.system("python ../crowd_nav/test.py --policy orca --phase test --test_case 0")
+            os.system("python3 ../crowd_nav/test.py --policy orca --phase test --test_case 0")
         sg.popup('Done')
     if event == '-START_VISUALISATION-':
         # open the file
